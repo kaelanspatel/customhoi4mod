@@ -117,9 +117,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_faction = lom
-add_to_faction = GRG
-
 create_country_leader = {
 	name = "Adrien Lefebvre"
 	desc = "POLITICS_KAELAN_PATEL_DESC"

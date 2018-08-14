@@ -119,6 +119,7 @@ set_politics = {
 
 create_faction = lom
 add_to_faction = KLN
+add_to_faction = GRG
 
 create_country_leader = {
 	name = "Adrien Lefebvre"
