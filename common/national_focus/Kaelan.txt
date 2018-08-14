@@ -1,1259 +1,465 @@
 focus_tree = {
-	id = kaelan_focus
+
+	id = 'kaelan_focus'
 	country = {
-		factor = 0
+	factor=0
 		modifier = {
 			add = 10
 			tag = KLN
 		}
 	}
-	focus = {
-		id = KAE_startfocus
-		icon = GFX_goal_generic_demand_territory
-		cost = 10.00
-		x = 12
-		y = 0
-		completion_reward = {
-			add_political_power = 300
-			set_rule = { 
-				can_create_factions = yes
-				can_puppet = yes
-			}
-			
-			rule = {
-				can_puppet = yes
-			}
-		}
-	}
-	focus = {
-		id = KAE_milifac
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_startfocus
-		}
-		x = 7
-		y = 1
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = KAE_milifac_2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_milifac
-		}
-		x = 7
-		y = 2
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = KAE_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_milifac_2
-		}
-		x = 6
-		y = 3
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = dockyard
-					level = 7
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = dockyard
-					level = 7
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = KAE_state
-		icon = GFX_focus_generic_self_management
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_startfocus
-		}
-		x = 12
-		y = 1
-		completion_reward = {
-			add_ideas = state_control
-		}
-	}
-	focus = {
-		id = KAE_conscription
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_state
-		}
-		x = 10
-		y = 2
-		completion_reward = {
-			add_ideas = all_serve
-		}
-	}
-	focus = {
-		id = KAE_military
-		icon = GFX_goal_generic_build_tank
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_conscription
-		}
-		prerequisite = {
-			focus = KAE_milifac_2
-		}
-		x = 8
-		y = 3
-		completion_reward = {
-			add_ideas = great_plan
-		}
-	}
-	focus = {
-		id = KAE_milirec
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_military
-		}
-		x = 10
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 4
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-	focus = {
-		id = KAE_chinawar
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_milirec
-		}
-		x = 10
-		y = 5
-		will_lead_to_war_with = CHI
-		will_lead_to_war_with = PRC
-		will_lead_to_war_with = SHX
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = CHI
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SHX
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = PRC
-			}
-		}
-	}
-	focus = {
-		id = KAE_media
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_state
-		}
-		x = 12
-		y = 2
-		completion_reward = {
-			add_ideas = state_media
-		}
-	}
-	focus = {
-		id = KAE_SECPOL
-		icon = GFX_focus_generic_military_mission
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_media
-		}
-		x = 12
-		y = 3
-		completion_reward = {
-			add_ideas = SECPOL_idea
-		}
-	}
-	focus = {
-		id = KAE_watching
-		icon = GFX_goal_generic_wolf_pack
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_SECPOL
-		}
-		x = 12
-		y = 4
-		completion_reward = {
-			add_ideas = Moon_Eye
-		}
-	}
-	focus = {
-		id = KAE_modernization
-		icon = GFX_goal_generic_production2
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_state
-		}
-		x = 14
-		y = 2
-		completion_reward = {
-			add_ideas = State_Labs
-		}
-	}
-	focus = {
-		id = KAE_civfac
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_startfocus
-		}
-		x = 17
-		y = 1
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = KAE_civfac_2
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_civfac
-		}
-		x = 17
-		y = 2
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = KAE_HUMADVPRO
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_blacklabs
-		}
-		x = 14
-		y = 5
-		completion_reward = {
-			add_ideas = super_soldiers
-		}
-	}
-	focus = {
-		id = KAE_ussrwar
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_miliind
-		}
-		x = 6
-		y = 5
-		will_lead_to_war_with = SOV
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-		}
-	}
-	focus = {
-		id = KAE_consolidated
-		icon = GFX_goal_generic_defence
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_chinawar
-		}
-		prerequisite = {
-			focus = KAE_ussrwar
-		}
-		prerequisite = {
-			focus = KAE_japanwar
-		}
-		x = 8
-		y = 6
-		completion_reward = {
-			add_ideas = united
-		}
-	}
-	focus = {
-		id = KAE_progress
-		icon = GFX_goal_generic_fortify_city
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_PSIRECPRO
-		}
-		prerequisite = {
-			focus = KAE_ORDDEVPRO
-		}
-		prerequisite = {
-			focus = KAE_HUMADVPRO
-		}
-		x = 16
-		y = 6
-		completion_reward = {
-			add_research_slot = 2
-			add_ideas = prog
-		}
-	}
-	focus = {
-		id = KAE_grandfleet
-		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_military
-		}
-		x = 8
-		y = 4
-		completion_reward = {
-			navy_experience = 100
-			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.70
-				uses = 5
-				category = fleet_in_being_tree
-			}
-		
-			equipment_bonus = {
+	
+	
+	default = no
 
-				capital_ship = {
-					build_cost_ic = -0.50 instant = yes
-				}
-				carrier = {
-					build_cost_ic = -0.50 instant = yes
-				}
-				screen_ship = {
-					build_cost_ic = -0.50 instant = yes
-				}
-			}
-			
-		}
+	focus = { 
+		id = KLN_consolidation_of_power 
+		icon = GFX_goal_generic_political_pressure 
+		ai_will_do = { factor = 0 } 
+		x =2 
+		y =2 
+		prerequisite = { focus = KLN_the_state_of_the_union } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_japanwar
-		icon = GFX_focus_RAJ_lions_of_the_great_war
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_grandfleet
-		}
-		x = 8
-		y = 5
-		will_lead_to_war_with = JAP
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = JAP
-			}
-		}
+	
+	focus = { 
+		id = KLN_saint_of_california 
+		icon = GFX_focus_generic_strike_at_democracy1 
+		ai_will_do = { factor = 0 } 
+		x =9 
+		y =2 
+		prerequisite = { focus = KLN_the_state_of_the_union } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_blacklabs
-		icon = GFX_goal_generic_secret_weapon
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_collecitivist
-		}
-		x = 14
-		y = 4
-		completion_reward = {
-			add_ideas = black_labs
-		}
+	
+	focus = { 
+		id = KLN_purge_the_army 
+		icon = GFX_goal_generic_support_fascism 
+		ai_will_do = { factor = 0 } 
+		x =1 
+		y =3 
+		prerequisite = { focus = KLN_consolidation_of_power } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_PSIRECPRO
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_esoterica
-		}
-		x = 16
-		y = 5
-		completion_reward = {
-			add_ideas = precog
-		}
+	
+	focus = { 
+		id = KLN_destroy_reactionaries 
+		icon = GFX_goal_generic_war_with_comintern 
+		ai_will_do = { factor = 0 } 
+		x =3 
+		y =3  
+		prerequisite = { focus = KLN_consolidation_of_power } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_miliind
-		icon = GFX_goal_generic_production
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_military
-		}
-		x = 6
-		y = 4
-		completion_reward = {
-			add_ideas = miliind
-		}
+	
+	focus = { 
+		id = KLN_operation_moon 
+		icon = GFX_goal_tfv_generic_tech_sharing 
+		ai_will_do = { factor = 0 } 
+		x =9 
+		y =3 
+		prerequisite = { focus = KLN_saint_of_california } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_ORDDEVPRO
-		icon = GFX_goal_generic_occupy_start_war
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_production
-		}
-		x = 18
-		y = 5
-		completion_reward = {
-			add_ideas = ordinance
-		}
+	
+	focus = { 
+		id = KLN_implant_officers 
+		icon = GFX_goal_generic_propaganda 
+		ai_will_do = { factor = 0 } 
+		x =1 
+		y =4 
+		prerequisite = { focus = KLN_purge_the_army } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_esoterica
-		icon = GFX_focus_research
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_collecitivist
-		}
-		x = 16
-		y = 4
-		completion_reward = {
-			add_ideas = DepEso
-		}
+	
+	focus = { 
+		id = KLN_found_the_secpol 
+		icon = GFX_focus_generic_military_mission 
+		ai_will_do = { factor = 0 } 
+		x =3 
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_destroy_reactionaries } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_production
-		icon = GFX_goal_generic_construction2
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_collecitivist
-		}
-		x = 18
-		y = 4
-		completion_reward = {
-			add_ideas = DepMech
-		}
+	
+	focus = { 
+		id = KLN_brainsweeps 
+		icon = GFX_goal_generic_wolf_pack 
+		ai_will_do = { factor = 0 } 
+		x =5 
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_moon } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_statewill
-		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_watching
-		}
-		prerequisite = {
-			focus = KAE_modernization
-		}
-		prerequisite = {
-			focus = KAE_conscription
-		}
-		x = 12
-		y = 6
-		completion_reward = {
-			add_ideas = statewill
-		}
+	
+	focus = { 
+		id = KLN_communion 
+		icon = GFX_goal_generic_national_unity 
+		ai_will_do = { factor = 0 } 
+		x =7 
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_moon } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_collecitivist
-		icon = GFX_goal_generic_national_unity
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_modernization
-		}
-		prerequisite = {
-			focus = KAE_civfac_2
-		}
-		x = 16
-		y = 3
-		completion_reward = {
-			add_ideas = collectivism
-		}
+	
+	focus = { 
+		id = KLN_xenotechnology 
+		icon = GFX_goal_generic_consumer_goods 
+		ai_will_do = { factor = 0 } 
+		x =11 
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_moon} 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
-	focus = {
-		id = KAE_infra
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = KAE_civfac_2
-		}
-		x = 18
-		y = 3
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-			
-			
-		}
+	
+	focus = { 
+		id = KLN_the_reins_of_destiny 
+		icon = GFX_focus_generic_home_defense 
+		ai_will_do = { factor = 0 } 
+		x =2 
+		y =5 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_implant_officers } 
+		prerequisite = { focus = KLN_found_the_secpol } 
+		prerequisite = { focus = KLN_brainsweeps } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
+		
+	focus = { 
+		id = KLN_operation_rigel 
+		icon = GFX_focus_rocketry 
+		ai_will_do = { factor = 0 } 
+		x =12 
+		y =5 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_xenotechnology} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_operation_black_sun 
+		icon = GFX_focus_wonderweapons 
+		ai_will_do = { factor = 0 } 
+		x =16 
+		y =5 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_xenotechnology} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+		
+	focus = { 
+		id = KLN_grand_airfleet 
+		icon = GFX_goal_generic_build_airforce 
+		ai_will_do = { factor = 0 } 
+		x =0 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_the_reins_of_destiny } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_grand_navy 
+		icon = GFX_goal_generic_build_nay 
+		ai_will_do = { factor = 0 } 
+		x =2 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_the_reins_of_destiny} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_grand_army 
+		icon = GFX_goal_generic_allies_build_infantry 
+		ai_will_do = { factor = 0 } 
+		x =4 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_the_reins_of_destiny} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_is
+		icon = GFX_focus_cze_german_puppet 
+		ai_will_do = { factor = 0 } 
+		x =6 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_brainsweeps } 
+		prerequisite = { focus = KLN_communion } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_bring_them_through 
+		icon = GFX_goal_generic_secret_weapon 
+		ai_will_do = { factor = 0 } 
+		x =8 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_communion } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_ucs_luna 
+		icon = GFX_focus_yug_ikarus 
+		ai_will_do = { factor = 0 } 
+		x =12 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_rigel} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_fission_power 
+		icon = GFX_focus_research 
+		ai_will_do = { factor = 0 } 
+		x =16 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_black_sun} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_aviation_cult 
+		icon = GFX_goal_generic_CAS 
+		ai_will_do = { factor = 0 } 
+		x =0 
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_airfleet } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard 
+		ai_will_do = { factor = 0 } 
+		x =2 
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_navy } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_military_industrial_complex 
+		icon = GFX_goal_generic_production 
+		ai_will_do = { factor = 0 } 
+		x =4 
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_army } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_parallel_universe_stripmines 
+		icon = GFX_focus_generic_steel 
+		ai_will_do = { factor = 0 } 
+		x =7 
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_bring_them_through } 
+		prerequisite = { focus = KLN_is } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+		
+	focus = { 
+		id = KLN_nuclear_infrastructure_one
+		icon = GFX_goal_generic_construct_infrastructure 
+		ai_will_do = { factor = 0 } 
+		x =17 
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_fission_power } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_increase_aircraft_production 
+		icon = GFX_goal_generic_air_production 
+		ai_will_do = { factor = 0 } 
+		x =0 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_aviation_cult } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_floating_fortresses 
+		icon = GFX_goal_generic_navy_battleship 
+		ai_will_do = { factor = 0 } 
+		x =2 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_dockyards } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_armaments_research 
+		icon = GFX_goal_generic_small_arms 
+		ai_will_do = { factor = 0 } 
+		x =4 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_military_industrial_complex } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_astral_legions 
+		icon = GFX_focus_generic_little_entente 
+		ai_will_do = { factor = 0 } 
+		x =6 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_army } 
+		prerequisite = { focus = KLN_is} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_otherworld_industries 
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 0 } 
+		x =9 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_parallel_universe_stripmines } 
+		prerequisite = { focus = KLN_xenotechnology } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_lunar_industry 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 0 } 
+		x =11 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_ucs_luna} 
+		prerequisite = { focus = KLN_fission_power} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_fusion_power 
+		icon = GFX_focus_research2 
+		ai_will_do = { factor = 0 } 
+		x =16 
+		y =8 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_fission_power } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_ucs_ares 
+		icon = GFX_focus_yug_ikarus 
+		ai_will_do = { factor = 0 } 
+		x =12 
+		y =9 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_fusion_power} 
+		prerequisite = { focus = KLN_ucs_luna} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_martian_industry 
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 0 } 
+		x =12 
+		y =10 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_ucs_ares} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_space_capable_airforce 
+		icon = GFX_goal_generic_air_fighter2 
+		ai_will_do = { factor = 0 } 
+		x =14 
+		y =10 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_ucs_ares } 
+		prerequisite = { focus = KLN_fusion_power } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_nuclear_infrastructure_two
+		icon = GFX_goal_generic_construct_infrastructure 
+		ai_will_do = { factor = 0 } 
+		x =17 
+		y =10 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_nuclear_infrastructure_one } 
+		prerequisite = { focus = KLN_fusion_power } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_dark_state_economy
+		icon = GFX_goal_generic_production2 
+		ai_will_do = { factor = 0 } 
+		x =11 
+		y =11 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_otherworld_industries } 
+		prerequisite = { focus = KLN_martian_industry } 
+		prerequisite = { focus = KLN_lunar_industry } 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
 }
