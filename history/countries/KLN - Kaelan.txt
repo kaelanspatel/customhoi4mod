@@ -117,7 +117,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_faction = Sun
+create_faction = lom
 add_to_faction = KLN
 
 create_country_leader = {
