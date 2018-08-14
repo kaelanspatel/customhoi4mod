@@ -1,0 +1,264 @@
+focus_tree = {
+	id = greg_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRG
+		}
+	}
+	focus = {
+		id = GRE_startfocus
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = GRE_ind
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = GRE_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_ind
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = GRE_ships_2
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_dockyards
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = GRE_ships
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_ships_2
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = GRE_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_ind
+		}
+		prerequisite = {
+			focus = GRE_startfocus
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = GRE_mili
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_infra
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = GRE_mili_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_mili
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = GRE_iraqwar
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_ind
+		}
+		prerequisite = {
+			focus = GRE_startfocus
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = GRE_rajwar
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_iraqwar
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = GRE_afgwar
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_iraqwar
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = GRE_nationalism
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_startfocus
+		}
+		prerequisite = {
+			focus = GRE_ind
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = GRE_conscripts
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_nationalism
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = GRE_cannonfodder
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_conscripts
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = GRE_indrec
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_startfocus
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = GRE_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_mech
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = GRE_mech
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_supersoldiers
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = GRE_sovwar
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_rajwar
+		}
+		prerequisite = {
+			focus = GRE_afgwar
+		}
+		prerequisite = {
+			focus = GRE_cannonfodder
+		}
+		prerequisite = {
+			focus = GRE_mili_2
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = GRE_superfleet
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_ships
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = GRE_superind
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_mili_2
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = GRE_superconscript
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_cannonfodder
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = GRE_supersoldiers
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_indrec
+		}
+		x = 20
+		y = 2
+
+	}
+}

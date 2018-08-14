@@ -1,0 +1,612 @@
+ideas = {
+	country = {
+		
+		state_control = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				political_power_gain = 0.5
+			}
+			
+			rule = {
+				can_puppet = yes
+			}
+		}
+		
+		state_media = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription = 0.01
+				research_time_factor = -0.05
+			}
+		}
+		
+		SECPOL_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription = 0.0025
+				enemy_partisan_effect = -0.5
+				army_morale_factor = 0.3
+				enemy_partisan_effect = -1
+			}
+		}
+		
+		Moon_Eye = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				political_power_gain = 1
+				non_core_manpower = 0.5
+			}
+		}
+		
+		prog = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				industrial_caKAEity_factory = 0.35
+				industrial_caKAEity_dockyard = 0.35
+				research_time_factor = -0.05
+			}
+		}
+		
+		black_labs = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus
+			
+			research_bonus = {
+				air_equipment = 0.10
+				naval_equipment = 0.10
+				industry = 0.10
+				electronics = 0.10
+			}		
+			
+		}
+		
+		super_soldiers = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				army_speed_factor = 0.30
+				army_attack_factor = 0.30
+				army_defense_factor = 0.30
+			}
+
+			
+		}
+		
+		
+		all_serve = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_manpower_bonus
+				
+			modifier = {
+				army_org = 25
+				army_morale_factor = 0.1
+				conscription = 0.07
+			}
+		
+		}
+		
+		great_plan = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus
+			
+			research_bonus = {
+				land_doctrine = 0.10
+				infantry_weapons = 0.10
+				armor = 0.10
+				artillery = 0.10
+			}	
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.3
+				production_speed_buildings_factor = 0.3
+				industry_repair_factor = 0.3
+			}
+			
+		}
+		
+		State_Labs = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				research_time_factor = -0.10
+			}
+		}
+		
+		DepEso = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				army_morale_factor = 1
+			}
+		}
+		
+		DepMech = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				cat_mechanized_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+			
+		}
+		
+		ordinance = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+		
+		miliind = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.7
+			}
+		}
+
+		
+		united = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				unity_factor = 0.30
+			}
+		}
+		
+		precog = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				planning_speed = 1void replacef_flip(int dim, pixel* src, pixel* dst){
+    int i, j, replace, p;
+    int k = 0;
+    for (i = 0; i< dim; i+=4){
+        p = 0;
+        for(j = 0; j<dim; j+=4){
+            replace = k+j;
+            dst[p + (dim-1-i)] = src[replace];
+            dst[dim*(j+1) + (dim-1-i)] = src[replace+1];
+            dst[dim*(j+2) + (dim-1-i)] = src[replace+2];
+            dst[dim*(j+3) + (dim-1-i)] = src[replace+3];
+            p += dim* 4;
+        }
+        for(j = 0; j<dim; j+=4){
+            replace = k + dim + j;
+            dst[dim*j + (dim-1-(i+1))] = src[replace];
+            dst[dim*(j+1) + (dim-1-(i+1))] = src[replace+1];
+            dst[dim*(j+2) + (dim-1-(i+1))] = src[replace+2];
+            dst[dim*(j+3) + (dim-1-(i+1))] = src[replace+3];
+            p += dim* 4;
+        }
+        for(j = 0; j<dim; j+=4){
+            replace = k+ dim*2 + j;
+            dst[dim*j + (dim-1-(i+2))] = src[replace];
+            dst[dim*(j+1) + (dim-1-(i+2))] = src[replace+1];
+            dst[dim*(j+2) + (dim-1-(i+2))] = src[replace+2];
+            dst[dim*(j+3) + (dim-1-(i+2))] = src[replace+3];
+            p += dim* 4;
+        }
+        for(j = 0; j<dim; j+=4){
+            replace = k+ dim*3 + j;
+            dst[dim*j + (dim-1-(i+3))]  = src[replace];
+            dst[dim*(j+1) + (dim-1-(i+3))] = src[replace+1];
+            dst[dim*(j+2) + (dim-1-(i+3))] = src[replace+2];
+            dst[dim*(j+3) + (dim-1-(i+3))] = src[replace+3];
+            p += dim* 4;
+        }
+        k += dim *4;
+    }
+}
+				max_planning = 0.2
+			}
+		}	
+
+		statewill = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				army_morale_factor = 0.1
+				conscription = 0.07
+			}
+		}	
+
+		collectivism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_research_bonus	
+			
+			modifier = {
+				 pop_growth_mod = 1
+				 conscription = 0.03
+			}
+		}			
+		
+		
+	}
+
+	political_advisor = {
+
+		secpol_chief = {
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { secpol }
+		}
+
+		industrial_advisor = {
+
+
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { greg_industry }
+		}
+
+		dockyard_advisor = {
+
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { dockyards }
+		}
+
+		resource_advisor = {
+
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { goblin_hunter }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	theorist = {
+
+		gbp_th = {
+					
+					
+			allowed = {
+				original_tag = KAE
+			}
+			
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.10
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+
+		mw_th = {
+					
+					
+			allowed = {
+				original_tag = KAE
+			}
+			
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.10
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+	}
+	# MILITARY
+	army_chief = {
+		
+		off_ar = {
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { offense_first }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		def_ar = {
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { defense_first }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	air_chief = {
+		
+
+		nuke_ai = {
+			
+		
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { nukes }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		yolo_ai = {
+			
+		
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { yolo }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		gf_nv = {
+			
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { grand_fleet }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+	
+		humexp_mi = {
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { mage }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		supply_mi = {
+			
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { fuck_supply }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		go_mi = {
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+
+			
+			traits = { gnome_cavalry }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		attk_mi = {
+			
+			allowed = {
+				original_tag = KAE
+			}
+			
+			traits = { pvp_player }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

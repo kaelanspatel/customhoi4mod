@@ -1,0 +1,129 @@
+division_template = {
+	name = "Grand Legion"  	
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {
+	division = {
+		name = "1. Grand Legion"
+		location = 800
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2. Grand Legion"
+		location = 11771
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3. Grand Legion"
+		location = 3944
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "4. Grand Legion"
+		location = 4809
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "5. Grand Legion"
+		location = 3877
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "6. Grand Legion"
+		location = 800
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "7. Grand Legion"
+		location = 11771
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "8. Grand Legion"
+		location = 3944
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "9. Grand Legion"
+		location = 4809
+		division_template = "Grand Legion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	navy = {
+		name = "1. Grand Fleet"
+		base = 12068
+		location = 12068
+		ship = { name = "Hand of the Sun I" definition = battleship equipment = { battleship_2 = {amount = 1 owner = KAE} } }
+		ship = { name = "Hand of the Sun II" definition = battleship equipment = { battleship_2 = {amount = 1 owner = KAE} } }
+		ship = { name = "Hand of the Sun III" definition = battleship equipment = { battleship_2 = {amount = 1 owner = KAE} } }
+		ship = { name = "Hand of the Sun IV" definition = battleship equipment = { battleship_2 = {amount = 1 owner = KAE} } }
+		
+		ship = { name = "Broadsword I" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = KAE} } }	
+		ship = { name = "Broadsword II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Broadsword III" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Broadsword IV" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Broadsword V" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = KAE} } }
+		
+		ship = { name = "Lancer I" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Lancer II" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Lancer III" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Lancer IV" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Lancer V" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Lancer VI" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = KAE} } }
+		
+		ship = { name = "Seeker I" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker II" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker III" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker IV" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker V" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker VI" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+		ship = { name = "Seeker VII" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = KAE} } }
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "KAE"
+		}
+		requested_factories = 1
+		progress = 0.52
+		efficiency = 100
+	}
+}
