@@ -264,7 +264,17 @@ leader_traits = {
 	rev_unending = {
 		random = no
 		sprite = 13
-		neutrality_drift = 100.0
+		communism_drift = 100.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rev_unending_fac = {
+		random = no
+		sprite = 13
+		fascism_drift = 100.0
 		
 		ai_will_do = {
 			factor = 1

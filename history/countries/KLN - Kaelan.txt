@@ -103,15 +103,21 @@ set_convoys = 30
 set_stability = 0.5
 set_war_support = 0.4
 
+add_ai_strategy = {
+    type = alliance
+    id = "GRG"
+    value = 200
+}
+
 set_politics = {
 
 	parties = {
-		neutrality = {
+		communism = {
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -122,90 +128,29 @@ add_to_faction = KLN
 add_to_faction = GRG
 
 create_country_leader = {
-	name = "Adrien Lefebvre"
+	name = "Kaelan Patel"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		rev_unending
-	}
-}
-
-create_country_leader = {
-	name = "Leon Bucard"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kp.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Marcel Meyont"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/asia/Portrait_Asia_Generic_navy_2.dds"
+	picture = "gfx/leaders/kln.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Luca Toussaint"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kp.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
+		rev_unending
 	}
 }
 
 #Generals etc
 
 create_corps_commander = {
-	name = "Jean Javert"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
-	traits = { }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Nestor Leclerc"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
-	traits = { }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Alan Matrice"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+	name = "Kaelan Patel"
+	portrait_path = "gfx/leaders/kln.dds"
 	traits = { }
 	skill = 3
 }
 
 create_field_marshal = {
-	name = "Luca Toussaint"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+	name = "Kaelan Patel"
+	portrait_path = "gfx/leaders/kln.dds"
 	traits = { defensive_doctrine thorough_planner }
-	skill = 4
-}
-
-create_field_marshal = {
-	name = "Simon Pavel"
-	portrait_path = "gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
-	traits = { offensive_doctrine }
-	skill = 5
-}
-
-create_navy_leader = {
-	name = "Fabrice LaMer"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { superior_tactician }
 	skill = 4
 }
 

@@ -99,6 +99,12 @@ set_technology = {
 	}
 }
 
+add_ai_strategy = {
+    type = alliance
+    id = "KLN"
+    value = 200
+}
+
 set_convoys = 30
 set_stability = 0.5
 set_war_support = 0.4
@@ -118,90 +124,30 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Adrien Lefebvre"
+	name = "Gregory Carlson"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		rev_unending
-	}
-}
-
-create_country_leader = {
-	name = "Leon Bucard"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kp.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Marcel Meyont"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/asia/Portrait_Asia_Generic_navy_2.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Luca Toussaint"
-	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kp.dds"
+	picture = "gfx/leaders/grg.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+		rev_unending_fac
 	}
 }
+
 
 #Generals etc
 
 create_corps_commander = {
-	name = "Jean Javert"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
-	traits = { }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Nestor Leclerc"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
-	traits = { }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Alan Matrice"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_4.dds"
+	name = "Gregory Carlson"
+	portrait_path = "gfx/leaders/FRA/grg.dds"
 	traits = { }
 	skill = 3
 }
 
 create_field_marshal = {
-	name = "Luca Toussaint"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+	name = "Gregory Carlson"
+	portrait_path = "gfx/leaders/grg.dds"
 	traits = { defensive_doctrine thorough_planner }
-	skill = 4
-}
-
-create_field_marshal = {
-	name = "Simon Pavel"
-	portrait_path = "gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
-	traits = { offensive_doctrine }
-	skill = 5
-}
-
-create_navy_leader = {
-	name = "Fabrice LaMer"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { superior_tactician }
 	skill = 4
 }
 

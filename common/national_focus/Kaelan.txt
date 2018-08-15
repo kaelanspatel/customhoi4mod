@@ -19,8 +19,12 @@ focus_tree = {
 		x =2 
 		y =2 
 		prerequisite = { focus = KLN_the_state_of_the_union } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
 	}
 	
 	focus = { 
@@ -30,19 +34,27 @@ focus_tree = {
 		x =9 
 		y =2 
 		prerequisite = { focus = KLN_the_state_of_the_union } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.1
+		}
 	}
 	
 	focus = { 
 		id = KLN_purge_the_army 
-		icon = GFX_goal_generic_support_fascism 
+		icon = GFX_goal_support_fascism
 		ai_will_do = { factor = 0 } 
 		x =1 
 		y =3 
 		prerequisite = { focus = KLN_consolidation_of_power } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.2 } }
+			add_ideas = army_purged
+		}		
 	}
 	
 	focus = { 
@@ -52,8 +64,12 @@ focus_tree = {
 		x =3 
 		y =3  
 		prerequisite = { focus = KLN_consolidation_of_power } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.3 } }
+			add_ideas = gov_purged
+		}
 	}
 	
 	focus = { 
@@ -63,8 +79,12 @@ focus_tree = {
 		x =9 
 		y =3 
 		prerequisite = { focus = KLN_saint_of_california } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.4 } }
+			add_ideas = portal_tech
+		}
 	}
 	
 	focus = { 
@@ -74,8 +94,12 @@ focus_tree = {
 		x =1 
 		y =4 
 		prerequisite = { focus = KLN_purge_the_army } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = gov_purged
+			add_ideas = implant_officers
+		}
 	}
 	
 	focus = { 
@@ -86,8 +110,11 @@ focus_tree = {
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_destroy_reactionaries } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = SECPOL_idea
+		}
 	}
 	
 	focus = { 
@@ -98,8 +125,11 @@ focus_tree = {
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_moon } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = brainsweeping
+		}
 	}
 	
 	focus = { 
@@ -110,8 +140,11 @@ focus_tree = {
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_moon } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.5 } }
+		}
 	}
 	
 	focus = { 
@@ -122,8 +155,12 @@ focus_tree = {
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_moon} 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.5 } }
+			add_ideas = xenotech
+		}
 	}
 	
 	focus = { 
@@ -132,12 +169,20 @@ focus_tree = {
 		ai_will_do = { factor = 0 } 
 		x =2 
 		y =5 
+		will_lead_to_war_with = USA
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_implant_officers } 
 		prerequisite = { focus = KLN_found_the_secpol } 
 		prerequisite = { focus = KLN_brainsweeps } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
 	}
 		
 	focus = { 
@@ -148,8 +193,18 @@ focus_tree = {
 		y =5 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_xenotechnology} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.6 } }
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				bonus = 0.9
+				uses = 3
+				category = rocketry
+				category = jet_technology
+			}
+		}
 	}
 	
 	focus = { 
@@ -160,8 +215,17 @@ focus_tree = {
 		y =5 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_xenotechnology} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.7 } }
+			add_tech_bonus = {
+				name = KLN_nuclear_effort_1
+				bonus = 0.9
+				uses = 1
+				category = nuclear
+			}
+		}		
 	}
 		
 	focus = { 
@@ -172,20 +236,106 @@ focus_tree = {
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_the_reins_of_destiny } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			
+			
+		}
 	}
 	
 	focus = { 
 		id = KLN_grand_navy 
-		icon = GFX_goal_generic_build_nay 
+		icon = GFX_goal_generic_build_navy 
 		ai_will_do = { factor = 0 } 
 		x =2 
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_the_reins_of_destiny} 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			navy_experience = 25
+			378 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 9671
+						level = 5
+						instant_build = yes
+					}
+					
+				}
+			}
+			385 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 12211
+						level = 7
+						instant_build = yes
+					}
+				}
+			}
+			484 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 1892
+						level = 8
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 	
 	focus = { 
@@ -196,21 +346,38 @@ focus_tree = {
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_the_reins_of_destiny} 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.13 } }
+			remove_ideas = army_purged
+			add_ideas = super_soldiers
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.7
+				uses = 4
+				category = land_doctrine
+			}
+		}
 	}
 	
 	focus = { 
 		id = KLN_is
-		icon = GFX_focus_cze_german_puppet 
+		icon = GFX_focus_CZE_german_puppet
 		ai_will_do = { factor = 0 } 
 		x =6 
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_brainsweeps } 
 		prerequisite = { focus = KLN_communion } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.8 } }
+			add_ideas = is
+			add_manpower = 1000000
+		}
 	}
 	
 	focus = { 
@@ -221,20 +388,76 @@ focus_tree = {
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_communion } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.9 } }
+			378 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 254170
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			385 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 338460
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			386 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 482192
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			379 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1283911
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			387 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1144211
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}		
 	}
 	
 	focus = { 
 		id = KLN_ucs_luna 
-		icon = GFX_focus_yug_ikarus 
+		icon = GFX_focus_YUG_ikarus
 		ai_will_do = { factor = 0 } 
 		x =12 
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_rigel} 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.10 } }
+		}
 	}
 	
 	focus = { 
@@ -245,8 +468,21 @@ focus_tree = {
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_black_sun} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = KLN_nuclear_effort_2
+				bonus = 0.9
+				uses = 2
+				category = nuclear
+			}
+		}
 	}
 	
 	focus = { 
@@ -257,8 +493,13 @@ focus_tree = {
 		y =7 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_airfleet } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+		}
 	}
 	
 	focus = { 
@@ -269,8 +510,74 @@ focus_tree = {
 		y =7 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_navy } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = grand_fleet
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = { 
@@ -281,8 +588,165 @@ focus_tree = {
 		y =7 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_army } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			add_ideas = miliind
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	focus = { 
@@ -294,8 +758,52 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_bring_them_through } 
 		prerequisite = { focus = KLN_is } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			378 = {
+				add_resource = {
+					type = steel
+					amount = 500
+				}
+			}
+			
+			378 = {
+				add_resource = {
+					type = tungsten
+					amount = 500
+				}
+			}
+			
+			378 = {
+				add_resource = {
+					type = chromium
+					amount = 500
+				}
+			}
+			
+			378 = {
+				add_resource = {
+					type = oil
+					amount = 500
+				}
+			}
+			
+			378 = {
+				add_resource = {
+					type = rubber
+					amount = 500
+				}
+			}
+			
+			378 = {
+				add_resource = {
+					type = aluminum
+					amount = 500
+				}
+			}
+		}
+		
 	}
 		
 	focus = { 
@@ -306,8 +814,11 @@ focus_tree = {
 		y =7 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_fission_power } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = construction_boost_1
+		}
 	}
 	
 	focus = { 
@@ -318,8 +829,11 @@ focus_tree = {
 		y =8 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_aviation_cult } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = air_production
+		}
 	}
 	
 	focus = { 
@@ -330,8 +844,48 @@ focus_tree = {
 		y =8 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_dockyards } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.70
+				uses = 5
+				category = fleet_in_being_tree
+			}
+			
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 3
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		
+			equipment_bonus = {
+
+				capital_ship = {
+					build_cost_ic = -0.50 instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.50 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.50 instant = yes
+				}
+			}
+			
+		}		
 	}
 	
 	focus = { 
@@ -342,8 +896,17 @@ focus_tree = {
 		y =8 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_military_industrial_complex } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
 	}
 	
 	focus = { 
@@ -355,8 +918,123 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_army } 
 		prerequisite = { focus = KLN_is} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			division_template = {
+				name = "Astral Grand Legion"
+				priority = 1
+				division_names_group = MAN_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					
+					heavy_tank_brigade =  { x = 3 y = 0 }
+					
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+				}
+			}
+			378 = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				
+			}			
+		}
 	}
 	
 	focus = { 
@@ -368,8 +1046,12 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_parallel_universe_stripmines } 
 		prerequisite = { focus = KLN_xenotechnology } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 15 }
+			add_offsite_building = { type = industrial_complex level = 20 }
+		}
 	}
 	
 	focus = { 
@@ -381,8 +1063,12 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_ucs_luna} 
 		prerequisite = { focus = KLN_fission_power} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 15 }
+			add_offsite_building = { type = industrial_complex level = 15 }
+		}
 	}
 	
 	focus = { 
@@ -393,21 +1079,28 @@ focus_tree = {
 		y =8 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_fission_power } 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.11 } }
+			add_ideas = fusion_economy
+		}
 	}
 	
 	focus = { 
 		id = KLN_ucs_ares 
-		icon = GFX_focus_yug_ikarus 
+		icon = GFX_focus_YUG_ikarus
 		ai_will_do = { factor = 0 } 
 		x =12 
 		y =9 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_fusion_power} 
 		prerequisite = { focus = KLN_ucs_luna} 
-		cost = 10  
-		available_if_capitulated = yes  
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.12 } }
+		}
 	}
 	
 	focus = { 
@@ -418,8 +1111,12 @@ focus_tree = {
 		y =10 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_ucs_ares} 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 30 }
+			add_offsite_building = { type = industrial_complex level = 30 }
+		}
 	}
 	
 	focus = { 
@@ -431,8 +1128,13 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_ucs_ares } 
 		prerequisite = { focus = KLN_fusion_power } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			set_technology = { jet_fighter1 = 1 }
+			set_technology = { jet_tactical_bomber1 = 1 }
+			set_technology = { jet_strategic_bomber1 = 1 }
+		}
 	}
 	
 	focus = { 
@@ -444,8 +1146,12 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_nuclear_infrastructure_one } 
 		prerequisite = { focus = KLN_fusion_power } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			remove_ideas = construction_boost_1
+			add_ideas = construction_boost_2
+		}
 	}
 	
 	focus = { 
@@ -458,8 +1164,11 @@ focus_tree = {
 		prerequisite = { focus = KLN_otherworld_industries } 
 		prerequisite = { focus = KLN_martian_industry } 
 		prerequisite = { focus = KLN_lunar_industry } 
-		cost = 10  
+		cost = 5  
 		available_if_capitulated = yes  
+		completion_reward = {
+			add_ideas = dark_state
+		}
 	}
 	
 }
