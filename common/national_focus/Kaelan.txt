@@ -53,7 +53,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.2 } }
-			add_ideas = army_purged
 		}		
 	}
 	
@@ -68,7 +67,6 @@ focus_tree = {
 		available_if_capitulated = yes  
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.3 } }
-			add_ideas = gov_purged
 		}
 	}
 	
@@ -83,7 +81,6 @@ focus_tree = {
 		available_if_capitulated = yes  
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.4 } }
-			add_ideas = portal_tech
 		}
 	}
 	
@@ -143,7 +140,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.5 } }
+			ROOT = { country_event = { id = kaelan.13 } }
 		}
 	}
 	
@@ -159,7 +156,6 @@ focus_tree = {
 		available_if_capitulated = yes  
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.5 } }
-			add_ideas = xenotech
 		}
 	}
 	
@@ -349,7 +345,6 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.13 } }
 			remove_ideas = army_purged
 			add_ideas = super_soldiers
 			army_experience = 50
@@ -375,8 +370,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.8 } }
-			add_ideas = is
-			add_manpower = 1000000
 		}
 	}
 	
@@ -1083,7 +1076,6 @@ focus_tree = {
 		available_if_capitulated = yes 
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.11 } }
-			add_ideas = fusion_economy
 		}
 	}
 	

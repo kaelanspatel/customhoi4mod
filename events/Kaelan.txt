@@ -25,7 +25,7 @@ country_event = { # purging the government
 	is_triggered_only = yes
 	
 	option = {
-		name = kaelan.3.a
+		name = kaelan.3.a	
 		add_manpower = -10000
 		add_ideas = gov_purged
 	}
@@ -163,6 +163,19 @@ country_event = { # Mars Landing
 
 }
 
+country_event = { # Communion
+	id = kaelan.13
+	title = kaelan.13.t
+	desc = kaelan.13.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.13.a
+	}
+
+}
 
 # Alpine Line Extension
 country_event = {
