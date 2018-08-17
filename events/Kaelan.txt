@@ -1,6 +1,6 @@
 ﻿add_namespace = kaelan
 
-country_event = {
+country_event = { # purging the army
 	id = kaelan.2
 	title = kaelan.2.t
 	desc = kaelan.2.d
@@ -11,11 +11,12 @@ country_event = {
 	option = {
 		name = kaelan.2.a
 		add_manpower = -10000
+		add_ideas = army_purged
 	}
 
 }
 
-country_event = {
+country_event = { # purging the government
 	id = kaelan.3
 	title = kaelan.3.t
 	desc = kaelan.3.d
@@ -26,9 +27,142 @@ country_event = {
 	option = {
 		name = kaelan.3.a
 		add_manpower = -10000
+		add_ideas = gov_purged
 	}
 
 }
+
+country_event = { # operation moon
+	id = kaelan.4
+	title = kaelan.4.t
+	desc = kaelan.4.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.4.a
+		add_ideas = portal_tech
+	}
+
+}
+
+country_event = { # Xenotechnology
+	id = kaelan.5
+	title = kaelan.5.t
+	desc = kaelan.5.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.5.a
+		add_ideas = xenotech
+	}
+
+}
+
+country_event = { # Operation Rigel
+	id = kaelan.6
+	title = kaelan.6.t
+	desc = kaelan.6.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.6.a
+	}
+
+}
+
+country_event = { # Operation Black Sun
+	id = kaelan.7
+	title = kaelan.7.t
+	desc = kaelan.7.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.7.a
+	}
+
+}
+
+country_event = { # Enslave Xenos
+	id = kaelan.8
+	title = kaelan.8.t
+	desc = kaelan.8.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.8.a
+		add_ideas = is
+		add_manpower = 1000000
+	}
+
+}
+
+country_event = { # Alternate Timeline Resettlement
+	id = kaelan.9
+	title = kaelan.9.t
+	desc = kaelan.9.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.9.a
+	}
+
+}
+
+country_event = { # Moon Landing
+	id = kaelan.10
+	title = kaelan.10.t
+	desc = kaelan.10.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.10.a
+	}
+
+}
+
+country_event = { # Fusion Energy 
+	id = kaelan.11
+	title = kaelan.11.t
+	desc = kaelan.11.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.11.a
+		add_ideas = fusion_economy
+	}
+
+}
+
+country_event = { # Mars Landing
+	id = kaelan.12
+	title = kaelan.12.t
+	desc = kaelan.12.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.12.a
+	}
+
+}
+
 
 # Alpine Line Extension
 country_event = {
