@@ -2537,6 +2537,10 @@
  alt_colonial:0 "Alternate Timeline Colonialism"
  destiny:0 "The Reins of Destiny"
  air_production:0 "The Grand Airfleet"
+ dark_state:0 "Dark State Economy"
+ fusion_economy:0 "Fusion Power"
+ construction_boost_1:0 "Basic Infrastructure Nuclearization"
+ construction_boost_2:0 "Advanced Infrastructure Nuclearization"
  
  rev_unending:0 "Psionic Coercion"
  rev_unending_fac:0 "The South Will Rise Again"

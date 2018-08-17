@@ -533,9 +533,9 @@ D15 = {
 }
 KLN = {
 	color = rgb { 232 32 25 }
-	color_ui = rgb { 255 32 25 }
+	color_ui = rgb { 255 80 80 }
 }
 GRG = {
-	color = rgb { 220 168 212 }
-	color_ui = rgb { 220 168 212 }
+	color = rgb { 204 153 0 }
+	color_ui = rgb { 102 51 0 }
 }

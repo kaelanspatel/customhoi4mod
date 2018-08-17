@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		
-		state_control = {
+		fusion_economy = {
 			
 			
 			allowed = {
@@ -17,16 +17,16 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = 0.5
+				consumer_goods_factor = -0.5
+				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				
 			}
 			
-			rule = {
-				can_puppet = yes
-			}
 		}
 		
-		state_media = {
+		dark_state = {
 		
 			removal_cost = -1
 			
@@ -37,8 +37,11 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			modifier = {
-				conscription = 0.01
-				research_time_factor = -0.05
+				consumer_goods_factor = -0.10
+				production_factory_max_efficiency_factor = 0.4
+				production_factory_efficiency_gain_factor = 0.4
+				industrial_capacity_factory = 0.4
+				industrial_capacity_dockyard = 0.4
 			}
 		}
 		
@@ -504,6 +507,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.2
+				global_building_slots_factor = 0.20
 			}
 		
 		
@@ -519,6 +523,10 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.4
+				global_building_slots_factor = 0.30
+				line_change_production_efficiency_factor = 0.5
+				production_factory_start_efficiency_factor = 0.5
+				equipment_conversion_speed = 0.90
 			}
 		
 		
