@@ -1379,8 +1379,10 @@
  FACTION_NAME_NONALIGNED_5:0 "The $LEADER_COUNTRY$ Coalition"
  
  KLN_communism:0 "KUF Government"
+ KLN_communism_DEF:0 "KUF Government"
  KLN_neutrality:0 "Kaelanic Union"
  KLN_neutrality_DEF:0 "Kaelanic Union"
  
  GRG_fascism:0 "Empire of Gregistan"
+ GRG_fascism_DEF:0 "Empire of Gregistan"
 
