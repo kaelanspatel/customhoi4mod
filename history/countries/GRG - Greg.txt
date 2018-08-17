@@ -1,4 +1,4 @@
-capital = 6845
+capital = 360
 
 oob = "GRG_1936"
 
