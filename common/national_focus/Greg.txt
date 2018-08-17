@@ -13,7 +13,12 @@ focus_tree = {
 		cost = 10.00
 		x = 18
 		y = 0
-
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.05
+			add_war_support = 0.1
+			ROOT = { country_event = { id = greg.2 } }
+		}
 	}
 	focus = {
 		id = GRE_ind
@@ -21,7 +26,73 @@ focus_tree = {
 		cost = 10.00
 		x = 12
 		y = 0
-
+		completion_reward = {
+		
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			
+			
+		}
 	}
 	focus = {
 		id = GRE_dockyards
@@ -32,7 +103,72 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
-
+		completion_reward = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = dockyard
+					level = 8
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 9
+				add_building_construction = {
+					type = dockyard
+					level = 9
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 9
+				add_building_construction = {
+					type = dockyard
+					level = 9
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 9
+				add_building_construction = {
+					type = dockyard
+					level = 9
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GRE_ships_2
@@ -43,6 +179,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		completion_reward = {
+			add_ideas = GRG_dockyard_output
+		}
 
 	}
 	focus = {
@@ -54,7 +193,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-
+		completion_reward = {
+			add_ideas = GRG_sub_cost_reduction
+		}
 	}
 	focus = {
 		id = GRE_infra
@@ -68,7 +209,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
-
+		completion_reward = {
+			add_ideas = GRG_infrastructure
+		}
 	}
 	focus = {
 		id = GRE_mili
@@ -79,7 +222,34 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GRE_mili_2
@@ -90,7 +260,34 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GRE_iraqwar
@@ -140,7 +337,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
-
+		completion_reward = {
+			ROOT = { country_event = { id = greg.3 } }
+		}
 	}
 	focus = {
 		id = GRE_conscripts
@@ -151,7 +350,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
-
+		completion_reward = {
+			ROOT = { country_event = { id = greg.4 } }
+		}
 	}
 	focus = {
 		id = GRE_cannonfodder
@@ -162,7 +363,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-
+		completion_reward = {
+			ROOT = { country_event = { id = greg.5 } }
+		}
 	}
 	focus = {
 		id = GRE_indrec
@@ -173,7 +376,17 @@ focus_tree = {
 		}
 		x = 20
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 10
+				category = infantry_weapons
+				category = artillery
+			}
+			add_ideas = GRG_equip_production
+		
+		}
 	}
 	focus = {
 		id = GRE_tanks
@@ -184,7 +397,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-
+		completion_reward = {
+			add_ideas = GRG_tank_production
+		}
 	}
 	focus = {
 		id = GRE_mech
@@ -195,7 +410,11 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-
+		completion_reward = {
+		
+			add_ideas = GRG_motor_production
+		
+		}
 	}
 	focus = {
 		id = GRE_sovwar
@@ -226,7 +445,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-
+		completion_reward = {
+			
+			add_ideas = GRG_fleet_production
+		
+		}
 	}
 	focus = {
 		id = GRE_superind
@@ -237,7 +460,12 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			
+			add_ideas = GRG_super_industry
+			add_offsite_building = { type = industrial_complex level = 28 }
+		
+		}
 	}
 	focus = {
 		id = GRE_superconscript
@@ -248,7 +476,11 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
-
+		completion_reward = {
+			
+			ROOT = { country_event = { id = greg.6 } }
+		
+		}
 	}
 	focus = {
 		id = GRE_supersoldiers
@@ -259,6 +491,10 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-
+		completion_reward = {
+			
+			add_ideas = GRG_supersoliders
+		
+		}
 	}
 }

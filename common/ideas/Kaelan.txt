@@ -17,7 +17,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.2
 				industrial_capacity_factory = 0.2
 				industrial_capacity_dockyard = 0.2
@@ -59,7 +59,6 @@ ideas = {
 				conscription = 0.0025
 				enemy_partisan_effect = -0.5
 				army_morale_factor = 0.3
-				enemy_partisan_effect = -1
 			}
 		}
 		
@@ -76,7 +75,7 @@ ideas = {
 			modifier = {
 				conscription = 0.07
 				enemy_partisan_effect = -0.5
-				non_core_manpower = 0.5
+				non_core_manpower = 0.05
 				army_morale_factor = 0.3
 			}
 		}
@@ -434,13 +433,13 @@ ideas = {
 			equipment_bonus = {
 
 				capital_ship = {
-					build_cost_ic = -0.50 instant = yes
+					build_cost_ic = -0.70 instant = yes
 				}
 				carrier = {
-					build_cost_ic = -0.50 instant = yes
+					build_cost_ic = -0.70 instant = yes
 				}
 				screen_ship = {
-					build_cost_ic = -0.50 instant = yes
+					build_cost_ic = -0.70 instant = yes
 				}
 			}
 			
@@ -457,7 +456,7 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			modifier = {
-				planning_speed = 1
+				planning_speed = 3.0
 				max_planning = 0.2
 			}
 			
@@ -572,7 +571,7 @@ ideas = {
 		secpol_chief = {
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { secpol }
@@ -582,7 +581,7 @@ ideas = {
 
 
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { greg_industry }
@@ -593,7 +592,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { dockyards }
@@ -603,7 +602,7 @@ ideas = {
 
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { goblin_hunter }
@@ -619,7 +618,7 @@ ideas = {
 					
 					
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			
@@ -634,7 +633,7 @@ ideas = {
 					
 					
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			
@@ -652,7 +651,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -668,7 +667,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -690,7 +689,7 @@ ideas = {
 		
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -707,7 +706,7 @@ ideas = {
 		
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -728,7 +727,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -747,7 +746,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { mage }
@@ -761,7 +760,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -776,7 +775,7 @@ ideas = {
 		go_mi = {
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 
@@ -791,7 +790,7 @@ ideas = {
 		attk_mi = {
 			
 			allowed = {
-				original_tag = KAE
+				original_tag = KLN
 			}
 			
 			traits = { pvp_player }

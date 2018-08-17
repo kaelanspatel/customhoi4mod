@@ -1,0 +1,78 @@
+﻿add_namespace = greg
+
+country_event = { # haha lol
+	id = greg.2
+	title = greg.2.t
+	desc = greg.2.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greg.2.a
+	}
+
+}
+
+country_event = { # nationalism
+	id = greg.3
+	title = greg.3.t
+	desc = greg.3.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greg.3.a	
+		add_ideas = GRG_nationalism
+	}
+
+}
+
+country_event = { # conscription 1
+	id = greg.4
+	title = greg.4.t
+	desc = greg.4.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greg.4.a
+		add_ideas = GRG_conscription_one
+	}
+
+}
+
+country_event = { # Cannon Fodder
+	id = greg.5
+	title = greg.5.t
+	desc = greg.5.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greg.5.a
+		remove_ideas = GRG_conscription_one
+		add_ideas = GRG_conscription_two
+	}
+
+}
+
+country_event = { # Operation Rigel
+	id = greg.6
+	title = greg.6.t
+	desc = greg.6.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = greg.6.a
+		remove_ideas = GRG_conscription_two
+		add_ideas = GRG_fuck_it
+	}
+
+}
+
