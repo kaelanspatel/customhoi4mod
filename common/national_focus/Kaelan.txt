@@ -935,7 +935,7 @@ focus_tree = {
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
 					
-					heavy_tank_brigade =  { x = 3 y = 0 }
+					heavy_tank =  { x = 3 y = 0 }
 					
 					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 4 y = 1 }
