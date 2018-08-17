@@ -11,8 +11,8 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  
@@ -26,63 +26,63 @@ units = {
 		location = 9814
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2. Grand Legion"
 		location = 9671
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3. Grand Legion"
 		location = 9713
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4. Grand Legion"
 		location = 3513
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5. Grand Legion"
 		location = 1562
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "6. Grand Legion"
 		location = 13089
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "7. Grand Legion"
 		location = 4865
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "8. Grand Legion"
 		location = 13091
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "9. Grand Legion"
 		location = 4180
 		division_template = "Grand Legion"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	navy = {
 		name = "1. Grand Fleet"
@@ -90,16 +90,16 @@ units = {
 		location = 9671
 		ship = { name = "Sword of the Father I" definition = carrier equipment = { carrier_2 = {amount = 1 owner = KAE} } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "KLN" amount = 15 }
-				cv_nav_bomber_equipment_1 =  { owner = "KLN" amount = 15 } 
+				cv_fighter_equipment_0 =  { owner = "KLN" amount = 27 }
+				cv_nav_bomber_equipment_1 =  { owner = "KLN" amount = 27 } 
 			}
 		
 		}
 		
 		ship = { name = "Sword of the Father II" definition = carrier equipment = { carrier_2 = {amount = 1 owner = KAE} } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "KLN" amount = 15 }
-				cv_nav_bomber_equipment_1 =  { owner = "KLN" amount = 15 } 
+				cv_fighter_equipment_0 =  { owner = "KLN" amount = 27 }
+				cv_nav_bomber_equipment_1 =  { owner = "KLN" amount = 27 } 
 			}
 		}
 		
