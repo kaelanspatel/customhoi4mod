@@ -34,7 +34,7 @@ ideas = {
 				always = no # Added via focus
 			}
 
-			picture = idea_man_five_year_plan_industry
+			picture = man_five_year_plan_industry
 			
 			modifier = {
 				consumer_goods_factor = -0.10
@@ -350,7 +350,7 @@ ideas = {
 				always = no # Added via focus
 			}
 
-			picture = idea_generic_oppression	
+			picture = generic_oppression	
 			
 			modifier = {
 				army_morale_factor = 0.1
@@ -382,7 +382,7 @@ ideas = {
 				always = no # Added via focus
 			}
 
-			picture = idea_jap_interservice_rivalry_navy_dominant
+			picture = jap_interservice_rivalry_navy_dominant
 		
 			modifier = {
 				army_morale_factor = -0.1

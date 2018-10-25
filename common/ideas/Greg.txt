@@ -258,7 +258,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_chi_incompetent_officers
+			picture = chi_incompetent_officers
 			
 			modifier = {
 				conscription = -0.03
