@@ -1,0 +1,3 @@
+#### My dank meme mods
+KLN = "countries/Kaelan.txt"
+GRG = "countries/Greg.txt"

@@ -1,21 +1,26 @@
+state = {
+	id = 557
+	name = "STATE_557"
 
-state={
-	id=557
-	name="STATE_557" # Mauritania
-	manpower = 429200
-	
-	state_category = wasteland
-	impassable = yes
-
-	history={
-		owner = FRA
-		buildings = {
-			infrastructure = 0
+	history = {
+		owner = NFA
+		add_core_of = NFA
+		victory_points = {
+			7992 1 #Port Etienne
 		}
+		victory_points = {
+			5034 1 #Saint Louis
+		}
+		buildings = {
+			infrastructure = 2
 
+		}
 	}
 
-	provinces={
-		1115 1897 1962 5034 5077 7943 7992 8035 8058 10725 10779 10814 10838 10868 
+	provinces = {
+		5034 5077 7992 8058 10771
 	}
+	manpower = 296412
+	buildings_max_level_factor = 1
+	state_category = pastoral
 }

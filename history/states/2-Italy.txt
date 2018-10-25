@@ -1,37 +1,37 @@
-state= {
-	id=2
-	name="STATE_2" # Latium
-	manpower = 2781971
-	
+state = {
+	id = 2
+	name = "STATE_2" # Latium
+	manpower = 2418200
+
 	state_category = city
 
-	history=
-	{
-		owner = ITA
+	history = {
+		owner = PAP
+		add_core_of = PAP
 		victory_points = { 9904 40 }
 		victory_points = { 11846 5 }
 		buildings = {
-			infrastructure = 8
-			air_base = 8
+			infrastructure = 6
+			air_base = 5
 			arms_factory = 1
-			industrial_complex = 4
+			dockyard = 1
+			industrial_complex = 2
 			11751 = {
 				naval_base = 5
+				bunker = 1
 			}
 			11846 = {
 				naval_base = 2
+				bunker = 1
 			}
-		}
-		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 5
+			9904 = {
+				bunker = 4
+				coastal_bunker = 1
 			}
 		}
 	}
 
-	provinces= {
-		923 6862 9794 9904 11751 11846 11882
- 	}
+	provinces = {
+		9904 11751 11846
+	}
 }

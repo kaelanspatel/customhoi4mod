@@ -1,49 +1,37 @@
-
-state={
-	id=51
-	name="STATE_51"
-	manpower = 6144743
-	resources={
-		steel=30 # was: 54
+state = {
+	id = 51
+	name = "STATE_51"
+	resources = {
+		steel = 40
 	}
 
-
-	state_category = metropolis
-	
-	history={
+	history = {
 		owner = GER
+		add_core_of = GER
 		victory_points = {
-			6469 10 
+			6469 35
 		}
 		victory_points = {
-			587 5 
+			6570 20
 		}
+
+
 		buildings = {
 			infrastructure = 8
 			arms_factory = 3
-			industrial_complex = 2
+			industrial_complex = 9
 			air_base = 3
+			3512 = {
+				bunker = 3
 
-		}
-		add_core_of = GER
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				radar_station = 1
 			}
 		}
-	
-		set_demilitarized_zone = yes
-	
-	
-		1936.3.7 = {
-			set_demilitarized_zone = no
-		}
 	}
 
-	provinces={
-		529 587 3444 3512 3547 6469 6570 9482 9522 
+	provinces = {
+		529 3512 6469 6570 9482
 	}
-	
+	manpower = 3458612
+	buildings_max_level_factor = 1
+	state_category = megalopolis
 }

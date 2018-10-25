@@ -1,27 +1,25 @@
-state={
-	id=736
-	name="STATE_736"
-	
-	state_category = city
+state = {
+	id = 736
+	name = "STATE_736"
 
-	history={
-		owner = ITA
-		add_core_of = ITA
-		add_core_of = YUG
+	history = {
+		owner = AUS
+		add_core_of = AUS
+
 		buildings = {
-			infrastructure = 2
+			infrastructure = 6
+			dockyard = 1
 			11735 = {
-				naval_base = 5
-
+				naval_base = 8
+				bunker = 1
+				coastal_bunker = 3
 			}
-
 		}
-
 	}
 
-	provinces={
-		599 6626 11595 11735 
+	provinces = {
+		599 11735 11595
 	}
-	manpower=1063159
-	buildings_max_level_factor=1.000
+	manpower = 557500
+	state_category = "city"
 }

@@ -1,20 +1,23 @@
+state = {
+	id = 486
+	name = "STATE_486"
 
-state={
-	id=486
-	name="STATE_486"
-	manpower = 213160
-	
-	state_category = pastoral
-
-	history={
+	history = {
 		owner = COL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+
 		}
 		add_core_of = COL
+		victory_points = {
+			1887 2
+		}
 	}
 
-	provinces={
-		1887 2007 5026 10792 12729 12770 12825 
+	provinces = {
+		1887 5026 13411 13413 13416 13426 13542
 	}
+	manpower = 57214
+	buildings_max_level_factor = 1
+	state_category = rural
 }

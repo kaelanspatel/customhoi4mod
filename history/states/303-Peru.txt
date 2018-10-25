@@ -1,33 +1,35 @@
+state = {
+	id = 303
+	name = "STATE_303"
 
-state={
-	id=303
-	name="STATE_303" # Lima
-	manpower = 3563249
-	resources={
-		oil=14 # was: 18
-	}
-	
-	state_category = large_city
-
-	history={
+	history = {
 		owner = PRU
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 6
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
 			air_base = 3
 			12997 = {
 				naval_base = 5
+
 			}
 		}
 		add_core_of = PRU
 		victory_points = {
-			12997 5 
+			12997 20
 		}
-
+		victory_points = {
+			13299 3
+		}
+		victory_points = {
+			12983 1
+		}
 	}
 
-	provinces={
-		2156 2162 5190 8199 12969 12983 12997 
+	provinces = {
+		2162 5190 12969 12983 12997 13299 13523
 	}
+	manpower = 2324519
+	buildings_max_level_factor = 1
+	state_category = large_city
 }

@@ -1,33 +1,31 @@
-
-state={
-	id=60
-	name="STATE_60"
+state = {
+	id = 60
+	name = "STATE_60"
 	manpower = 3005214
-	resources={
-		steel=13 # was: 20
-		chromium = 3 # was: 4
-		tungsten = 3 # was: 4
+	resources = {
+		steel = 20
+		chromium = 4
+		tungsten = 4
 	}
-	
+
 	state_category = large_city
 
-	history={
+	history = {
 		owner = GER
-		victory_points = { 6524 5 }
+		add_core_of = GER
+		victory_points = { 6524 1 }
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
-		}
-		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 3
-				arms_factory = 2
+			arms_factory = 1
+			industrial_complex = 4
+			6524 = {
+				bunker = 2
+
 			}
 		}
 	}
 
-	provinces={
-		425 482 538 3500 3561 6501 6524 6582 9497 
+	provinces = {
+		425 482 538 3500 3561 6501 6524 6582 9497
 	}
 }

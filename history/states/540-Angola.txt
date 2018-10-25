@@ -1,18 +1,17 @@
+state = {
+	id = 540
+	name = "STATE_540"
+	manpower = 2711500
 
-state={
-	id=540
-	name="STATE_540"
-	manpower = 3225000
-	
-	state_category = rural
-	resources={
-		rubber=1 # was: 1
-	}
-	history={
+	state_category = hyvin
+
+	history = {
 		owner = POR
+		add_core_of = ANG
 		buildings = {
 			infrastructure = 2
-			8248 ={
+			industrial_complex = 1
+			8248 = {
 				naval_base = 1
 			}
 		}
@@ -22,10 +21,9 @@ state={
 		victory_points = {
 			10966 1
 		}
-		add_core_of = ANG
 	}
 
-	provinces={
-		1552 2115 2126 4735 5158 7548 8054 8138 8202 8219 8248 10966 12391 12958 12981 12985 
+	provinces = {
+		2126 5158 8138 8202 8248 10966 12391 12958 12981 12985 13652
 	}
 }

@@ -1,33 +1,24 @@
+state = {
+	id = 658
+	name = "STATE_658"
+	manpower = 108000
 
-state={
-	id=658
-	name="STATE_658"
-	manpower = 220000
-	resources={
-		oil=5 # was: 6
-	}
-	
 	state_category = pastoral
 
 
-	history={
-		owner = ENG
-		victory_points = {
-			7960 1 
-		}
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		add_claim_by = JBS
 		buildings = {
 			infrastructure = 2
 			7960 = {
 				naval_base = 3
 			}
-			8051 = {
-				naval_base = 2
-			}
 		}
-
 	}
 
-	provinces={
-		2048 7960 8051 8108 10904 
+	provinces = {
+		2048 4932 7960 8108 10904
 	}
 }

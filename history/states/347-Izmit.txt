@@ -1,29 +1,26 @@
-
-state={
-	id=347
-	name="STATE_347"
-	manpower = 807660
-	resources={
-		chromium=19 # was: 26
+state = {
+	id = 347
+	name = "STATE_347"
+	resources = {
+		chromium = 26.000
 	}
-	
-	state_category = rural
 
-	history={
-		owner = TUR
-		victory_points = {
-			890 1 
-		}
+	history = {
+		owner = OTT
 		buildings = {
 			infrastructure = 4
-			904 = {
-				naval_base = 2
+			849 = {
+				coastal_bunker = 4
+				bunker = 2
 			}
 		}
-		add_core_of = TUR
+		add_core_of = OTT
+
 	}
 
-	provinces={
-		890 904 3905 3919 6871 11811 11866 11883 
+	provinces = {
+		849
 	}
+	manpower = 133214
+	state_category = town
 }

@@ -1,0 +1,26 @@
+state = {
+	id = 930
+	name = "STATE_930"
+
+	history = {
+		owner = GRG
+		add_core_of = GRG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			9758 3
+		}
+	}
+
+
+
+	provinces = {
+		3917 6892 9758 9786 13628
+	}
+
+	manpower = 495700
+	buildings_max_level_factor = 1
+	state_category = rural
+}

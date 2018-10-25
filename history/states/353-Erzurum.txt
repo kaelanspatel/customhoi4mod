@@ -1,19 +1,25 @@
+state = { #Amdo
+	id = 353
+	name = "STATE_353"
 
-state={
-	id=353
-	name="STATE_353"
-	manpower = 523537
-	state_category = rural
-
-	history={
-		owner = TUR
+	history = {
+		owner = XSM
+		add_core_of = XSM
+		add_core_of = SQI
+		add_core_of = QIE
+		add_core_of = FNG
+		add_core_of = TIB
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			air_base = 1
+
 		}
-		add_core_of = TUR
 	}
 
-	provinces={
-		652 876 4583 7470 9858 9954 10399 11853 11880 12376 13121 
+	provinces = {
+		1882 4914 4964 7940 8018 12899
 	}
+	manpower = 172593
+	buildings_max_level_factor = 1
+	state_category = town
 }

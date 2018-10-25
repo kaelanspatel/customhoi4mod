@@ -1,14 +1,14 @@
-
-state={
-	id=629
-	name="STATE_629"
-	manpower = 368336
+state = {
+	id = 629
+	name = "STATE_629"
+	manpower = 393000
 	state_category = town
-	history={
+	history = {
 		owner = KLN
 		buildings = {
 			infrastructure = 3
 			air_base = 5
+			industrial_complex = 2
 			4180 = {
 				naval_base = 10
 			}
@@ -16,10 +16,10 @@ state={
 		add_core_of = KLN
 		victory_points = {
 			4180 15
-		 }
+		}
 	}
 
-	provinces={
-		4180 7112 7195 10048 12021 
+	provinces = {
+		4180 7112 7195 10048 12021
 	}
 }

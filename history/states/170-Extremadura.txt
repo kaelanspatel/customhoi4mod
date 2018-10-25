@@ -1,26 +1,26 @@
-
-state={
-	id=170
-	name="STATE_170"
-	manpower = 1782253
-	
-	state_category = large_town
-	
-	resources={
-		tungsten=4 # was: 6
+state = {
+	id = 170
+	name = "STATE_170"
+	resources = {
+		tungsten = 6
 	}
 
-	history={
+	history = {
 		owner = SPR
-		
+		victory_points = { 11851 1 } #Badajoz
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
+			11851 = {
+				bunker = 1
+			}
 		}
 		add_core_of = SPR
 	}
 
-	provinces={
-		794 809 874 931 985 3874 3930 6866 6867 6902 6948 6954 9770 9839 9877 9917 9925 11756 11780 11798 11851 
+	provinces = {
+		809 931 985 3930 6866 6902 6948 6954 9839 9877 9917 9925 11780 11798 11756 11851
 	}
+	manpower = 1782253
+	buildings_max_level_factor = 1
+	state_category = large_town
 }

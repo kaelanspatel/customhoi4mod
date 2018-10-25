@@ -1,26 +1,32 @@
+state = { #Southern Chahar
+	id = 611
+	name = "STATE_611"
 
-state={
-	id=611
-	name="STATE_611" # South Chahar
-	manpower = 1470000
-	
-	state_category = pastoral
-
-	history={
-		owner = MEN
-		add_core_of = MEN
-		add_core_of = CHI
-		add_core_of = PRC
+	history = {
+		owner = QIE
+		add_core_of = QIE
+		add_core_of = SQI
+		add_core_of = FNG
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
+
+			952 = {
+				bunker = 1
+			}
+			3955 = {
+				bunker = 1
+			}
 		}
+
 		victory_points = {
-			11752 3
+			10397 1
 		}
 	}
 
-	provinces={
-		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
+	provinces = {
+		828 952 1137 1590 3955 6904 9776 10397
 	}
+	manpower = 1470000
+	buildings_max_level_factor = 1
+	state_category = "rural"
 }

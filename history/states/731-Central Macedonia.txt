@@ -1,32 +1,32 @@
-state={
-	id=731
-	name="STATE_731"
-	manpower=1155700
-	
+state = {
+	id = 731
+	name = "STATE_731"
+	manpower = 712700
+
 	state_category = town
 
-	history={
-		owner = GRE
-		victory_points = {
-			11818 5 
-		}
+	history = {
+		owner = BUL
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 			air_base = 2
-			11818 = {
-				naval_base = 3
-
+			10163 = {
+				bunker = 2
 			}
-
+			9837 = {
+				bunker = 1
+			}
+		}
+		victory_points = {
+			9837 1 #Florina
 		}
 		add_core_of = GRE
-		add_claim_by = BUL
-
+		add_core_of = BUL
 	}
-	
-	provinces={
-		895 936 966 3526 3844 3936 10163 11818 
+
+	provinces = {
+		936 3526 10163 9837
 	}
 }

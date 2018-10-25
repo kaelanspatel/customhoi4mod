@@ -1,14 +1,14 @@
-state={
-	id=690
-	name="STATE_690"
-	manpower = 40000
-	
+state = {
+	id = 690
+	name = "STATE_690"
+	manpower = 62160
+
 	state_category = tiny_island
 
-	history={
-		owner = ENG
+	history = {
+		owner = CAF
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			10254 = {
 				naval_base = 1
 			}
@@ -19,10 +19,10 @@ state={
 				naval_base = 1
 			}
 		}
+		add_core_of = CAF
 	}
 
-	provinces={
-		4647 7245 10254 
+	provinces = {
+		4647 7245 10254
 	}
-	
 }

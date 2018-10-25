@@ -1,39 +1,29 @@
-
-state={
-	id=586
-	name="STATE_586" #Alma Alta
-	resources={
-		steel=20 # was: 48
-		chromium=12 # was: 44
-		tungsten=4 # was: 14
-		aluminium=10 # was: 32
+state = {
+	id = 586
+	name = "STATE_586"
+	resources = {
+		steel = 12
+		chromium = 44
 	}
 
-
-	state_category = city
-
-	history={
-		owner = SOV
+	history = {
+		owner = ALO
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
+			arms_factory = 1
 
 		}
+		add_core_of = ALO
 		victory_points = {
-			1591 3 
+			12583 1
 		}
-		add_core_of = SOV
-		#add_core_of = KAZ
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
-
 	}
 
-	provinces={
-		1591 1825 4224 4686 7706 10148 10660 12583 12640 13147 
+	provinces = {
+		1483 1675 1825 4316 4391 4686 4768 5062 7706 10148 10408 10530 10603 10660 12340 12370 12511 12583 12640 12658 13147 13206
 	}
-	manpower=2563404
+	manpower = 2563404
+	buildings_max_level_factor = 1
+	state_category = city
 }

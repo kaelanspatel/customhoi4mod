@@ -1,22 +1,20 @@
+state = {
+	id = 193
+	name = "STATE_193" # Chernihiv
+	manpower = 1579682
 
-state={
-	id=193
-	name="STATE_193" # Chernihiv
-	manpower = 1373637
-	
 	state_category = city
 
-	history={
-		owner = SOV
+	history = {
+		owner = UKR # SOV
 		buildings = {
-			infrastructure = 5
-			air_base = 8
+			infrastructure = 4
+			air_base = 3
 		}
-		add_core_of = SOV
-		add_core_of = UKR
+		add_core_of = UKR # SOV
 	}
 
-	provinces={
-		238 546 3480 3542 3568 3584 6458 6508 6532 6589 9437 9506 11425 11489 
+	provinces = {
+		489 582 3480 3542 3568 3584 6458 6508 6532 9437 9506 9543 11425 11489 11530 11557
 	}
 }

@@ -1,12 +1,13 @@
-
-state={
-	id=643
-	name="STATE_643"
-	manpower=493
+state = {
+	id = 643
+	name = "STATE_643"
+	manpower = 493
 	state_category = small_island
 
-	history={
-		owner = ENG
+	history = {
+		owner = GEA
+		add_core_of = GEA
+
 		buildings = {
 			infrastructure = 3
 			13056 = {
@@ -16,10 +17,9 @@ state={
 				naval_base = 1
 			}
 		}
-
 	}
 
-	provinces={
-		13054 13055 13056 13057 
+	provinces = {
+		13054 13055 13056 13057
 	}
 }

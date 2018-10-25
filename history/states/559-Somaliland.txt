@@ -1,25 +1,27 @@
-state=
-{
-	id=559
-	name="STATE_559"
-	manpower = 1028895
-	
-	state_category = rural
-	
-	history={
-		owner = ITA
-		victory_points = {
-			12991 3 
-		}
+state = {
+	id = 559
+	name = "STATE_559"
+	manpower = 854895
+
+	state_category = town
+
+	history = {
+		owner = SOM
+		add_core_of = SOM
 		buildings = {
 			infrastructure = 3
 			air_base = 1
-			12941 = {
+			industrial_complex = 2
+			arms_factory = 1
+			12991 = {
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			10928 5
+		}
 	}
-	provinces=
-	{
-1964 1966 2020 2063 4909 5065 8164 10818 10891 10928 11014 12840 12941 12991 	}
+	provinces = {
+		1964 1966 2020 2063 4909 5065 8164 10818 10891 10928 12840 12991
+	}
 }

@@ -1,22 +1,26 @@
-state=
-{
-	id=102
-	name="STATE_102"
-	manpower = 1144300
-	
-	state_category = large_town
-	
-	history =
-	{
-		owner = YUG
+state = {
+	id = 102
+	name = "STATE_102"
+	manpower = 1399900
+
+	state_category = city
+
+	history = {
+		owner = AUS
 		buildings = {
 			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		victory_points = {
-			9627 3 
+			9627 5
 		}
-		add_core_of = YUG
+		add_core_of = AUS
+		add_core_of = SLO
+
 	}
-	provinces={
-		596 665 3631 3654 6650 6672 9596 9627 11612 	}
+
+	provinces = {
+		596 3631 6650 9596 9627
 	}
+}

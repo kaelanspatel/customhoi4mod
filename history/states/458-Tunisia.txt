@@ -1,32 +1,41 @@
-
-state={
-	id=458
-	name="STATE_458"
+state = {
+	id = 458
+	name = "STATE_458"
 	manpower = 1982940
-	state_category = town
-	resources={
-		steel=6 # was: 8
+	state_category = large_city
+	resources = {
+		steel = 8
 	}
 
-	history={
-		owner = FRA
-		victory_points = {
-			11969 10 
+	history = {
+		owner = NFA
+		add_core_of = NFA
+		victory_points = {	#Tunis
+			11969 20
 		}
-		victory_points = {
-			9994 1 
+		victory_points = { #Bizerte
+			9994 5
+		}
+		victory_points = { #Sfax
+			11921 3
+		}
+		victory_points = { #Kairouan
+			7077 2
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 2
 			air_base = 8
 			9994 = {
 				naval_base = 8
+				coastal_bunker = 1
+				bunker = 1
 			}
 		}
 	}
 
-	provinces={
-		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
+	provinces = {
+		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969
 	}
 }

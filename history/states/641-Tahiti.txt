@@ -1,12 +1,12 @@
-
-state={
-	id=641
-	name="STATE_641"
-	manpower=105786
+state = {
+	id = 641
+	name = "STATE_641"
+	manpower = 105786
 	state_category = small_island
 
-	history={
-		owner = FRA
+	history = {
+		owner = GEA
+		add_core_of = GEA
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -16,7 +16,7 @@ state={
 		}
 	}
 
-	provinces={
-		10188 12148 
+	provinces = {
+		10188 12148
 	}
 }

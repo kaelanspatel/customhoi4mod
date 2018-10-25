@@ -1,0 +1,21 @@
+state = {
+	id = 911
+	name = "STATE_911"
+
+	history = {
+		owner = NFA
+		add_core_of = NFA
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+
+	provinces = {
+		1994
+	}
+	manpower = 28000
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	impassable = yes
+}

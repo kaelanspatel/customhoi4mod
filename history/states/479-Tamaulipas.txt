@@ -1,26 +1,24 @@
+state = {
+	id = 479
+	name = "STATE_479"
 
-state={
-	id=479
-	name="STATE_479"
-	manpower = 1032988
-	
-	state_category = town
-
-	history={
-		owner = GRG
+	history = {
+		owner = MEX
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+
 		}
-		add_core_of = GRG
+		add_core_of = MEX
 		victory_points = {
-			4956 1 
+			4956 2
 		}
-
 	}
 
-	provinces={
-		1952 2083 4956 5015 5021 12721 13088 
+	provinces = {
+		1952 2083 4956 5015 5021 12721 13088 13471 13472 13476
 	}
-	
+	manpower = 1032988
+	buildings_max_level_factor = 1
+	state_category = town
 }

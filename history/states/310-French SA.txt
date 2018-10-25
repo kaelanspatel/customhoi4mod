@@ -1,28 +1,29 @@
-
-state={
-	id=310
-	name="STATE_310"
-	manpower = 47341
-	resources={
-		aluminium=9 # was: 12
+state = {
+	id = 310
+	name = "STATE_310"
+	resources = {
+		aluminium = 104
 	}
 
-	state_category = pastoral
-
-	history={
-		owner = FRA
+	history = {
+		owner = CAF
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			12885 = {
 				naval_base = 1
+
 			}
 		}
 		victory_points = {
-			12885 1 
+			12885 1
 		}
+		add_core_of = CAF
+
 	}
 
-	provinces={
-		4934 12885 
+	provinces = {
+		12885 13417
 	}
+	manpower = 37010
+	state_category = pastoral
 }

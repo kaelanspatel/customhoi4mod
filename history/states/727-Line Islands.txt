@@ -1,11 +1,11 @@
-state={
-	id=727
-	name="STATE_727"
-	manpower=5367
+state = {
+	id = 727
+	name = "STATE_727"
+	manpower = 5367
 	state_category = small_island
 
-	history={
-		owner = USA
+	history = {
+		owner = KLN
 		buildings = {
 			infrastructure = 1
 			13048 = {
@@ -18,9 +18,10 @@ state={
 				naval_base = 1
 			}
 		}
+		add_core_of = KLN
 	}
-	
-	provinces={
-		13048 13049 13053 
+
+	provinces = {
+		13048 13049 13053
 	}
 }

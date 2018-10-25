@@ -1,22 +1,20 @@
+state = {
+	id = 198
+	name = "STATE_198"
+	manpower = 675705
 
-state={
-	id=198
-	name="STATE_198"
-	manpower = 1893391
+	state_category = town
 
-	state_category = large_town
-
-	history={
-		owner = SOV
+	history = {
+		owner = UKR # SOV
 		buildings = {
 			infrastructure = 5
-			air_base = 3
+			air_base = 2
 		}
-		add_core_of = SOV
-		add_core_of = UKR
+		add_core_of = UKR # SOV
 	}
 
-	provinces={
-		476 6455 6480 9423 9435 9481 9576 
+	provinces = {
+		9481 6480
 	}
 }

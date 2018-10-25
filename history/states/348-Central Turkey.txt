@@ -1,20 +1,28 @@
+state = { #Ningxia
+	id = 348
+	name = "STATE_348"
 
-state={
-	id=348
-	name="STATE_348" # Kayseri
-	manpower = 858452
-	
-	state_category = rural
-
-	history={
-		owner = TUR
+	history = {
+		owner = XSM
+		add_core_of = XSM
+		add_core_of = SQI
+		add_core_of = QIE
+		add_core_of = FNG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			arms_factory = 1
+
 		}
-		add_core_of = TUR
+
+		victory_points = {
+			10724 1
+		}
 	}
 
-	provinces={
-		869 919 921 961 3807 3862 3870 3964 6888 6977 9830 9861 11826 11844 
+	provinces = {
+		4783 5031 7727 7803 8055 8081 8102 8127 10724 10770 10899 12750
 	}
+	manpower = 1023100
+	buildings_max_level_factor = 1
+	state_category = rural
 }

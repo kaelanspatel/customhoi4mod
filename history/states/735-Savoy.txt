@@ -1,29 +1,35 @@
-state={
-	id=735
-	name="STATE_735"
+state = {
+	id = 735
+	name = "STATE_735"
 
-	state_category = town
+	state_category = rural
 
-	history={
+	history = {
 		owner = FRA
 		add_core_of = FRA
-		victory_points = {
-			778 1 
-		}
-		victory_points = {
-			9909 5 
-		}
+		add_claim_by = NFA
+		add_core_of = OCC
+
 		buildings = {
 			infrastructure = 4
-			9909 = {
-				naval_base = 2
-			}		
+			11573 = {
+				bunker = 1
+
+			}
+			9745 = {
+				bunker = 1
+
+			}
+			6609 = {
+				bunker = 1
+
+			}
 		}
 	}
 
-	provinces={
-		764 778 3764 3959 3961 6609 6975 9603 9736 9745 9909 11573 
+	provinces = {
+		6609 9745 11573
 	}
-	manpower=907500
-	buildings_max_level_factor=1.000
+	manpower = 239100
+	buildings_max_level_factor = 1
 }

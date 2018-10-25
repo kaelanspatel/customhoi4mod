@@ -1,29 +1,28 @@
-
-state={
-	id=342
-	name="STATE_342" # Antalya
-	manpower = 362689
-	resources={
-		chromium=35 # was: 46
+state = {		#Mugla
+	id = 342
+	name = "STATE_342"
+	resources = {
+		chromium = 46
 	}
-	state_category = rural
 
-	history={
-		owner = TUR
-		victory_points = {
-			1005 1 
-		}
+	history = {
+		owner = OTT
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			1005 = {
-				naval_base = 4
+
+			10122 = {
+				coastal_bunker = 1
+
 			}
 		}
-		add_core_of = TUR
+		add_core_of = OTT
+
 	}
 
-	provinces={
-		1005 1119 9941 10122 11917 12013 12016 12096 
+	provinces = {
+		9941 10122 11917 12096
 	}
+	manpower = 197118
+	buildings_max_level_factor = 1
+	state_category = town
 }

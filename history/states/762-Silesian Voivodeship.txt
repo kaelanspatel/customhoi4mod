@@ -1,21 +1,37 @@
-state={
-	id=762
-	name="STATE_762"
-	provinces={
-		506 6464
-	}
-	manpower=1000000
-	resources={
-		steel=19 # was: 60
-		aluminium=7 # was: 20
-	}
-	state_category = city
-	history={
-		owner = POL
-		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
+state = {
+	id = 762
+	name = "STATE_762"
+
+	state_category = town
+
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		add_claim_by = NFA
+		add_core_of = OCC
+
+
+
+		victory_points = {
+			9909 10
 		}
-		add_core_of = POL
+		buildings = {
+			infrastructure = 7
+			9909 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+			3959 = {
+				bunker = 1
+
+			}
+		}
 	}
+
+	provinces = {
+		3959 9909
+	}
+	manpower = 434846
+	buildings_max_level_factor = 1
 }
