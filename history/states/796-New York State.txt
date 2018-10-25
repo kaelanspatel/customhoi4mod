@@ -8,7 +8,7 @@ state = {
 	state_category = metropolis
 
 	history = {
-		owner = KLN
+		owner = GRG
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 5
@@ -17,7 +17,7 @@ state = {
 
 
 		}
-		add_core_of = KLN
+		add_core_of = GRG
 
 		victory_points = {
 			11654 1

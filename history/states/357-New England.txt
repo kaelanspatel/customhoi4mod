@@ -9,14 +9,14 @@ state = {
 
 
 	history = {
-		owner = KLN
+		owner = GRG
 		buildings = {
 			industrial_complex = 2
 			infrastructure = 5
 			dockyard = 1
 		}
 
-		add_core_of = KLN
+		add_core_of = GRG
 		victory_points = {
 			12459 1
 		}

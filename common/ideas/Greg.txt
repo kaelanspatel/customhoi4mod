@@ -213,7 +213,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
 				army_speed_factor = 0.30
@@ -235,7 +235,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
 				political_power_gain = 1.5
@@ -258,10 +258,10 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = idea_chi_incompetent_officers
 			
 			modifier = {
-				conscription = 0.03
+				conscription = -0.03
 			}
 			
 		}

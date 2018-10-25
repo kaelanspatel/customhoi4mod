@@ -16,7 +16,7 @@ state = {
 			infrastructure = 5
 			industrial_complex = 3
 		}
-		add_core_of = USA
+		add_core_of = GRG
 		victory_points = {
 			12501 3
 		}
