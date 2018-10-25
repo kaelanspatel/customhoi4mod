@@ -147,6 +147,20 @@ create_corps_commander = {
 	skill = 3
 }
 
+create_corps_commander = {
+	name = "Kaelan Patel"
+	portrait_path = "gfx/leaders/kln.dds"
+	traits = { }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Kaelan Patel"
+	portrait_path = "gfx/leaders/kln.dds"
+	traits = { }
+	skill = 3
+}
+
 create_field_marshal = {
 	name = "Kaelan Patel"
 	portrait_path = "gfx/leaders/kln.dds"

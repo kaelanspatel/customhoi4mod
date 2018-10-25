@@ -193,6 +193,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
+				research_time_factor = -0.50
 				industrial_capacity_factory = 2.0
 				production_factory_max_efficiency_factor = 0.75
 			}
