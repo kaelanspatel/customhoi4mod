@@ -1164,9 +1164,9 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = kln_make_the_unreal_real 
+		id = KLN_make_the_unreal_real 
 		icon = GFX_focus_prc_agrarian_socialism 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =17
 		y =1 
@@ -1177,9 +1177,9 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = kln_do_away_with_the_facade 
+		id = KLN_do_away_with_the_facade 
 		icon = GFX_goal_anti_comintern_pact 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =26
 		y =1 
@@ -1190,251 +1190,251 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = kln_social_democracy 
+		id = KLN_social_democracy 
 		icon = GFX_focus_generic_concessions 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =17
 		y =2 
-		mutually_exclusive = { focus = kln_agrarian_socialism} 
-		prerequisite = { focus = kln_make_the_unreal_real} 
+		mutually_exclusive = { focus = KLN_agrarian_socialism} 
+		prerequisite = { focus = KLN_make_the_unreal_real} 
 		cost = 10  
 		available_if_capitulated = yes  
 	} 
 	
 	focus = { 
-		id = kln_agrarian_socialism 
+		id = KLN_agrarian_socialism 
 		icon = GFX_goal_generic_support_communism 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =19
 		y =2 
-		mutually_exclusive = { focus = kln_social_democracy} 
-		prerequisite = { focus = kln_make_the_unreal_real} 
+		mutually_exclusive = { focus = KLN_social_democracy} 
+		prerequisite = { focus = KLN_make_the_unreal_real} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_purge_enemies 
+		id = KLN_purge_enemies 
 		icon = GFX_goal_generic_political_pressure 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =21 
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_continue_the_illusion} 
+		prerequisite = { focus = KLN_continue_the_illusion} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_found_the_secpol 
+		id = KLN_found_the_secpol 
 		icon = GFX_focus_generic_military_mission 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =23
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_continue_the_illusion} 
+		prerequisite = { focus = KLN_continue_the_illusion} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_democratic_authority 
+		id = KLN_democratic_authority 
 		icon = GFX_focus_generic_military_academy 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =25
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_do_away_with_the_facade} 
+		prerequisite = { focus = KLN_do_away_with_the_facade} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_direct_control 
+		id = KLN_direct_control 
 		icon = GFX_focus_generic_self_management 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =27 
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_do_away_with_the_facade} 
+		prerequisite = { focus = KLN_do_away_with_the_facade} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_socialist_bureaucracy 
+		id = KLN_socialist_bureaucracy 
 		icon = GFX_focus_generic_soviet_politics 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =17
 		y =3 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_social_democracy} 
+		prerequisite = { focus = KLN_social_democracy} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_decrease_government_control 
+		id = KLN_decrease_government_control 
 		icon = GFX_goal_generic_construction 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =19
 		y =3 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_agrarian_socialism} 
+		prerequisite = { focus = KLN_agrarian_socialism} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_accelerate_indoctrination 
+		id = KLN_accelerate_indoctrination 
 		icon = GFX_goal_molotov_ribbentrop_pact 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =22
 		y =3 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_purge_enemies} 
-		prerequisite = { focus =kln_found_the_secpol} 
+		prerequisite = { focus = KLN_purge_enemies} 
+		prerequisite = { focus =KLN_found_the_secpol} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_centralized_control 
+		id = KLN_centralized_control 
 		icon = GFX_goal_generic_fortify_city 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =25
 		y =3 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_direct_control  focus = kln_democratic_authority} 
+		prerequisite = { focus = KLN_direct_control  focus = KLN_democratic_authority} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_government_corporations 
+		id = KLN_government_corporations 
 		icon = GFX_goal_generic_intelligence_exchange 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =27
 		y =3 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_democratic_authority  focus = kln_direct_control} 
+		prerequisite = { focus = KLN_democratic_authority  focus = KLN_direct_control} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_socialist_industrialization 
+		id = KLN_socialist_industrialization 
 		icon = GFX_goal_generic_soviet_construction 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =28 
 		y =4 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_decrease_government_control  focus = kln_socialist_bureaucracy} 
+		prerequisite = { focus = KLN_decrease_government_control  focus = KLN_socialist_bureaucracy} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_intensify_military_industrial_complex 
+		id = KLN_intensify_military_industrial_complex 
 		icon = GFX_goal_generic_small_arms 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =23
 		y =4 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_accelerate_indoctrination} 
+		prerequisite = { focus = KLN_accelerate_indoctrination} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_rebuild_national_identity 
+		id = KLN_rebuild_national_identity 
 		icon = GFX_focus_generic_support_the_left_right 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =26
 		y =4 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_centralized_control} 
-		prerequisite = { focus =kln_government_corporations} 
+		prerequisite = { focus = KLN_centralized_control} 
+		prerequisite = { focus =KLN_government_corporations} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_real_socialism 
+		id = KLN_real_socialism 
 		icon = GFX_goal_generic_forceful_treaty 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =18
 		y =5 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_socialist_industrialization} 
+		prerequisite = { focus = KLN_socialist_industrialization} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_the_revolution 
+		id = KLN_the_revolution 
 		icon = GFX_goal_generic_war_with_comintern 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =23
 		y =5 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_intensify_military_industrial_complex} 
+		prerequisite = { focus = KLN_intensify_military_industrial_complex} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_reactionary_society 
+		id = KLN_reactionary_society 
 		icon = GFX_goal_generic_defence 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =26
 		y =5 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_rebuild_national_identity} 
+		prerequisite = { focus = KLN_rebuild_national_identity} 
 		cost = 10  
 		available_if_capitulated = yes  
 		
 	}
 		
 	focus = { 
-		id = kln_destroy_canada 
+		id = KLN_destroy_canada 
 		icon = GFX_goal_tfv_burn_the_royal_portraits 
-		ai_will_do = { factor = 0 } 
+		 
 		
 		x =20 
 		y =6 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_real_socialism  focus = kln_the_revolution  focus = kln_reactionary_society} 
+		prerequisite = { focus = KLN_real_socialism  focus = KLN_the_revolution  focus = KLN_reactionary_society} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
-		id = kln_obliterate_the_internationale 
+		id = KLN_obliterate_the_internationale 
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony 
-		ai_will_do = { factor = 0 }
+		
 		
 		x =24
 		y =6 
 		mutually_exclusive = { } 
-		prerequisite = { focus = kln_reactionary_society  focus = kln_the_revolution  focus = kln_real_socialism} 
+		prerequisite = { focus = KLN_reactionary_society  focus = KLN_the_revolution  focus = KLN_real_socialism} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
