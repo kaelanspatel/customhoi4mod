@@ -39,7 +39,10 @@ ordinance:0 "ORDDEVPRO"
 miliind:0 "Military-Industrial Complex"
 united:0 "Unity for All"
 precog:0 "PSIRECPRO"
+
 statewill:0 "A State of Chattel"
+statewill_desc:0 "The people of the Authority have been stripped of the delusion that they are anything but gears within the greater machine of the state. After all, what greater honor exists?"
+
 collectivism:0 "Collectivist Thought"
 research_parks:0 "Research Parks"
 free_edu:0 "Free Education"
@@ -53,7 +56,10 @@ watching:0 "Telescreens"
 brainsweeping:0 "Mind Control"
 implant_officers:0 "Mind Worms"
 is:0 "Xenos Slave Workers"
+
 army_purged:0 "Navy Control of the Army"
+army_purged_desc:0 "While the army has been purged of all counter-authority filth, the loyal naval officers we've put in charge have done a questionable job of managing our land forces. At the very least, they seem to have some unique ideas about what warfare is like..."
+
 gov_purged:0 "Government Purged"
 xenotech:0 "Xenotechnology"
 grand_fleet:0 "The Grand Fleet"
