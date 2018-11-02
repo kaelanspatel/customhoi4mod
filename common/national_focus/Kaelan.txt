@@ -11,29 +11,141 @@ focus_tree = {
 	
 	
 	default = no
+	
+	focus = {
+		id = KLN_the_great_plan
+		icon = GFX_focus_generic_treaty
+	
+		x = 5
+		y = 1
+		cost = 6
+		
+		completion_reward = {
+		
+			add_political_power = 150
+			add_stability = 0.05
+		
+		}
+	}
 
 	focus = { 
-		id = KLN_consolidation_of_power 
-		icon = GFX_goal_generic_political_pressure 
+		id = KLN_industrial_directive 
+		icon = GFX_goal_generic_construct_civ_factory
 		 
 		x =2 
 		y =2 
-		prerequisite = { focus = KLN_the_state_of_the_union } 
 		cost = 5  
+		prerequisite = { focus = KLN_the_great_plan }
 		available_if_capitulated = yes  
 		completion_reward = {
-			add_political_power = 150
-			add_stability = 0.05
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		
+			
 		}
 	}
 	
 	focus = { 
 		id = KLN_saint_of_california 
-		icon = GFX_focus_generic_strike_at_democracy1 
+		icon = GFX_focus_generic_socialist_science
 		 
 		x =9 
 		y =2 
-		prerequisite = { focus = KLN_the_state_of_the_union } 
+		prerequisite = { focus = KLN_the_great_plan } 
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
@@ -43,12 +155,12 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_purge_the_army 
-		icon = GFX_goal_support_fascism
+		id = KLN_nationalize_buisness 
+		icon = GFX_goal_generic_production
 		 
 		x =1 
 		y =3 
-		prerequisite = { focus = KLN_consolidation_of_power } 
+		prerequisite = { focus = KLN_industrial_directive } 
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
@@ -57,12 +169,12 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_destroy_reactionaries 
-		icon = GFX_goal_generic_war_with_comintern 
+		id = KLN_industry_one 
+		icon = GFX_goal_generic_build_tank
 		 
 		x =3 
 		y =3  
-		prerequisite = { focus = KLN_consolidation_of_power } 
+		prerequisite = { focus = KLN_industrial_directive } 
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
@@ -85,28 +197,28 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_implant_officers 
-		icon = GFX_goal_generic_propaganda 
+		id = KLN_arms_manufacturing 
+		icon = GFX_focus_generic_combined_arms 
 		 
 		x =1 
 		y =4 
-		prerequisite = { focus = KLN_purge_the_army } 
+		prerequisite = { focus = KLN_nationalize_buisness } 
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
 			remove_ideas = gov_purged
-			add_ideas = implant_officers
+			add_ideas = arms_manufacturing
 		}
 	}
 	
+	
 	focus = { 
-		id = KLN_found_the_secpol 
-		icon = GFX_focus_generic_military_mission 
+		id = KLN_industry_two
+		icon = GFX_focus_generic_industry_2
 		 
 		x =3 
 		y =4 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_destroy_reactionaries } 
+		prerequisite = { focus = KLN_industry_one } 
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
@@ -161,15 +273,116 @@ focus_tree = {
 	
 	focus = { 
 		id = KLN_the_reins_of_destiny 
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_demand_territory
 		 
 		x =2 
 		y =5 
 		will_lead_to_war_with = USA
 		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_implant_officers } 
-		prerequisite = { focus = KLN_found_the_secpol } 
+		prerequisite = { focus = KLN_arms_manufacturing } 
+		prerequisite = { focus = KLN_industry_two } 
 		prerequisite = { focus = KLN_brainsweeps } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_procure_human_chattel
+		icon = GFX_goal_generic_attack_allies
+		 
+		x =3 
+		y =6 
+		will_lead_to_war_with = USA
+		mutually_exclusive = { } 
+		prerequisite = { focus= KLN_the_reins_of_destiny  } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_lock_down_research_cities
+		icon = GFX_goal_generic_fortify_city
+		 
+		x =1
+		y =6 
+		will_lead_to_war_with = USA
+		mutually_exclusive = { } 
+		prerequisite = { focus= KLN_the_reins_of_destiny  }
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_reprogramming
+		icon = GFX_goal_generic_propaganda
+		 
+		x =3
+		y =7 
+		will_lead_to_war_with = USA
+		mutually_exclusive = { } 
+		prerequisite = { focus= KLN_procure_human_chattel } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_begin_cybernetics_research
+		icon = GFX_goal_generic_production2
+		 
+		x =1
+		y =7 
+		will_lead_to_war_with = USA
+		mutually_exclusive = { } 
+		prerequisite = { focus= KLN_lock_down_research_cities }  
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = destiny
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_the_hand_and_sword_of_divinity
+		icon = GFX_focus_generic_strike_at_democracy1
+		 
+		x =2
+		y =8 
+		will_lead_to_war_with = USA
+		mutually_exclusive = { } 
+		prerequisite = { focus= KLN_begin_cybernetics_research }  
+		prerequisite = { focus= KLN_reprogramming } 
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
@@ -228,15 +441,14 @@ focus_tree = {
 		id = KLN_grand_airfleet 
 		icon = GFX_goal_generic_build_airforce 
 		 
-		x =0 
-		y =6 
+		x =36
+		y =1
 		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_the_reins_of_destiny } 
+		 
 		cost = 5  
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25
 
 			random_owned_controlled_state = {
 				limit = {
@@ -286,13 +498,146 @@ focus_tree = {
 	}
 	
 	focus = { 
+		id = KLN_reorganize_air_command
+		icon = GFX_goal_generic_air_doctrine
+		 
+		x =36
+		y =2
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_airfleet } 
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25	
+			
+		}
+	}
+	
+	focus = { 
+		id = KLN_increase_aircraft_production 
+		icon = GFX_goal_generic_air_production 
+		 
+		x =37
+		y =3
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_reorganize_air_command } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = air_production
+		}
+	}
+	
+	focus = { 
+		id = KLN_strategic_destruction_doctrine
+		icon = GFX_goal_generic_occupy_start_war
+		 
+		x =35
+		y =3
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_reorganize_air_command } 
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25	
+			
+		}
+	}
+	
+	focus = { 
+		id = KLN_aerial_artillery
+		icon = GFX_goal_generic_CAS
+		 
+		x =35
+		y =4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_strategic_destruction_doctrine } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = air_production
+		}
+	}
+	
+	focus = { 
+		id = KLN_seaplanes
+		icon = GFX_goal_generic_air_naval_bomber
+		 
+		x =37
+		y =4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_increase_aircraft_production  } 
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25	
+			
+		}
+	}
+	
+	focus = { 
+		id = KLN_air_destroyers
+		icon = GFX_goal_generic_air_bomber
+		 
+		x =36
+		y =5
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_seaplanes  } 
+		prerequisite = { focus = KLN_aerial_artillery  } 
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25	
+			
+		}
+	}
+	
+	focus = { 
+		id = KLN_aviation_cult 
+		icon = GFX_goal_generic_air_fighter
+		 
+		x =33
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_strategic_destruction_doctrine } 
+		cost = 5  
+		available_if_capitulated = yes  
+		completion_reward = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_the_edge_of_the_world
+		icon = GFX_goal_generic_air_fighter2
+		 
+		x =36
+		y = 7
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_air_destroyers } 
+		cost = 5  
+		available_if_capitulated = yes  
+		completion_reward = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+		}
+	}
+	
+	focus = { 
 		id = KLN_grand_navy 
 		icon = GFX_goal_generic_build_navy 
 		 
-		x =2 
-		y =6 
+		x =43
+		y =1
 		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_the_reins_of_destiny} 
+		prerequisite = { } 
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
@@ -335,172 +680,11 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_grand_army 
-		icon = GFX_goal_generic_allies_build_infantry 
-		 
-		x =4 
-		y =6 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_the_reins_of_destiny} 
-		cost = 5  
-		available_if_capitulated = yes  
-		completion_reward = {
-			remove_ideas = army_purged
-			add_ideas = super_soldiers
-			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.7
-				uses = 4
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = { 
-		id = KLN_is
-		icon = GFX_focus_CZE_german_puppet
-		 
-		x =6 
-		y =6 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_brainsweeps } 
-		prerequisite = { focus = KLN_communion } 
-		cost = 5  
-		available_if_capitulated = yes
-		completion_reward = {
-			ROOT = { country_event = { id = kaelan.8 } }
-		}
-	}
-	
-	focus = { 
-		id = KLN_bring_them_through 
-		icon = GFX_goal_generic_secret_weapon 
-		 
-		x =8 
-		y =6 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_communion } 
-		cost = 5  
-		available_if_capitulated = yes 
-		completion_reward = {
-			ROOT = { country_event = { id = kaelan.9 } }
-			378 = {
-				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 254170
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			385 = {
-				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 338460
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			386 = {
-				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 482192
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			379 = {
-				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 1283911
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			387 = {
-				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 1144211
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}		
-	}
-	
-	focus = { 
-		id = KLN_ucs_luna 
-		icon = GFX_focus_YUG_ikarus
-		 
-		x =12 
-		y =6 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_operation_rigel} 
-		cost = 5  
-		available_if_capitulated = yes  
-		completion_reward = {
-			ROOT = { country_event = { id = kaelan.10 } }
-		}
-	}
-	
-	focus = { 
-		id = KLN_fission_power 
-		icon = GFX_focus_research 
-		 
-		x =16 
-		y =6 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_operation_black_sun} 
-		cost = 5  
-		available_if_capitulated = yes 
-		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				ahead_reduction = 0.5
-				category = nuclear
-			}
-			add_tech_bonus = {
-				name = KLN_nuclear_effort_2
-				bonus = 0.9
-				uses = 2
-				category = nuclear
-			}
-		}
-	}
-	
-	focus = { 
-		id = KLN_aviation_cult 
-		icon = GFX_goal_generic_CAS 
-		 
-		x =0 
-		y =7 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_grand_airfleet } 
-		cost = 5  
-		available_if_capitulated = yes  
-		completion_reward = {
-			set_rule = {
-				can_use_kamikaze_pilots = yes
-			}
-		}
-	}
-	
-	focus = { 
 		id = KLN_dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard 
 		 
-		x =2 
-		y =7 
+		x =45
+		y =2
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_navy } 
 		cost = 5  
@@ -574,11 +758,206 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_military_industrial_complex 
-		icon = GFX_goal_generic_production 
+		id = KLN_fortified_seas_doctrine
+		icon = GFX_goal_generic_construct_military
 		 
-		x =4 
-		y =7 
+		x =41
+		y =2
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_navy } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_consolidate_the_officer_clique
+		icon = GFX_goal_generic_dangerous_deal
+		 
+		x =43
+		y =2
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_grand_navy  } 
+		cost = 5  
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			air_experience = 25	
+			
+		}
+	}
+	
+	focus = { 
+		id = KLN_battleship_focus
+		icon = GFX_focus_generic_navy_battleship2
+		 
+		x =42
+		y =3
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_fortified_seas_doctrine } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_coastal_defense_industry
+		icon = GFX_focus_generic_coastal_fort
+		 
+		x =44
+		y =3
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_dockyards } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_cruiser_escorts
+		icon = GFX_goal_generic_navy_cruiser
+		 
+		x =42
+		y =4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_battleship_focus } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_navy_army_corps
+		icon = GFX_focus_secret_rearmament
+		 
+		x =44
+		y =4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_coastal_defense_industry } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_the_grand_fleet_end_focus
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		 
+		x =43
+		y =5
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_navy_army_corps } 
+		prerequisite = { focus = KLN_cruiser_escorts } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	focus = { 
+		id = KLN_floating_fortresses 
+		icon = GFX_goal_generic_navy_battleship 
+		 
+		x =43
+		y =7
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_the_grand_fleet_end_focus } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.50
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			
+		}		
+	}
+	
+	
+	focus = { 
+		id = KLN_grand_army 
+		icon = GFX_goal_generic_axis_build_infantry 
+		 
+		x = 50
+		y = 1
+		mutually_exclusive = { } 
+		cost = 5  
+		available_if_capitulated = yes  
+		completion_reward = {
+			remove_ideas = army_purged
+			add_ideas = super_soldiers
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_reorganize_the_army
+		icon = GFX_focus_chi_army_reform
+		 
+		x =50
+		y =2
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_grand_army } 
 		cost = 5  
@@ -743,6 +1122,323 @@ focus_tree = {
 	}
 	
 	focus = { 
+		id = KLN_application_of_force_doctrine
+		icon = GFX_focus_generic_provoke_border_clashes 
+		 
+		x =51
+		y =3 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_reorganize_the_army } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_armaments_research 
+		icon = GFX_focus_generic_license_production
+		 
+		x =51
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_application_of_force_doctrine } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_arms_production_quotas
+		icon = GFX_focus_generic_tank_production
+		 
+		x =49
+		y =3 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_reorganize_the_army } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_increase_conscription
+		icon = GFX_focus_generic_little_entente
+		 
+		x =49
+		y =4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_arms_production_quotas } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_the_army_reborn
+		icon = GFX_goal_generic_major_war
+		 
+		x =50
+		y =5
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_increase_conscription } 
+		prerequisite = { focus = KLN_armaments_research  } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_the_grey_legion_marches
+		icon = GFX_goal_generic_position_armies
+		 
+		x =50
+		y =7
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_the_army_reborn } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_mobile_artillery
+		icon = GFX_focus_generic_army_tanks2
+		 
+		x =53
+		y =4
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_application_of_force_doctrine } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	
+	focus = { 
+		id = KLN_carrier_air_shields
+		icon = GFX_goal_generic_navy_carrier
+		 
+		x =40
+		y =5
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_cruiser_escorts focus = KLN_seaplanes  } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = { 
+		id = KLN_government_marines
+		icon = GFX_goal_generic_amphibious_assault
+		 
+		x =46
+		y =5
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_navy_army_corps focus = KLN_increase_conscription } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.7
+				uses = 7
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	
+	
+	
+	focus = { 
+		id = KLN_is
+		icon = GFX_focus_CZE_german_puppet
+		 
+		x =6 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_brainsweeps } 
+		prerequisite = { focus = KLN_communion } 
+		cost = 5  
+		available_if_capitulated = yes
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.8 } }
+		}
+	}
+	
+	focus = { 
+		id = KLN_bring_them_through 
+		icon = GFX_goal_generic_secret_weapon 
+		 
+		x =8 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_communion } 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.9 } }
+			378 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 254170
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			385 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 338460
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			386 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 482192
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			379 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1283911
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			387 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1144211
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}		
+	}
+	
+	focus = { 
+		id = KLN_ucs_luna 
+		icon = GFX_focus_YUG_ikarus
+		 
+		x =12 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_rigel} 
+		cost = 5  
+		available_if_capitulated = yes  
+		completion_reward = {
+			ROOT = { country_event = { id = kaelan.10 } }
+		}
+	}
+	
+	focus = { 
+		id = KLN_fission_power 
+		icon = GFX_focus_research 
+		 
+		x =16 
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_operation_black_sun} 
+		cost = 5  
+		available_if_capitulated = yes 
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = KLN_nuclear_effort_2
+				bonus = 0.9
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+	
+	
+	
+	focus = { 
 		id = KLN_parallel_universe_stripmines 
 		icon = GFX_focus_generic_steel 
 		 
@@ -810,106 +1506,22 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = construction_boost_1
-		}
-	}
-	
-	focus = { 
-		id = KLN_increase_aircraft_production 
-		icon = GFX_goal_generic_air_production 
-		 
-		x =0 
-		y =8 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_aviation_cult } 
-		cost = 5  
-		available_if_capitulated = yes 
-		completion_reward = {
-			add_ideas = air_production
-		}
-	}
-	
-	focus = { 
-		id = KLN_floating_fortresses 
-		icon = GFX_goal_generic_navy_battleship 
-		 
-		x =2 
-		y =8 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_dockyards } 
-		cost = 5  
-		available_if_capitulated = yes
-		completion_reward = {
-			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.70
-				uses = 5
-				category = fleet_in_being_tree
-			}
-			
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 3
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
-			}
-		
-			equipment_bonus = {
-
-				capital_ship = {
-					build_cost_ic = -0.50 instant = yes
-				}
-				carrier = {
-					build_cost_ic = -0.50 instant = yes
-				}
-				screen_ship = {
-					build_cost_ic = -0.50 instant = yes
-				}
-			}
-			
-		}		
-	}
-	
-	focus = { 
-		id = KLN_armaments_research 
-		icon = GFX_goal_generic_small_arms 
-		 
-		x =4 
-		y =8 
-		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_military_industrial_complex } 
-		cost = 5  
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+			swap_ideas = {
+				remove_idea = KLN_dark_state_3
+				add_idea = KLN_dark_state_4
 			}
 		}
 	}
+	
+	
 	
 	focus = { 
 		id = KLN_astral_legions 
 		icon = GFX_focus_generic_little_entente 
 		 
-		x =6 
-		y =8 
+		x =5
+		y =7
 		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_grand_army } 
 		prerequisite = { focus = KLN_is} 
 		cost = 5  
 		available_if_capitulated = yes
@@ -1141,14 +1753,16 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			remove_ideas = construction_boost_1
-			add_ideas = construction_boost_2
+			swap_ideas = {
+				remove_idea = KLN_dark_state_4
+				add_idea = KLN_dark_state_5
+			}
 		}
 	}
 	
 	focus = { 
 		id = KLN_dark_state_economy
-		icon = GFX_goal_generic_production2 
+		icon = GFX_focus_generic_industry_3
 		 
 		x =11 
 		y =11 
@@ -1159,8 +1773,28 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			add_ideas = dark_state
+			swap_ideas = {
+				remove_idea = KLN_dark_state_5
+				add_idea = KLN_perfect_economy
+			}
 		}
+	}
+	
+	
+	
+	
+	focus = { 
+		id = KLN_continue_the_illusion
+		icon = GFX_focus_generic_join_comintern
+		 
+		
+		x =25
+		y =1 
+		mutually_exclusive = { focus = KLN_make_the_unreal_real } 
+		mutually_exclusive = { focus = KLN_do_away_with_the_facade } 
+		prerequisite = { } 
+		cost = 10  
+		available_if_capitulated = yes  
 	}
 	
 	focus = { 
@@ -1168,9 +1802,10 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism 
 		 
 		
-		x =17
+		x =21
 		y =1 
-		mutually_exclusive = { } 
+		mutually_exclusive = { focus = KLN_continue_the_illusion } 
+		mutually_exclusive = { focus = KLN_do_away_with_the_facade } 
 		prerequisite = { } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -1181,9 +1816,10 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact 
 		 
 		
-		x =26
+		x =29
 		y =1 
-		mutually_exclusive = { } 
+		mutually_exclusive = { focus = KLN_make_the_unreal_real } 
+		mutually_exclusive = { focus = KLN_do_away_with_the_facade } 
 		prerequisite = { } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -1194,7 +1830,7 @@ focus_tree = {
 		icon = GFX_focus_generic_concessions 
 		 
 		
-		x =17
+		x =20
 		y =2 
 		mutually_exclusive = { focus = KLN_agrarian_socialism} 
 		prerequisite = { focus = KLN_make_the_unreal_real} 
@@ -1204,10 +1840,10 @@ focus_tree = {
 	
 	focus = { 
 		id = KLN_agrarian_socialism 
-		icon = GFX_goal_generic_support_communism 
+		icon = GFX_goal_generic_construct_civilian
 		 
 		
-		x =19
+		x =22
 		y =2 
 		mutually_exclusive = { focus = KLN_social_democracy} 
 		prerequisite = { focus = KLN_make_the_unreal_real} 
@@ -1220,7 +1856,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure 
 		 
 		
-		x =21 
+		x =24
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_continue_the_illusion} 
@@ -1233,7 +1869,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission 
 		 
 		
-		x =23
+		x =26
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_continue_the_illusion} 
@@ -1246,7 +1882,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy 
 		 
 		
-		x =25
+		x =28
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_do_away_with_the_facade} 
@@ -1259,7 +1895,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management 
 		 
 		
-		x =27 
+		x =30
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_do_away_with_the_facade} 
@@ -1272,7 +1908,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics 
 		 
 		
-		x =17
+		x =20
 		y =3 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_social_democracy} 
@@ -1285,7 +1921,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction 
 		 
 		
-		x =19
+		x =22
 		y =3 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_agrarian_socialism} 
@@ -1298,21 +1934,21 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact 
 		 
 		
-		x =22
+		x =25
 		y =3 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_purge_enemies} 
-		prerequisite = { focus =KLN_found_the_secpol} 
+		prerequisite = { focus = KLN_found_the_secpol} 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
 	
 	focus = { 
 		id = KLN_centralized_control 
-		icon = GFX_goal_generic_fortify_city 
+		icon = GFX_goal_generic_alliance
 		 
 		
-		x =25
+		x =28
 		y =3 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_direct_control  focus = KLN_democratic_authority} 
@@ -1325,7 +1961,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange 
 		 
 		
-		x =27
+		x =30
 		y =3 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_democratic_authority  focus = KLN_direct_control} 
@@ -1338,7 +1974,7 @@ focus_tree = {
 		icon = GFX_goal_generic_soviet_construction 
 		 
 		
-		x =28 
+		x =21
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_decrease_government_control  focus = KLN_socialist_bureaucracy} 
@@ -1351,7 +1987,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms 
 		 
 		
-		x =23
+		x =25
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_accelerate_indoctrination} 
@@ -1364,7 +2000,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right 
 		 
 		
-		x =26
+		x =29
 		y =4 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_centralized_control} 
@@ -1378,7 +2014,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty 
 		 
 		
-		x =18
+		x =21
 		y =5 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_socialist_industrialization} 
@@ -1391,7 +2027,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern 
 		 
 		
-		x =23
+		x =25
 		y =5 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_intensify_military_industrial_complex} 
@@ -1404,7 +2040,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence 
 		 
 		
-		x =26
+		x =29
 		y =5 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_rebuild_national_identity} 
@@ -1418,7 +2054,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_burn_the_royal_portraits 
 		 
 		
-		x =20 
+		x =23
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_real_socialism  focus = KLN_the_revolution  focus = KLN_reactionary_society} 
@@ -1431,10 +2067,36 @@ focus_tree = {
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony 
 		
 		
-		x =24
+		x =27
 		y =6 
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_reactionary_society  focus = KLN_the_revolution  focus = KLN_real_socialism} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_destroy_canada 
+		icon = GFX_goal_tfv_burn_the_royal_portraits 
+		 
+		
+		x =23
+		y =6 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_real_socialism  focus = KLN_the_revolution  focus = KLN_reactionary_society} 
+		cost = 10  
+		available_if_capitulated = yes  
+	}
+	
+	focus = { 
+		id = KLN_shatter_german_hegemony
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		
+		
+		x =25
+		y =7 
+		mutually_exclusive = { } 
+		prerequisite = { focus = KLN_reactionary_society  focus = KLN_the_revolution  focus = KLN_real_socialism } 
 		cost = 10  
 		available_if_capitulated = yes  
 	}
