@@ -1884,7 +1884,7 @@ focus_tree = {
 		
 		x =28
 		y =2 
-		mutually_exclusive = { } 
+		mutually_exclusive = { focus = KLN_direct_control } 
 		prerequisite = { focus = KLN_do_away_with_the_facade} 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -1897,7 +1897,7 @@ focus_tree = {
 		
 		x =30
 		y =2 
-		mutually_exclusive = { } 
+		mutually_exclusive = { focus = KLN_democratic_authority   } 
 		prerequisite = { focus = KLN_do_away_with_the_facade} 
 		cost = 10  
 		available_if_capitulated = yes  
