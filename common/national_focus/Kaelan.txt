@@ -22,8 +22,7 @@ focus_tree = {
 		
 		completion_reward = {
 		
-			add_political_power = 150
-			add_stability = 0.05
+			ROOT = { country_event = { id = kaelan.2 } }
 		
 		}
 	}
@@ -38,8 +37,8 @@ focus_tree = {
 		prerequisite = { focus = KLN_the_great_plan }
 		available_if_capitulated = yes  
 		completion_reward = {
-			
-			random_owned_controlled_state = {
+			ROOT = { country_event = { id = kaelan.3 } }
+			797 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -55,7 +54,7 @@ focus_tree = {
 				}
 			}
 			
-			random_owned_controlled_state = {
+			379 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -71,7 +70,7 @@ focus_tree = {
 				}
 			}
 			
-			random_owned_controlled_state = {
+			829 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -87,7 +86,7 @@ focus_tree = {
 				}
 			}
 			
-			random_owned_controlled_state = {
+			378 = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -103,7 +102,7 @@ focus_tree = {
 				}
 			}
 			
-			random_owned_controlled_state = {
+			385 = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -119,7 +118,7 @@ focus_tree = {
 				}
 			}
 			
-			random_owned_controlled_state = {
+			798 = {
 				limit = {
 					free_building_slots = {
 						building = dockyard
@@ -149,8 +148,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
-			add_war_support = 0.1
+			ROOT = { country_event = { id = kaelan.14 } }
 		}
 	}
 	
@@ -164,7 +162,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.2 } }
+			
 		}		
 	}
 	
@@ -178,7 +176,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.3 } }
+			
 		}
 	}
 	
@@ -237,7 +235,10 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = brainsweeping
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
 	

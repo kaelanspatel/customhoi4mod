@@ -161,7 +161,7 @@ create_country_leader = {
 
 add_ideas = {
 	army_purged
-	statewill
+	KLN_statewill
 	KLN_dark_state
 }
 

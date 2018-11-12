@@ -452,7 +452,23 @@ ideas = {
 			}
 		}	
 
-		statewill = {
+		KLN_statewill = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_oppression	
+			
+			modifier = {
+				army_morale_factor = 0.1
+				conscription = 0.03
+			}
+		}	
+		
+		KLN_statewill_2 = {
 		
 			removal_cost = -1
 			
@@ -466,7 +482,7 @@ ideas = {
 				army_morale_factor = 0.1
 				conscription = 0.07
 			}
-		}	
+		}
 
 		collectivism = {
 		

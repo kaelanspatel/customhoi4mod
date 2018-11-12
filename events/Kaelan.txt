@@ -1,6 +1,6 @@
 ﻿add_namespace = kaelan
 
-country_event = { # purging the army
+country_event = { # the great plan
 	id = kaelan.2
 	title = kaelan.2.t
 	desc = kaelan.2.d
@@ -11,7 +11,8 @@ country_event = { # purging the army
 	option = {
 		name = kaelan.2.a
 		add_manpower = -10000
-		add_ideas = army_purged
+		add_political_power = 150
+		add_stability = 0.05
 	}
 
 }
@@ -179,6 +180,19 @@ country_event = { # Communion
 	
 	option = {
 		name = kaelan.13.a
+	}
+}
+
+country_event = { # dark science
+	id = kaelan.14
+	title = kaelan.14.t
+	desc = kaelan.14.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.14.a
 	}
 
 }
