@@ -17,7 +17,7 @@ country_event = { # the great plan
 
 }
 
-country_event = { # purging the government
+country_event = { # directive one
 	id = kaelan.3
 	title = kaelan.3.t
 	desc = kaelan.3.d
@@ -27,8 +27,8 @@ country_event = { # purging the government
 	
 	option = {
 		name = kaelan.3.a	
-		add_manpower = -10000
-		add_ideas = gov_purged
+		add_manpower = -100000
+		add_ideas = KLN_directive_one
 	}
 
 }
@@ -193,6 +193,21 @@ country_event = { # dark science
 	
 	option = {
 		name = kaelan.14.a
+	}
+
+}
+
+country_event = { # directive two
+	id = kaelan.15
+	title = kaelan.15.t
+	desc = kaelan.15.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kaelan.15.a
+		add_ideas = KLN_directive_one_2
 	}
 
 }

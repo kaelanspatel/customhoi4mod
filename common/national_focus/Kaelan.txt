@@ -286,11 +286,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
-			}
+			add_ideas = KLN_directive_2
 		}
 	}
 	

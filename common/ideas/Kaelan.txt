@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		
-		fusion_economy = {
+		KLN_directive_one = {
 			
 			
 			allowed = {
@@ -17,10 +17,120 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_factory_max_efficiency_factor = 0.2
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
+				
+				pop_growth_mod = 1
+				global_building_slots_factor = 0.70
+				
+			}
+			
+		}
+		
+		KLN_directive_one_2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				
+				pop_growth_mod = 1
+				global_building_slots_factor = 0.70
+				
+				equipment_bonus = {
+					armor = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					motorized_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					cat_mechanized_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					infantry_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					artillery = {
+						build_cost_ic = -0.2 instant = yes
+					}
+				}
+				
+			}
+			
+		}
+		
+		KLN_directive_one_3 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				
+				modifier = {
+				
+				pop_growth_mod = 1
+				global_building_slots_factor = 0.70
+				
+				equipment_bonus = {
+					armor = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					motorized_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					cat_mechanized_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					infantry_equipment = {
+						build_cost_ic = -0.2 instant = yes
+					}
+					artillery = {
+						build_cost_ic = -0.2 instant = yes
+					}
+				}
+				
+			}
+				
+			}
+			
+		}
+		
+		KLN_directive_one_4 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				
+				
 				
 			}
 			
@@ -61,8 +171,8 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.10
-				industrial_capacity_factory = 1.0
-				industrial_capacity_dockyard = 1.0
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 		
@@ -82,8 +192,8 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				production_speed_buildings_factor = 0.20
-				industrial_capacity_factory = 1.0
-				industrial_capacity_dockyard = 1.0
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
 				research_time_factor = -0.15
 			}
 		}
@@ -103,9 +213,9 @@ ideas = {
 				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.20
 				production_factory_efficiency_gain_factor = 0.20
-				production_speed_buildings_factor = 0.40
-				industrial_capacity_factory = 1.0
-				industrial_capacity_dockyard = 1.0
+				production_speed_buildings_factor = 0.30
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
 				research_time_factor = -0.15
 			}
 		}
@@ -125,9 +235,9 @@ ideas = {
 				consumer_goods_factor = -0.20
 				production_factory_max_efficiency_factor = 0.30
 				production_factory_efficiency_gain_factor = 0.30
-				production_speed_buildings_factor = 0.60
-				industrial_capacity_factory = 1.0
-				industrial_capacity_dockyard = 1.0
+				production_speed_buildings_factor = 0.40
+				industrial_capacity_factory = 0.4
+				industrial_capacity_dockyard = 0.4
 				research_time_factor = -0.15
 			}
 		}
@@ -146,9 +256,9 @@ ideas = {
 				consumer_goods_factor = -0.25
 				production_factory_max_efficiency_factor = 0.50
 				production_factory_efficiency_gain_factor = 0.50
-				production_speed_buildings_factor = 0.90
-				industrial_capacity_factory = 2.0
-				industrial_capacity_dockyard = 2.0
+				production_speed_buildings_factor = 0.50
+				industrial_capacity_factory = 0.5
+				industrial_capacity_dockyard = 0.5
 				research_time_factor = -0.20
 			}
 		}
