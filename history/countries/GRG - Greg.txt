@@ -110,6 +110,8 @@ set_politics = {
 
 set_convoys = 50
 
+country_event = { id = greg.1 days = 1 }
+
 create_country_leader = {
 	name = "Gregory Carlson"
 	desc = "POLITICS_KAELAN_PATEL_DESC"

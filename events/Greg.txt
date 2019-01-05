@@ -1,5 +1,22 @@
 ﻿add_namespace = greg
 
+country_event = { # Germany Annexation Cleanup
+	id = greg.1
+	title = greg.1.t
+	desc =  greg.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = greg.1.a
+		custom_effect_tooltip = MAF_player_becomes_GEX
+		set_global_flag = GER_flees_to_africa
+		hidden_effect = { country_event = capt.22 }
+		hidden_effect = { country_event = capt.21 }
+	}
+
+}
+
 country_event = { # haha lol
 	id = greg.2
 	title = greg.2.t
