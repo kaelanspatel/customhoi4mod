@@ -3,15 +3,15 @@ state = {
 	name = "STATE_834"
 	manpower = 129300
 
-	state_category = pastoral
+	state_category = rural
 
 	history = {
-		owner = KLN
+		owner = USA
 		buildings = {
 			infrastructure = 6
 		}
 
-		add_core_of = KLN
+		add_core_of = USA
 		victory_points = {
 			3834 1
 		}

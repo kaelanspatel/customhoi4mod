@@ -3,7 +3,7 @@ state = {
 	name = "STATE_753"
 
 	history = {
-		owner = GER
+		owner = GRG
 		buildings = {
 			infrastructure = 3
 			9947 = {
@@ -16,7 +16,6 @@ state = {
 				coastal_bunker = 2
 			}
 			air_base = 3
-
 		}
 		add_claim_by = OTT
 		add_core_of = EGY

@@ -2,16 +2,18 @@ state = {
 	id = 381
 	name = "STATE_381"
 	manpower = 240000
-	state_category = pastoral
-
+	state_category = town
+	resources = {
+		oil = 15
+	}
 	history = {
-		owner = KLN
+		owner = USA
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = KLN
+		add_core_of = USA
 		victory_points = {
-			4723 2
+			4723 1
 		}
 	}
 

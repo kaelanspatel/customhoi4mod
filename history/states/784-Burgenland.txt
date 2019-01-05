@@ -14,7 +14,7 @@ state = {
 		victory_points = {
 			3700 15
 		}
-		add_core_of = AUS
+		add_core_of = GRG
 		add_core_of = HUN
 	}
 

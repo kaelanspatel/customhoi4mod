@@ -1,9 +1,9 @@
 state = {
 	id = 46
 	name = "STATE_46" # Muntenia
-	manpower = 3621400
+	manpower = 3791400
 	resources = {
-		oil = 70
+		oil = 74
 	}
 
 	state_category = city
@@ -23,7 +23,6 @@ state = {
 			3663 = {
 				bunker = 1
 			}
-
 		}
 		add_core_of = ROM
 	}

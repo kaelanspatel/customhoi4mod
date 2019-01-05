@@ -6,9 +6,9 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = SRI
-		add_core_of = PAP
-		add_core_of = SRI
+		owner = KLN
+		add_core_of = KLN
+		add_core_of = KLN
 		buildings = {
 			infrastructure = 8
 			6862 = {

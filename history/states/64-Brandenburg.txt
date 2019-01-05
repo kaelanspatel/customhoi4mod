@@ -8,8 +8,8 @@ state = {
 
 
 	history = {
-		owner = GER
-		add_core_of = GER
+		owner = GRG
+		add_core_of = GRG
 		victory_points = {
 			6521 50
 		}
@@ -26,7 +26,6 @@ state = {
 			industrial_complex = 4
 			anti_air_building = 2
 			air_base = 6
-
 		}
 	}
 

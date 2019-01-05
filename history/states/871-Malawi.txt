@@ -4,11 +4,9 @@ state = {
 
 	history = {
 		owner = MAF
-		add_core_of = MLW
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
 		}
 		victory_points = {
 			12986 1

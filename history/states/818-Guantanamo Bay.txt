@@ -7,7 +7,7 @@ state = {
 	state_category = enclave
 
 	history = {
-		owner = GRG
+		owner = USA
 		buildings = {
 
 			infrastructure = 4

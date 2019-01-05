@@ -8,9 +8,9 @@ state = {
 	state_category = town
 
 	history = {
-		owner = GER
+		owner = GRG
 		add_core_of = BEL
-		add_claim_by = GER
+		add_claim_by = GRG
 
 		buildings = {
 			infrastructure = 6

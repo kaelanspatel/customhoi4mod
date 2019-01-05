@@ -3,16 +3,16 @@ state = {
 	name = "STATE_202"
 	manpower = 3119190
 	resources = {
-		oil = 14
+		oil = 16
 		aluminium = 12
 	}
 
 	state_category = city
 
 	history = {
-		owner = UKR # SOV
+		owner = UKR
 		victory_points = {
-			525 20
+			525 25
 		}
 		buildings = {
 			infrastructure = 6
@@ -20,7 +20,7 @@ state = {
 			industrial_complex = 2
 			air_base = 5
 		}
-		add_core_of = UKR # SOV
+		add_core_of = UKR
 	}
 
 	provinces = {

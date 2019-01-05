@@ -6,9 +6,9 @@ state = {
 	state_category = city
 
 	history = {
-		owner = DKB # SOV
+		owner = DKB
 		victory_points = {
-			9417 1
+			9417 15
 		}
 		buildings = {
 			infrastructure = 5
@@ -19,7 +19,7 @@ state = {
 				bunker = 2
 			}
 		}
-		add_core_of = DKB # SOV
+		add_core_of = DKB
 	}
 
 	provinces = {

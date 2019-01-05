@@ -7,7 +7,7 @@ state = {
 	}
 
 	history = {
-		owner = ITA
+		owner = KLN
 		victory_points = {
 			9613 1
 		}
@@ -19,7 +19,7 @@ state = {
 				bunker = 1
 			}
 		}
-		add_core_of = ITA
+		add_core_of = KLN
 
 	}
 

@@ -2,7 +2,7 @@ state = {
 	id = 306
 	name = "STATE_306"
 	resources = {
-		oil = 20
+		oil = 18
 	}
 
 	history = {
@@ -12,7 +12,6 @@ state = {
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 2
-
 		}
 		add_core_of = COL
 		victory_points = {

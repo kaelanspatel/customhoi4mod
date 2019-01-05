@@ -6,7 +6,7 @@ state = {
 	state_category = enclave
 
 	history = {
-		owner = GER
+		owner = GRG
 
 		buildings = {
 			infrastructure = 3

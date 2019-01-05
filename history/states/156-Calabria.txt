@@ -5,14 +5,13 @@ state = {
 
 	state_category = town
 	history = {
-		owner = SIC
-		add_core_of = SIC
+		owner = KLN
+		add_core_of = KLN
 		victory_points = { 9990 2 } #Reggio di Calabria
 		buildings = {
 			infrastructure = 5
 			air_base = 5
 			industrial_complex = 3
-
 		}
 	}
 

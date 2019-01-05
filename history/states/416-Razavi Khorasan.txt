@@ -6,10 +6,6 @@ state = {
 		owner = PER
 		buildings = {
 			infrastructure = 3
-
-		}
-		victory_points = {
-			5029 1
 		}
 		add_core_of = PER
 
