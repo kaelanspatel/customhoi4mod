@@ -1,4 +1,4 @@
-capital = 360
+capital = 6332
 
 oob = "GRG_1936"
 
@@ -66,9 +66,6 @@ diplomatic_relation = { country = GER relation = non_aggression_pact }
 diplomatic_relation = { country = ITA relation = non_aggression_pact }
 give_guarantee = ITA
 give_military_access = ITA
-set_country_flag = no_LEC_profit_for_you
-
-country_event = { id = austria.1 days = 1 } # Intro event
 
 set_politics = {
 
@@ -92,16 +89,16 @@ set_politics = {
 			popularity = 20
 		}
 		social_conservative = {
-			popularity = 14
+			popularity = 7
 		}
 		authoritarian_democrat = {
-			popularity = 0
+			popularity = 12
 		}
 		paternal_autocrat = {
-			popularity = 0
+			popularity = 9
 		}
 		national_populist = {
-			popularity = 66
+			popularity = 49
 		}
 	}
 

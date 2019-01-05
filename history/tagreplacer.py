@@ -1,8 +1,8 @@
 import os
 
-directory = 'states' # directory for files; script should be one level up from directory
-to_replace = 'PAP' # string to be replaced
-replace = 'KLN' # what to replace string to be replaced with
+directory = '' # directory for files; script should be one level up from directory
+to_replace = '' # string to be replaced
+replace = '' # what to replace string to be replaced with
 
 def main():
     for filename in os.listdir(directory):
