@@ -404,6 +404,7 @@ annexation_decisions = {
 				tag = VNC
 				tag = EMI
 				tag = LOM
+				tag = KLN
 			}
 		}
 		activation = {
@@ -923,6 +924,7 @@ annexation_decisions = {
 				tag = LOM
 				tag = EMI
 				tag = TUS
+				tag = KLN
 			}
 		}
 		activation = {
@@ -1855,6 +1857,7 @@ annexation_decisions = {
 				tag = WGR
 				tag = BAV
 				tag = NGF
+				tag = GRG
 			}
 		}
 		activation = {
@@ -2882,6 +2885,7 @@ annexation_decisions = {
 				tag = DEH
 				tag = BHC
 				tag = MAD
+				tag = GRG
 			}
 		}
 		activation = {
@@ -4542,6 +4546,7 @@ annexation_decisions = {
 				tag = LOM
 				tag = VNC
 				tag = EMI
+				tag = KLN
 			}
 		}
 		activation = {
@@ -8379,6 +8384,7 @@ annexation_decisions = {
 				tag = MAG
 				tag = MAF
 				tag = GER
+				tag = GRG
 			}
 		}
 		activation = {
@@ -8690,6 +8696,7 @@ annexation_decisions = {
 				tag = LOM
 				tag = VNC
 				tag = EMI
+				tag = KLN
 			}
 		}
 		activation = {
