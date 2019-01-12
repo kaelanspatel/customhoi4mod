@@ -1062,10 +1062,10 @@ D15 = {
 	color_ui = rgb { 252 182 112 }
 }
 KLN = {
-	color = rgb { 232 32 25 }
-	color_ui = rgb { 255 80 80 }
+	color = rgb { 20 82 82 }
+	color_ui = rgb { 30 123 123 }
 }
 GRG = {
-	color = rgb { 204 153 0 }
-	color_ui = rgb { 102 51 0 }
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 128 128 128 }
 }
