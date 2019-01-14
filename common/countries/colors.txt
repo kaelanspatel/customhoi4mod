@@ -64,6 +64,10 @@ BAS = {
 	color = rgb { 249 66 29 }
 	color_ui = rgb { 249 66 29 }
 }
+BAT = {
+	color = rgb { 142 142 128 }
+	color_ui = rgb { 142 142 128 }
+}
 BAV = {
 	color = rgb { 0 153 213 }
 	color_ui = rgb { 0 153 213 }
@@ -379,10 +383,6 @@ HAW = {
 HNN = {
 	color = rgb { 137 48 63 }
 	color_ui = rgb { 249 126 98 }
-}
-HOL = {
-	color = rgb { 200 127 45 }
-	color_ui = rgb { 238 151 52 }
 }
 HON = {
 	color = rgb { 161 76 65 }
