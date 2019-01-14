@@ -1,8 +1,8 @@
 capital = 1
 
-oob = "AUS"
-
 set_research_slots = 4
+
+set_cosmetic_tag = KAS
 
 # Starting tech
 set_technology = {
