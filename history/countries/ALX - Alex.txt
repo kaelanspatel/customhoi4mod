@@ -136,7 +136,7 @@ set_politics = {
 		}
 	}
 
-	ruling_party = totalist
+	ruling_party = radical_socialist
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -144,11 +144,11 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Kaelan Patel"
+	name = "Alex Southard"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kln.dds"
+	picture = "gfx/leaders/NOPIC"
 	expire = "1965.1.1"
-	ideology = totalist_subtype
+	ideology = radical_socialist_subtype
 }
 
 #Generals etc
