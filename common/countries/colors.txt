@@ -1053,3 +1053,7 @@ KIL = {
 	color = rgb { 25 103 103 }
 	color_ui = rgb { 19 83 83 }
 }
+ALX = {
+	color = rgb { 102 102 255 }
+	color_ui = rgb { 51 51 255 }
+}

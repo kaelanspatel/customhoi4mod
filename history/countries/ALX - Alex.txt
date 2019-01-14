@@ -1,10 +1,6 @@
 capital = 158
 
-oob = "KLN_1936"
-
 set_research_slots = 4
-
-set_cosmetic_tag = KLN
 
 # Starting tech
 set_technology = {
@@ -109,31 +105,31 @@ set_politics = {
 
 	parties = {
 		totalist = {
-			popularity = 39
+			popularity = 0
 		}
 		radical_socialist = {
-			popularity = 12
+			popularity = 39
 		}
 		syndicalist = {
-			popularity = 0
+			popularity = 6
 		}
 		social_democrat = {
-			popularity = 27
+			popularity = 31
 		}
 		social_liberal = {
-			popularity = 0
+			popularity = 17
 		}
 		market_liberal = {
-			popularity = 0
+			popularity = 7
 		}
 		social_conservative = {
 			popularity = 0
 		}
 		authoritarian_democrat = {
-			popularity = 12
+			popularity = 0
 		}
 		paternal_autocrat = {
-			popularity = 10
+			popularity = 0
 		}
 		national_populist = {
 			popularity = 0
@@ -147,30 +143,12 @@ set_politics = {
 }
 
 
-create_faction = kcb
-add_to_faction = KLN
-
 create_country_leader = {
 	name = "Kaelan Patel"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
 	picture = "gfx/leaders/kln.dds"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
-}
-
-add_ideas = {
-	army_purged
-	KLN_statewill
-	KLN_dark_state
-}
-
-set_autonomy = {
-	target = KAS
-	autonomous_state = kr_integrated_puppet
-}
-set_autonomy = {
-	target = KIL
-	autonomous_state = kr_integrated_puppet
 }
 
 #Generals etc
