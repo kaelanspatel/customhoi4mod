@@ -18,14 +18,13 @@ ideas = {
 			
 			modifier = {
 				
-				pop_growth_mod = 1
-				global_building_slots_factor = 0.70
+				global_building_slots_factor = 0.10
 				
 			}
 			
 		}
 		
-		KLN_directive_one_2 = {
+		KLN_arms = {
 			
 			
 			allowed = {
@@ -42,24 +41,21 @@ ideas = {
 			
 			modifier = {
 				
-				pop_growth_mod = 1
-				global_building_slots_factor = 0.70
-				
 				equipment_bonus = {
 					armor = {
-						build_cost_ic = -0.2 instant = yes
+						build_cost_ic = -0.05 instant = yes
 					}
 					motorized_equipment = {
-						build_cost_ic = -0.2 instant = yes
+						build_cost_ic = -0.05 instant = yes
 					}
 					cat_mechanized_equipment = {
-						build_cost_ic = -0.2 instant = yes
+						build_cost_ic = -0.05 instant = yes
 					}
 					infantry_equipment = {
-						build_cost_ic = -0.2 instant = yes
+						build_cost_ic = -0.05 instant = yes
 					}
 					artillery = {
-						build_cost_ic = -0.2 instant = yes
+						build_cost_ic = -0.05 instant = yes
 					}
 				}
 				
@@ -136,6 +132,23 @@ ideas = {
 			
 		}
 		
+		KLN_dark_science_costs = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				research_time_factor = -0.10
+				conscription_factor = -0.05
+			}
+		}
+		
 		# initial econ idea
 		KLN_dark_state = {
 		
@@ -148,10 +161,12 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.01
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				production_speed_buildings_factor = 0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -167,12 +182,13 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.01
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.10
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -188,13 +204,13 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
-				production_speed_buildings_factor = 0.20
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
-				research_time_factor = -0.15
+				production_speed_buildings_factor = 0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -210,13 +226,15 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.15
-				production_factory_max_efficiency_factor = 0.20
-				production_factory_efficiency_gain_factor = 0.20
-				production_speed_buildings_factor = 0.30
-				industrial_capacity_factory = 0.3
-				industrial_capacity_dockyard = 0.3
-				research_time_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -232,13 +250,15 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.20
-				production_factory_max_efficiency_factor = 0.30
-				production_factory_efficiency_gain_factor = 0.30
-				production_speed_buildings_factor = 0.40
-				industrial_capacity_factory = 0.4
-				industrial_capacity_dockyard = 0.4
-				research_time_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -253,13 +273,15 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.25
-				production_factory_max_efficiency_factor = 0.50
-				production_factory_efficiency_gain_factor = 0.50
-				production_speed_buildings_factor = 0.50
-				industrial_capacity_factory = 0.5
-				industrial_capacity_dockyard = 0.5
-				research_time_factor = -0.20
+				consumer_goods_factor = -0.10
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.10
 			}
 		}
 		
@@ -574,7 +596,7 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.1
-				conscription = 0.03
+				conscription = 0.01
 			}
 		}	
 		
@@ -590,7 +612,7 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.1
-				conscription = 0.07
+				conscription = 0.03
 			}
 		}
 

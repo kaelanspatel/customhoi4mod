@@ -193,6 +193,8 @@ country_event = { # dark science
 	
 	option = {
 		name = kaelan.14.a
+		add_manpower = -100000
+		add_ideas = KLN_dark_science_costs
 	}
 
 }

@@ -38,7 +38,7 @@ focus_tree = {
 		available_if_capitulated = yes  
 		completion_reward = {
 			ROOT = { country_event = { id = kaelan.3 } }
-			797 = {
+			2 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -54,7 +54,7 @@ focus_tree = {
 				}
 			}
 			
-			379 = {
+			117 = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -65,70 +65,6 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			829 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			378 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			385 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			798 = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
 					level = 2
 					instant_build = yes
 				}
@@ -162,7 +98,12 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			2 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			117 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			115 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			160 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			162 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			158 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
 		}		
 	}
 	
@@ -176,7 +117,69 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
+			158 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			
+			158 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			2 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			2 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -204,8 +207,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = gov_purged
-			add_ideas = arms_manufacturing
+			add_ideas = KLN_arms
 		}
 	}
 	
@@ -220,7 +222,69 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = SECPOL_idea
+			115 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			160 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			158 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			162 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -405,8 +469,8 @@ focus_tree = {
 			ROOT = { country_event = { id = kaelan.6 } }
 			add_tech_bonus = {
 				name = jet_rocket_bonus
-				bonus = 0.9
-				uses = 3
+				bonus = 0.25
+				uses = 2
 				category = rocketry
 				category = jet_technology
 			}
@@ -427,7 +491,7 @@ focus_tree = {
 			ROOT = { country_event = { id = kaelan.7 } }
 			add_tech_bonus = {
 				name = KLN_nuclear_effort_1
-				bonus = 0.9
+				bonus = 0.50
 				uses = 1
 				category = nuclear
 			}
@@ -1324,7 +1388,36 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.8 } }
+			158 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1254170
+				add_extra_state_shared_building_slots = 1
+				
+			}
+			160 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 538460
+				add_extra_state_shared_building_slots = 1
+				
+			}
+			162 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 482192
+				add_extra_state_shared_building_slots = 1
+				
+			}
+			2 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1283911
+				add_extra_state_shared_building_slots = 1
+				
+			}
+			117 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = 1144211
+				add_extra_state_shared_building_slots = 1
+				
+			}
 		}
 	}
 	
@@ -1339,54 +1432,49 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			ROOT = { country_event = { id = kaelan.9 } }
+			# ROOT = { country_event = { id = kaelan.9 } }
 			378 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 254170
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			385 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 338460
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			386 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 482192
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			379 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 1283911
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			387 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 1144211
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1447,45 +1535,45 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			378 = {
+			158 = {
 				add_resource = {
 					type = steel
-					amount = 500
+					amount = 24
 				}
 			}
 			
-			378 = {
+			160 = {
 				add_resource = {
 					type = tungsten
-					amount = 500
+					amount = 32
 				}
 			}
 			
-			378 = {
+			2 = {
 				add_resource = {
 					type = chromium
-					amount = 500
+					amount = 42
 				}
 			}
 			
-			378 = {
+			117 = {
 				add_resource = {
 					type = oil
-					amount = 500
+					amount = 32
 				}
 			}
 			
-			378 = {
+			158 = {
 				add_resource = {
 					type = rubber
-					amount = 500
+					amount = 24
 				}
 			}
 			
-			378 = {
+			2 = {
 				add_resource = {
 					type = aluminum
-					amount = 500
+					amount = 24
 				}
 			}
 		}
@@ -1552,7 +1640,7 @@ focus_tree = {
 					artillery_brigade = { x = 4 y = 3 }
 				}
 			}
-			378 = {
+			158 = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
@@ -1651,8 +1739,8 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 15 }
-			add_offsite_building = { type = industrial_complex level = 20 }
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = industrial_complex level = 5 }
 		}
 	}
 	
@@ -1668,8 +1756,8 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 15 }
-			add_offsite_building = { type = industrial_complex level = 15 }
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 	
@@ -1715,8 +1803,8 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 30 }
-			add_offsite_building = { type = industrial_complex level = 30 }
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 	
@@ -1732,9 +1820,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			set_technology = { jet_fighter1 = 1 }
-			set_technology = { jet_tactical_bomber1 = 1 }
-			set_technology = { jet_strategic_bomber1 = 1 }
+			
 		}
 	}
 	
