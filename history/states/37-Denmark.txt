@@ -6,7 +6,7 @@ state = {
 	state_category = large_city
 
 	history = {
-		owner = DEN
+		owner = ALX
 		victory_points = {
 			6287 25
 		}
@@ -37,7 +37,7 @@ state = {
 				bunker = 3
 			}
 		}
-		add_core_of = DEN
+		add_core_of = ALX
 	}
 
 	provinces = {

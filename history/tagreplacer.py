@@ -1,7 +1,7 @@
 import os
 
 directory = 'states' # directory for files; script should be one level up from directory
-to_replace = 'HOL' # string to be replaced
+to_replace = 'DEN' # string to be replaced
 replace = 'ALX' # what to replace string to be replaced with
 
 def main():
