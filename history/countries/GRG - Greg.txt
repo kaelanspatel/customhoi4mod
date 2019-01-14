@@ -58,9 +58,9 @@ set_technology = {
 
 add_opinion_modifier = { target = ENG modifier = embargo }
 add_opinion_modifier = { target = FRA modifier = embargo }
-add_opinion_modifier = { target = SRI modifier = embargo }
-add_opinion_modifier = { target = LEC modifier = LEC_member }
-give_military_access = LEC
+
+give_guarantee = KLN
+
 
 set_politics = {
 
