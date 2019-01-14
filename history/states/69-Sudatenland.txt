@@ -12,7 +12,7 @@ state = {
 			industrial_complex = 1
 		}
 		add_core_of = CZE
-		add_core_of = GRG
+		add_core_of = AUS
 		victory_points = {
 			11401 2
 		}

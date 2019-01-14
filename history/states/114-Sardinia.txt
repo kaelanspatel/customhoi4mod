@@ -6,8 +6,8 @@ state = {
 	state_category = rural
 
 	history = {
-		owner = SRD
-		add_core_of = SRD
+		owner = KLN
+		add_core_of = KLN
 		victory_points = { 11773 5 } #Cagliari
 		buildings = {
 			infrastructure = 5

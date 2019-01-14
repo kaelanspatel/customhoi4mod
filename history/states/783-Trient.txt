@@ -3,7 +3,7 @@ state = {
 	name = "STATE_783"
 
 	history = {
-		owner = GRG
+		owner = KLN
 		buildings = {
 			infrastructure = 6
 			9598 = {
@@ -13,7 +13,7 @@ state = {
 				bunker = 3
 			}
 		}
-		add_core_of = GRG
+		add_core_of = KLN
 
 	}
 

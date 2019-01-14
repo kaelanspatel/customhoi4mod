@@ -6,7 +6,7 @@ state = {
 	state_category = "hyvin"
 
 	history = {
-		owner = GRG
+		owner = KLN
 		victory_points = {
 			673 2
 		}
@@ -18,7 +18,7 @@ state = {
 				bunker = 1
 			}
 		}
-		add_core_of = GRG
+		add_core_of = KLN
 
 	}
 

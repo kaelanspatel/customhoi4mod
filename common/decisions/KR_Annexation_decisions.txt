@@ -8754,6 +8754,7 @@ annexation_decisions = {
 				tag = LOM
 				tag = VNC
 				tag = EMI
+				tag = KLN
 			}
 		}
 		activation = {
