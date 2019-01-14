@@ -1,8 +1,8 @@
 import os
 
-directory = '' # directory for files; script should be one level up from directory
-to_replace = '' # string to be replaced
-replace = '' # what to replace string to be replaced with
+directory = 'states' # directory for files; script should be one level up from directory
+to_replace = 'AUS' # string to be replaced
+replace = 'KAS' # what to replace string to be replaced with
 
 def main():
     for filename in os.listdir(directory):

@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = CRO
+		owner = KIL
 		victory_points = {
 			11899 10
 		}
@@ -34,7 +34,7 @@ state = {
 			}
 		}
 
-		add_core_of = CRO
+		add_core_of = KIL
 		add_core_of = BOS
 	}
 

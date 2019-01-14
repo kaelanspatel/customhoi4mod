@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = AUS
+		owner = KAS
 		victory_points = {
 			13575 10
 		}
@@ -21,7 +21,7 @@ state = {
 			arms_factory = 1
 		}
 
-		add_core_of = AUS
+		add_core_of = KAS
 	}
 
 	provinces = {
