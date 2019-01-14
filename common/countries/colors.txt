@@ -200,10 +200,6 @@ COS = {
 	color = rgb { 212 161 9 }
 	color_ui = rgb { 212 161 9 }
 }
-CRO = {
-	color = rgb { 255 240 40 }
-	color_ui = rgb { 255 240 40 }
-}
 CSA = {
 	color = rgb { 178 34 52 }
 	color_ui = rgb { 178 34 52 }
@@ -335,10 +331,6 @@ GEA = {
 GEO = {
 	color = rgb { 247 133 39 }
 	color_ui = rgb { 247 133 39 }
-}
-GER = {
-	color = rgb { 77 93 83 }
-	color_ui = rgb { 138 155 116 }
 }
 GEX = {
 	color = rgb { 77 93 83 }
@@ -744,10 +736,6 @@ SAF = {
 	color = rgb { 255 126 0 }
 	color_ui = rgb { 255 126 0 }
 }
-SAR = {
-	color = rgb { 40 40 225 }
-	color_ui = rgb { 40 40 225 }
-}
 SAU = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
@@ -823,10 +811,6 @@ SPR = {
 SQI = {
 	color = rgb { 204 81 39 }
 	color_ui = rgb { 204 81 39 }
-}
-SRI = {
-	color = rgb { 114 47 55 }
-	color_ui = rgb { 114 47 55 }
 }
 SRD = {
 	color = rgb { 140 140 200 }
