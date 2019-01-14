@@ -61,7 +61,6 @@ add_opinion_modifier = { target = FRA modifier = embargo }
 
 give_guarantee = KLN
 
-
 set_politics = {
 
 	parties = {
