@@ -34,11 +34,6 @@ division_template = {
 		militia = { x = 2 y = 1 }
 		militia = { x = 2 y = 2 }
 		militia = { x = 3 y = 0 }
-		militia = { x = 3 y = 1 }
-		militia = { x = 3 y = 2 }
-		militia = { x = 4 y = 0 }
-		militia = { x = 4 y = 1 }
-		militia = { x = 4 y = 2 }
 	}
 }
 
@@ -449,8 +444,8 @@ units = {
 	
 	navy = {
 		name = "KGA National Fleet"
-		base = 6788
-		location = 8788
+		base = 6973
+		location = 6973
 		ship = { name = "Sword of the Father I" definition = carrier equipment = { carrier_2 = {amount = 1 owner = KLN} } 
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "KLN" amount = 27 }
