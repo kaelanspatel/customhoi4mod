@@ -1069,3 +1069,11 @@ GRG = {
 	color = rgb { 64 64 64 }
 	color_ui = rgb { 128 128 128 }
 }
+KAS = {
+	color = rgb { 25 103 103 }
+	color_ui = rgb { 19 83 83 }
+}
+KIL = {
+	color = rgb { 25 103 103 }
+	color_ui = rgb { 19 83 83 }
+}
