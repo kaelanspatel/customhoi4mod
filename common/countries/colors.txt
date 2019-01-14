@@ -64,10 +64,6 @@ BAS = {
 	color = rgb { 249 66 29 }
 	color_ui = rgb { 249 66 29 }
 }
-BAT = {
-	color = rgb { 142 142 128 }
-	color_ui = rgb { 142 142 128 }
-}
 BAV = {
 	color = rgb { 0 153 213 }
 	color_ui = rgb { 0 153 213 }
@@ -531,10 +527,6 @@ MAL = {
 MAN = {
 	color = rgb { 189 113 33 }
 	color_ui = rgb { 189 113 33 }
-}
-MEN = {
-	color = rgb { 185 255 152 }
-	color_ui = rgb { 165 230 132 }
 }
 MEX = {
 	color = rgb { 104 152 83 }
