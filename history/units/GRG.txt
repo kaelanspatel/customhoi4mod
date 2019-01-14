@@ -1,0 +1,662 @@
+division_template = {
+	name = "Miliztruppe" 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Infanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+
+
+units = {
+
+	division = {
+		name = "1. Infanterie-Division"
+		location = 6332
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Infanterie-Division"
+		location = 6332
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "32. Infanterie-Division"
+		location = 6332
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "27. Infanterie-Division"
+		location = 6375
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "28. Infanterie-Division"
+		location = 6375
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Preußische Infanterie-Division"
+		location = 389
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Preußische Infanterie-Division"
+		location = 389
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9. Infanterie-Division"
+		location = 6558
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10. Infanterie-Division"
+		location = 6558
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "36. Infanterie-Division"
+		location = 6558
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "11. Infanterie-Division"
+		location = 9570
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "12. Infanterie-Division"
+		location = 9570
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "37. Infanterie-Division"
+		location = 9570
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Infanterie-Division"
+		location = 6282
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Infanterie-Division"
+		location = 6282
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "33. Infanterie-Division"
+		location = 6282
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5. Infanterie-Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Infanterie-Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "34. Infanterie-Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Mecklenburgische Infanterie-Division"
+		location = 6389
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "17. Infanterie-Division"
+		location = 6389
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7. Infanterie-Division"
+		location = 3522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8. Infanterie-Division"
+		location = 3522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "35. Infanterie-Division"
+		location = 3522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Königlich Sächsische Infanterie-Division"
+		location = 3535
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Königlich Sächsische Infanterie-Division"
+		location = 3535
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Königlich Sächsische Infanterie-Division"
+		location = 514
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Königlich Sächsische Infanterie-Division"
+		location = 514
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "18. Infanterie-Division"
+		location = 6377
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "19. Infanterie-Division"
+		location = 6377
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "20. Infanterie-Division"
+		location = 6524
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "21. Infanterie-Division"
+		location = 6524
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "13. Infanterie-Division"
+		location = 6622
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "14. Infanterie-Division"
+		location = 6622
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "38. Infanterie-Division"
+		location = 6622
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "15. Infanterie-Division"
+		location = 9522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "16. Infanterie-Division"
+		location = 9522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "29. Infanterie-Division"
+		location = 9575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "30. Infanterie-Division"
+		location = 9575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Wallonische Infanterie-Division"
+		location = 11407
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "31. Infanterie-Division"
+		location = 11407
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Bayrische Infanterie-Division"
+		location = 9418
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Bayrische Infanterie-Division"
+		location = 9418
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Bayrische Infanterie-Division"
+		location = 9418
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "24. Infanterie-Division"
+		location = 9559
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "25. Infanterie-Division"
+		location = 9559
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "40. Infanterie-Division"
+		location = 9559
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "22. Infanterie-Division"
+		location = 11516
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "23. Infanterie-Division"
+		location = 11516
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "39. Infanterie-Division"
+		location = 11516
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Feld Artillerie-Division Großherzog"
+		location = 678
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Badische Leib-Grenadier-Division"
+		location = 678
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "41. Infanterie-Division"
+		location = 678
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "101. Infanterie-Division"
+		location = 9503
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "102. Infanterie-Division"
+		location = 9503
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "103. Infanterie-Division"
+		location = 9517
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "104. Infanterie-Division"
+		location = 9517
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5. Bayerische Infanterie-Division"
+		location = 692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Bayerische Infanterie-Division"
+		location = 692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Bayerische Infanterie-Division"
+		location = 6693
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Bayerische Infanterie-Division"
+		location = 6693
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+
+	navy = {
+		name = "Gregist National Navy"
+		base = 6389
+		location = 11360
+		ship = { name = "Adolf Hitler" definition = SH_battleship equipment = { SH_battleship_3 = { amount = 1 owner = GRG version_name = "Gangut Class" } } }
+		ship = { name = "George Bush" definition = SH_battleship equipment = { SH_battleship_3 = { amount = 1 owner = GRG version_name = "Gangut Class" } } }
+		ship = { name = "Saddam Hussain" definition = SH_battleship equipment = { SH_battleship_3 = { amount = 1 owner = GRG version_name = "Gangut Class" } } }
+		ship = { name = "Michael Dresser" definition = SH_battleship equipment = { SH_battleship_3 = { amount = 1 owner = GRG version_name = "Gangut Class" } } }
+
+		ship = { name = "Vladmir Putin" definition = SH_battleship equipment = { SH_battleship_1 = { amount = 1 owner = GRG version_name = "Andrey Pervozvannyy Class" } } }
+		ship = { name = "Fuck Off Im not naming all of these" definition = SH_battleship equipment = { SH_battleship_1 = { amount = 1 owner = GRG version_name = "Andrey Pervozvannyy Class" } } }
+
+		ship = { name = "Izmail" definition = battleship equipment = { battleship_3 = { amount = 1 owner = GRG version_name = "Izmail Class" } } }
+		ship = { name = "Borodino" definition = battleship equipment = { battleship_3 = { amount = 1 owner = GRG version_name = "Izmail Class" } } }
+
+		ship = { name = "Askold" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRG version_name = "Askold Class" } } }
+		ship = { name = "Bogatyr" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRG version_name = "Bogatyr Class" } } }
+		ship = { name = "Oleg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRG version_name = "Bogatyr Class" } } }
+		ship = { name = "Svetlana" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GRG version_name = "Svetlana Class" } } }
+		ship = { name = "Admiral Butakov" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GRG version_name = "Svetlana Class" } } }
+
+		ship = { name = "Kapitan Saken" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRG version_name = "Leytenant Shestakov Class" } } }
+		ship = { name = "Pobeditel" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GRG version_name = "Novik Class" } } }
+		ship = { name = "Leytenant Ilyin" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GRG version_name = "Novik Class" } } }
+		ship = { name = "Rykov" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GRG version_name = "Novik Class" } } }
+		ship = { name = "Karl Libknekht" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GRG version_name = "Novik Class" } } }
+		ship = { name = "Gogland" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Gogland Class" } } }
+		ship = { name = "Kulm" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Gogland Class" } } }
+		ship = { name = "Grengamn" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Gogland Class" } } }
+		ship = { name = "Patras" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Gogland Class" } } }
+		ship = { name = "Forel" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Forel Class" } } }
+		ship = { name = "Osiostr" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Forel Class" } } }
+		ship = { name = "Kefal" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Forel Class" } } }
+		ship = { name = "Losos" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = GRG version_name = "Forel Class" } } }
+
+		ship = { name = "Osetr" definition = submarine equipment = { submarine_4 = { amount = 1 owner = GRG version_name = "Osetr Class" } } }
+		ship = { name = "Kefal" definition = submarine equipment = { submarine_4 = { amount = 1 owner = GRG version_name = "Osetr Class" } } }
+		ship = { name = "Akula" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Osetr" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Plotva" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Sig" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Som" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Beluga" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Schluka" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+		ship = { name = "Sudak" definition = submarine equipment = { submarine_5 = { amount = 1 owner = GRG version_name = "Akula Class" } } }
+	}
+
+air_wings = {
+
+	64 = {
+		fighter_equipment_0 = {
+			owner = "GER"
+			amount = 50
+		}
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 75
+		}
+	}
+
+	66 = {
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 75
+		}
+	}
+
+	57 = {
+		fighter_equipment_0 = {
+			owner = "GER"
+			amount = 25
+		}
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 25
+		}
+	}
+
+	52 = {
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 25
+		}
+	}
+
+	753 = {
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 25
+		}
+	}
+
+	5 = {
+		fighter_equipment_0 = {
+			owner = "GER"
+			amount = 50
+		}
+		tac_bomber_equipment_0 = {
+			owner = "GER"
+			amount = 50
+		}
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 12
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 3
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+		}
+		requested_factories = 4
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.59
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.42
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+}

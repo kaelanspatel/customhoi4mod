@@ -1,0 +1,255 @@
+division_template = {
+	name = "Popular Militia" 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 3 y = 2 }
+		militia = { x = 4 y = 0 }
+		militia = { x = 4 y = 1 }
+		militia = { x = 4 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Infantry Division"
+		location = 9431
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Infantry Division"
+		location = 3211
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Infantry Division"
+		location = 13544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Infantry Division"
+		location = 391
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5. Infantry Division"
+		location = 391
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Infantry Division"
+		location = 399
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7. Infantry Division"
+		location = 9403
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8. Infantry Division"
+		location = 11456
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "1. Popular Militia"
+		location = 9363
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Popular Militia"
+		location = 6286
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Popular Militia"
+		location = 9335
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Popular Militia"
+		location = 11318
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5. Popular Militia"
+		location = 6336
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Popular Militia"
+		location = 3314
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7. Popular Militia"
+		location = 6364
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8. Popular Militia"
+		location = 3325
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9. Popular Militia"
+		location = 394
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10. Popular Militia"
+		location = 391
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "11. Popular Militia"
+		location = 3277
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "12. Popular Militia"
+		location = 3277
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "13. Popular Militia"
+		location = 3305
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "14. Popular Militia"
+		location = 6361
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "15. Popular Militia"
+		location = 12674
+		division_template = "Popular Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	navy = {
+		name = "Red Navy"
+		base = 3314
+		location = 3314
+		ship = { name = "SRAS Gouden Leeuw" definition = carrier equipment = { carrier_2 = { amount = 1 owner = ALX version_name = "Gouden Leeuw Class" } }
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "ALX" amount = 12 }
+			}
+		}
+
+		ship = { name = "SRAS Aemalia" definition = battleship equipment = { battleship_4 = { amount = 1 owner = ALX version_name = "Aemalia Class" } } }
+		ship = { name = "SRAS Groote Liefde" definition = battleship equipment = { battleship_4 = { amount = 1 owner = ALX version_name = "Aemalia Class" } } }
+		ship = { name = "SRAS Sint Matheuus" definition = battleship equipment = { battleship_4 = { amount = 1 owner = ALX version_name = "Aemalia Class" } } }
+		ship = { name = "SRAS Willem van Oranje" definition = battleship equipment = { battleship_5 = { amount = 1 owner = ALX version_name = "Willem van Oranje Class" } } }
+		ship = { name = "SRAS Mercurius" definition = battleship equipment = { battleship_5 = { amount = 1 owner = ALX version_name = "Willem van Oranje Class" } } }
+
+		ship = { name = "SRAS Java" definition = light_cruiser equipment = { light_cruiser_3 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Sumatra" definition = light_cruiser equipment = { light_cruiser_3 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Celebes" definition = light_cruiser equipment = { light_cruiser_3 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Piet Hein" definition = light_cruiser equipment = { light_cruiser_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS De Ruyter" definition = light_cruiser equipment = { light_cruiser_5 = { amount = 1 owner = ALX } } }
+
+		ship = { name = "SRAS Van Ghent" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Evertsen" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Kortenaer" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Leiden" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Den Haag" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Amsterdam" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Rotterdam" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Utrecht" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Eindhoven" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Tilburg" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Gouda" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Groningen" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Van Galen" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Witte de With" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Banckert" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Van Nes" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Breda" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Nijmegen" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Apeldoorn" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+		ship = { name = "SRAS Enschede" definition = destroyer equipment = { destroyer_4 = { amount = 1 owner = ALX } } }
+	}
+	
+}
