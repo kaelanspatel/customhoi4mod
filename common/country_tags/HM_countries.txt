@@ -1,3 +1,6 @@
 #### My dank meme mods
 KLN = "countries/Kaelan.txt"
 GRG = "countries/Greg.txt"
+
+KAS = "countries/Kaelanist_Austria.txt"
+KIL = "countries/Kaelanist_Illyria.txt"
