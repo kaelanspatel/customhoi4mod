@@ -148,7 +148,7 @@ set_politics = {
 create_country_leader = {
 	name = "Alex Southard"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/NOPIC"
+	picture = "gfx/leaders/alx.dds"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 }
