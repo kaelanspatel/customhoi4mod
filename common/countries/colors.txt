@@ -928,10 +928,6 @@ VIE = {
 	color = rgb { 149 99 11 }
 	color_ui = rgb { 149 99 1 }
 }
-VNC = {
-	color = rgb { 179 11 0 }
-	color_ui = rgb { 179 11 0 }
-}
 VIN = {
 	color = rgb { 162 138 9 }
 	color_ui = rgb { 162 138 9 }
@@ -1045,14 +1041,6 @@ D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
 }
-KLN = {
-	color = rgb { 20 82 82 }
-	color_ui = rgb { 30 123 123 }
-}
-GRG = {
-	color = rgb { 64 64 64 }
-	color_ui = rgb { 128 128 128 }
-}
 KAS = {
 	color = rgb { 25 103 103 }
 	color_ui = rgb { 19 83 83 }
@@ -1060,4 +1048,12 @@ KAS = {
 KIL = {
 	color = rgb { 25 103 103 }
 	color_ui = rgb { 19 83 83 }
+}
+KLN = {
+	color = rgb { 20 82 82 }
+	color_ui = rgb { 30 123 123 }
+}
+GRG = {
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 128 128 128 }
 }

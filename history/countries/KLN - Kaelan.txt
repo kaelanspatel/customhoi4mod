@@ -147,9 +147,10 @@ set_politics = {
 }
 
 
-create_faction = lom
+create_faction = kcb
 add_to_faction = KLN
-add_to_faction = GRG
+add_to_faction = KAS
+add_to_faction = KIL
 
 create_country_leader = {
 	name = "Kaelan Patel"

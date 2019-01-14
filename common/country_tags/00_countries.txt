@@ -208,10 +208,8 @@ YUC = "countries/Yucatan.txt"
 ### Italian Minors ###
 LOM = "countries/LOM.txt" #Lombardy
 PAP = "countries/PAP.txt" #Papal States
-SRD = "countries/SRD.txt" #Sardinia/Kingdom of Italy
 TUS = "countries/TUS.txt" #Tuscany
 EMI = "countries/EMI.txt" #Emilia-Romagna
-VNC = "countries/VNC.txt" #Venice
 
 #### African Revolters
 AZR = "countries/AZR.txt" #Teke
