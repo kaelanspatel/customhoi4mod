@@ -23,6 +23,72 @@ ideas = {
 			
 		}
 		
+		GRG_low_corporate_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				
+			}
+			
+		}
+		
+		GRG_med_corporate_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				
+			}
+			
+		}
+		
+		GRG_high_corporate_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				
+			}
+			
+		}
+		
 		GRG_sub_cost_reduction = {
 			
 			
@@ -261,7 +327,8 @@ ideas = {
 			picture = chi_incompetent_officers
 			
 			modifier = {
-				conscription = -0.005
+				conscription = -0.01
+				army_morale_factor = -0.1
 			}
 			
 		}

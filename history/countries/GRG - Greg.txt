@@ -117,6 +117,7 @@ create_country_leader = {
 add_ideas = {
 	GRG_nationalism
 	GRG_conscription_one
+	GRG_low_corporate_influence
 }
 
 #Generals etc

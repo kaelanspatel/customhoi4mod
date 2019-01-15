@@ -48,9 +48,6 @@ ideas = {
 					motorized_equipment = {
 						build_cost_ic = -0.05 instant = yes
 					}
-					cat_mechanized_equipment = {
-						build_cost_ic = -0.05 instant = yes
-					}
 					infantry_equipment = {
 						build_cost_ic = -0.05 instant = yes
 					}
@@ -185,7 +182,6 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.01
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				stability_factor = -0.10
@@ -206,7 +202,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.10
