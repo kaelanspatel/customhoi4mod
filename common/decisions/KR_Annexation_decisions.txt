@@ -348,6 +348,7 @@ annexation_decisions = {
 		allowed = {
 			NOT = {
 				tag = AUS
+				tag = KAS
 			}
 		}
 		activation = {
@@ -495,6 +496,7 @@ annexation_decisions = {
 				tag = CRO
 				tag = AUS
 				tag = HUN
+				tag = KIL
 			}
 		}
 		activation = {
@@ -1353,6 +1355,7 @@ annexation_decisions = {
 				tag = YUG
 				tag = AUS
 				tag = HUN
+				tag = KIL
 			}
 		}
 		activation = {
@@ -4370,6 +4373,7 @@ annexation_decisions = {
 				tag = YUG
 				tag = SER
 				tag = AUS
+				tag = KIL
 			}
 		}
 		activation = {
@@ -4432,6 +4436,7 @@ annexation_decisions = {
 				tag = YUG
 				tag = SER
 				tag = AUS
+				tag = KIL
 			}
 		}
 		activation = {
@@ -4597,6 +4602,7 @@ annexation_decisions = {
 			NOT = {
 				tag = HOL
 				tag = DEI
+				tag = ALX
 			}
 		}
 		activation = {
@@ -4643,6 +4649,7 @@ annexation_decisions = {
 				tag = ICE
 				tag = SCA
 				tag = NOR
+				tag = ALX
 			}
 		}
 		activation = {

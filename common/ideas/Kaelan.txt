@@ -109,6 +109,30 @@ ideas = {
 			
 		}
 		
+		KLN_subject_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.05
+				stability_factor = -0.10
+				political_power_gain = -0.1
+				
+			}
+			
+		
+		}
+		
 		KLN_directive_one_4 = {
 			
 			

@@ -1,4 +1,6 @@
 ﻿add_namespace = greg
+add_namespace = greg.corpinf
+add_namespace = greg.corporate
 
 country_event = { # Germany Annexation Cleanup
 	id = greg.1
@@ -9,13 +11,110 @@ country_event = { # Germany Annexation Cleanup
 
 	option = {
 		name = greg.1.a
-		custom_effect_tooltip = MAF_player_becomes_GEX
+		# custom_effect_tooltip = MAF_player_becomes_GEX
 		set_global_flag = GER_flees_to_africa
 		hidden_effect = { country_event = capt.22 }
 		hidden_effect = { country_event = capt.21 }
 	}
 
 }
+
+country_event = {
+	id = greg.corpinf.2
+	title = greg.corpinf.2.t
+	desc = greg.corpinf.2.d
+
+	fire_only_once = no
+
+	trigger = {
+		tag = GRG
+		NOT = { has_idea = GRG_low_corporate_influence }
+		market_liberal > 0.01
+		market_liberal < 0.30
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = greg.corpinf.2.a
+		swap_ideas = {
+			remove_idea = GRG_med_corporate_influence
+			add_idea = GRG_low_corporate_influence
+		}
+	}
+}
+
+country_event = {
+	id = greg.corpinf.3
+	title = greg.corpinf.3.t
+	desc = greg.corpinf.3.d
+
+	picture = anshan_steel
+
+	fire_only_once = no
+
+	trigger = {
+		tag = GRG
+		NOT = { has_idea = GRG_med_corporate_influence }
+		market_liberal > 0.30
+		market_liberal < 0.40
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = greg.corpinf.3.a
+		if = {
+			limit = {
+				has_idea = GRG_low_corporate_influence
+			}
+			swap_ideas = {
+				remove_idea = GRG_low_corporate_influence
+				add_idea = GRG_med_corporate_influence
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GRG_high_corporate_influence
+			}
+			swap_ideas = {
+				remove_idea = GRG_high_corporate_influence
+				add_idea = GRG_med_corporate_influence
+			}
+		}
+	}
+}
+
+country_event = {
+	id = greg.corpinf.5
+	title = greg.corpinf.5.t
+	desc = greg.corpinf.5.d
+
+	picture = japanese_troops_train
+
+	trigger = {
+		tag = GRG
+		NOT = { has_idea = GRG_high_corporate_influence }
+		market_liberal > 0.40
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = greg.corpinf.5.a
+		swap_ideas = {
+			remove_idea = GRG_med_corporate_influence
+			add_idea = GRG_high_corporate_influence
+		}
+	}
+}
+
 
 country_event = { # haha lol
 	id = greg.2
