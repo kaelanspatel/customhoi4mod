@@ -7,6 +7,7 @@ SWE = "countries/Sweden.txt"
 FRA = "countries/France.txt"
 LUX = "countries/Luxemburg.txt"
 BEL = "countries/Belgium.txt"
+HOL = "countries/Holland.txt"
 CZE = "countries/Czechoslovakia.txt"
 POL = "countries/Poland.txt"
 AUS = "countries/Austria.txt"
@@ -70,6 +71,7 @@ HAI = "countries/Haiti.txt"
 YEM = "countries/Yeman.txt"
 OMA = "countries/Oman.txt"
 RAJ = "countries/British Raj.txt"
+CRO = "countries/Croatia.txt"
 PRC = "countries/ComChina.txt"
 SHX = "countries/Shanxi.txt"
 XSM = "countries/Xibei San Ma.txt"
@@ -240,7 +242,7 @@ QCH = "countries/QCH.txt"
 
 #### China Rework
 ANQ = "countries/ANQ.txt" #Anqing Clique
-AOG = "countries/AOG.txt" #Aufischtrat der Ostasiatische Generalverwaltung
+AOG = "countries/AOG.txt" #Areal der Ostasiatischen Gouvernements
 CHI = "countries/China.txt" #Kuomintang ##Vanilla Repurposed
 HNN = "countries/HNN.txt" #Hunan Clique
 LEP = "countries/LEP.txt" #League of Eight Provinces/Nanjing Clique
@@ -253,12 +255,10 @@ SZC = "countries/SZC.txt" #Sichuan Clique
 TAJ = "countries/TAJ.txt"
 PRI = "countries/PRI.txt"
 BAS = "countries/BAS.txt"
-KAC = "countries/Kachin.txt"
 SCH = "countries/SCH.txt"
 SHA = "countries/Shan.txt"
 UZB = "countries/UZB.txt"
 KYR = "countries/KYR.txt"
-LEB = "countries/Lebanon.txt"
 
 #### GFX storage only - These tags should always be at the end of this list
 XXA = "countries/XXA.txt"
