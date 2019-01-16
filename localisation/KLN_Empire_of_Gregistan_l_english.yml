@@ -24,7 +24,10 @@ GRG_national_populist_party_long:0 "Carlson Loyalists"
 
 # Ideas
 GRG_conscription_one:0 "Army Disarray"
+GRG_conscription_one_desc:0 "Though we have seized control of the Fatherland, our army is in disarray, fighting amoungst itself and dissolving into warlord-run cliques and gangs. We must stamp this out."
 GRG_nationalism:0 "Nationalist Fervor"
 GRG_low_corporate_influence:0 "Low Corporate Influence"
 GRG_med_corporate_influence:0 "Medium Corporate Influence"
 GRG_high_corporate_influence:0 "High Corporate Influence"
+GRG_imploded_economy:0 "Imploded Economy"
+GRG_imploded_economy_desc:0 "Though nominally our economy is the largest in Europe, it is in shambles due to horiffic unemployment and the horrendous valuation of our currency."

@@ -1,5 +1,30 @@
 ideas = {
 	country = {
+	
+		GRG_imploded_economy = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				industrial_capacity_factory = -0.6
+				production_speed_buildings_factor = -0.5
+				min_export = -0.4
+			}
+			
+		}
 		
 		GRG_dockyard_output = {
 			
@@ -40,7 +65,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				
+				industrial_capacity_factory = 0.05
 			}
 			
 		}
@@ -62,7 +87,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.10
-				
+				industrial_capacity_factory = 0.10
 			}
 			
 		}
@@ -84,7 +109,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.15
-				
+				industrial_capacity_factory = 0.15
 			}
 			
 		}
@@ -304,9 +329,10 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
-				political_power_gain = 1.5
-				enemy_partisan_effect = -0.9
-				army_morale_factor = 0.5
+				political_power_gain = 0.5
+				enemy_partisan_effect = -0.20
+				army_morale_factor = 0.05
+				army_attack_factor = 0.1
 			}
 			
 		}
@@ -328,7 +354,8 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.01
-				army_morale_factor = -0.1
+				army_morale_factor = -0.20
+				army_org_Factor = -0.30
 			}
 			
 		}

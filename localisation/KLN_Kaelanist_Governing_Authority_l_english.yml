@@ -244,8 +244,8 @@ brainsweeping:0 "Mind Control"
 implant_officers:0 "Mind Worms"
 is:0 "Xenos Slave Workers"
 
-army_purged:0 "Navy Control of the Army"
-army_purged_desc:0 "While the army has been purged of all counter-authority filth, the loyal naval officers we've put in charge have done a questionable job of managing our land forces. At the very least, they seem to have some unique ideas about what warfare is like..."
+KLN_army_purged:0 "Navy Control of the Army"
+KLN_army_purged_desc:0 "While the army has been purged of all counter-authority filth, the loyal naval officers we've put in charge have done a questionable job of managing our land forces."
 
 gov_purged:0 "Government Purged"
 xenotech:0 "Xenotechnology"

@@ -703,7 +703,7 @@ ideas = {
 			}
 		}
 
-		army_purged = {
+		KLN_army_purged = {
 		
 			removal_cost = -1
 			
@@ -714,13 +714,49 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 		
 			modifier = {
+				army_attack_factor = -0.30
+				army_morale_factor = -0.30
+				planning_speed = -0.30
+			}
+		}
+		
+		KLN_army_purged_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = jap_interservice_rivalry_navy_strengthened
+		
+			modifier = {
+				army_artillery_attack_factor = 0.12
+				army_artillery_defence_factor = 0.12
+				army_attack_factor = -0.15
+				army_morale_factor = -0.20
+				planning_speed = -0.20
+			}
+		}
+		
+		KLN_army_purged_3 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = jap_interservice_rivalry_navy_balanced
+		
+			modifier = {
 				army_org = 10
 				max_planning = 0.2
 				army_artillery_attack_factor = 0.12
 				army_artillery_defence_factor = 0.12
 				army_attack_factor = -0.05
-				army_morale_factor = -0.1
-				planning_speed = -0.1
+				army_morale_factor = -0.10
+				planning_speed = -0.10
 			}
 		}
 		
