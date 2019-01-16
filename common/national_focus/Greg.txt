@@ -397,6 +397,61 @@ focus_tree = {
 	}
 	
 	focus = { 
+		id = GRG_outside_help
+		icon = GFX_focus_generic_concessions
+		 
+		x = 14
+		y = 7
+		prerequisite = { focus = GRG_volunteers }
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_the_kaelanist_national_authority_corporation
+		icon = GFX_goal_molotov_ribbentrop_pact
+		 
+		x = 15
+		y = 8
+		prerequisite = { focus = GRG_outside_help }
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+
+	}
+	
+	focus = { 
+		id = GRG_alexist_labor_brigades
+		icon = GFX_goal_generic_dangerous_deal
+		 
+		x = 13
+		y = 8
+		prerequisite = { focus = GRG_outside_help }
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
 		id = GRG_expand_industry
 		icon = GFX_goal_generic_production2
 		 
@@ -822,4 +877,404 @@ focus_tree = {
 	
 	
 	
+	
+	
+	
+	
+	focus = { 
+		id = GRG_armyfocus
+		icon = GFX_focus_chi_army_reform
+		 
+		x = 36
+		y = 0
+
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		 
+		x = 35
+		y = 1
+		prerequisite = { focus = GRG_armyfocus }
+		mutually_exclusive = { focus = GRG_mobile_warfare }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_mobile_warfare
+		icon = GFX_goal_generic_army_tanks
+		 
+		x = 37
+		y = 1
+		prerequisite = { focus = GRG_armyfocus } 
+		mutually_exclusive = { focus = GRG_superior_firepower }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_infantry_cult
+		icon = GFX_goal_generic_axis_build_infantry
+		
+		x = 33
+		y = 2
+		prerequisite = { focus = GRG_superior_firepower } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_artillery_research
+		icon = GFX_goal_generic_army_artillery
+		 
+		x = 35
+		y = 2
+		prerequisite = { focus = GRG_superior_firepower } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}	
+	
+	focus = { 
+		id = GRG_quality
+		icon = GFX_focus_secret_rearmament
+		
+		x = 33
+		y = 3
+		prerequisite = { focus = GRG_artillery_research } 
+		prerequisite = { focus = GRG_infantry_cult } 
+		mutually_exclusive = { focus = GRG_quantity }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_quantity
+		icon = GFX_focus_generic_little_entente
+		 
+		x = 35
+		y = 3
+		prerequisite = { focus = GRG_artillery_research } 
+		prerequisite = { focus = GRG_infantry_cult } 
+		mutually_exclusive = { focus = GRG_quality }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_tank_production
+		icon = GFX_goal_generic_build_tank
+		
+		x = 37
+		y = 2
+		prerequisite = { focus = GRG_mobile_warfare } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		 
+		x = 39
+		y = 2
+		prerequisite = { focus = GRG_mobile_warfare } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}	
+	
+	focus = { 
+		id = GRG_combined_arms
+		icon = GFX_focus_generic_combined_arms
+		
+		x = 37
+		y = 3
+		prerequisite = { focus = GRG_tank_production } 
+		prerequisite = { focus = GRG_general_staff } 
+		mutually_exclusive = { focus = GRG_breakthrough_tactics }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_breakthrough_tactics
+		icon = GFX_focus_generic_army_tanks2
+		 
+		x = 39
+		y = 3
+		prerequisite = { focus = GRG_tank_production } 
+		prerequisite = { focus = GRG_general_staff } 
+		mutually_exclusive = { focus = GRG_combined_arms }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_a_new_army
+		icon = GFX_goal_generic_demand_territory
+		 
+		x = 36
+		y = 4
+		prerequisite = { focus = GRG_quality focus = GRG_quantity focus = GRG_combined_arms focus = GRG_breakthrough_tactics } 
+		mutually_exclusive = { focus = GRG_combined_arms }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_onwards_into_the_world
+		icon = GFX_focus_ger_revive_kaiserreich
+		 
+		x = 25
+		y = 6
+		prerequisite = { focus = GRG_a_new_army focus = GRG_the_wolf_hunts focus = GRG_control_the_skies }
+		prerequisite = { focus = GRG_looking_outward } 
+		mutually_exclusive = { focus = GRG_combined_arms }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	
+	focus = { 
+		id = GRG_east_europe
+		icon = GFX_goal_generic_major_war
+		 
+		x = 23
+		y = 7
+		
+		prerequisite = { focus = GRG_onwards_into_the_world } 
+		
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_destroy_russia
+		icon = GFX_focus_ger_strike_at_the_source
+		 
+		x = 23
+		y = 8
+		prerequisite = { focus = GRG_east_europe } 
+		
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_crush_the_internationale
+		icon = GFX_focus_ger_great_red_menace
+		 
+		x = 25
+		y = 7
+		prerequisite = { focus = GRG_onwards_into_the_world } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_friends
+		icon = GFX_focus_ger_revive_kaiserreich
+		 
+		x = 27
+		y = 7
+		prerequisite = { focus = GRG_onwards_into_the_world } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_ally_with_others
+		icon = GFX_goal_generic_alliance
+		 
+		x = 27
+		y = 8
+		prerequisite = { focus = GRG_friends } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}focus = { 
+		id = GRG_destroy_the_others
+		icon = GFX_goal_demand_sudetenland
+		 
+		x = 29
+		y = 8
+		prerequisite = { focus = GRG_friends } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+		
+	focus = { 
+		id = GRG_michael_dresser_university
+		icon = GFX_goal_generic_scientific_exchange
+		
+		x = 27
+		y = 9
+		prerequisite = { focus = GRG_ally_with_others } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_crush_alex
+		icon = GFX_goal_generic_political_pressure
+		 
+		x = 29
+		y = 9
+		prerequisite = { focus = GRG_destroy_the_others } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_obliterate_kaelan
+		icon = GFX_goal_generic_war_with_comintern
+		 
+		x = 29
+		y = 10
+		prerequisite = { focus = GRG_crush_alex } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
 }
