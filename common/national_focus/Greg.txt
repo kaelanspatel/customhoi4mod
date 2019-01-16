@@ -10,7 +10,7 @@ focus_tree = {
 	focus = {
 		id = GRG_startfocus
 		icon = GFX_focus_ger_reichskommisariats
-		cost = 10.00
+		cost = 8.00
 		x = 7
 		y = 0
 		completion_reward = {
@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = GRG_expand_research_facilities
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 8.00
 		x = 3
 		y = 2
 		prerequisite = {
@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = GRG_wonderweapons
 		icon = GFX_focus_wonderweapons
-		cost = 10.00
+		cost = 8.00
 		x = 2
 		y = 3
 		prerequisite = {
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = GRG_rocket_propelled_artillery
 		icon = GFX_focus_rocketry
-		cost = 10.00
+		cost = 8.00
 		x = 1
 		y = 2
 		prerequisite = {
@@ -78,7 +78,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GRG_startfocus } 
 		mutually_exclusive = { focus = GRG_autarky } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -96,7 +96,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = GRG_startfocus } 
 		mutually_exclusive = { focus = GRG_international_trade } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -114,7 +114,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = GRG_autarky focus = GRG_international_trade } 
 		mutually_exclusive = { focus = GRG_expand_corporate_ties } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -132,7 +132,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = GRG_autarky focus = GRG_international_trade } 
 		mutually_exclusive = { focus = GRG_nationalize_civilian_industry } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -150,7 +150,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = GRG_nationalize_civilian_industry focus = GRG_expand_corporate_ties } 
 		mutually_exclusive = { focus = GRG_free_the_market } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -168,7 +168,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = GRG_nationalize_civilian_industry focus = GRG_expand_corporate_ties } 
 		mutually_exclusive = { focus = GRG_control_the_market } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -186,7 +186,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = GRG_control_the_market focus = GRG_free_the_market } 
 		mutually_exclusive = { focus = GRG_corporate_mandate } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -204,7 +204,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = GRG_control_the_market focus = GRG_free_the_market } 
 		mutually_exclusive = { focus = GRG_national_corporatism } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -222,7 +222,7 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = GRG_corporate_mandate focus = GRG_national_corporatism } 
 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -424,7 +424,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GRG_expand_industry } 
 		mutually_exclusive = { focus = GRG_massive_industrial_networks } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -442,7 +442,7 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = GRG_expand_industry } 
 		mutually_exclusive = { focus = GRG_fortified_industrial_cities } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -460,7 +460,7 @@ focus_tree = {
 		y = 9
 		prerequisite = { focus = GRG_massive_industrial_networks focus = GRG_fortified_industrial_cities } 
 		mutually_exclusive = { focus = GRG_intensify_luxury_goods_production } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -478,7 +478,7 @@ focus_tree = {
 		y = 9
 		prerequisite = { focus = GRG_massive_industrial_networks focus = GRG_fortified_industrial_cities } 
 		mutually_exclusive = { focus = GRG_maximize_military_production } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -496,7 +496,7 @@ focus_tree = {
 		y = 10
 		prerequisite = { focus = GRG_maximize_military_production focus = GRG_intensify_luxury_goods_production } 
 		mutually_exclusive = { focus = GRG_overseas_trade } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -514,7 +514,7 @@ focus_tree = {
 		y = 10
 		prerequisite = { focus = GRG_maximize_military_production focus = GRG_intensify_luxury_goods_production } 
 		mutually_exclusive = { focus = GRG_lock_down_the_coasts } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -532,7 +532,7 @@ focus_tree = {
 		y = 11
 		prerequisite = { focus = GRG_lock_down_the_coasts focus = GRG_overseas_trade } 
 		mutually_exclusive = { focus = GRG_the_corporations } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -550,7 +550,7 @@ focus_tree = {
 		y = 11
 		prerequisite = { focus = GRG_lock_down_the_coasts focus = GRG_overseas_trade } 
 		mutually_exclusive = { focus = GRG_the_people } 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -568,7 +568,7 @@ focus_tree = {
 		y = 12
 		prerequisite = { focus = GRG_the_corporations focus = GRG_the_people } 
 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -587,7 +587,7 @@ focus_tree = {
 		prerequisite = { focus = GRG_expand_research_facilities } 
 		prerequisite = { focus = GRG_away_from_the_edge } 
 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -605,7 +605,7 @@ focus_tree = {
 		y = 9
 		prerequisite = { focus = GRG_increase_university_funding } 
 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -623,7 +623,7 @@ focus_tree = {
 		y = 9
 		prerequisite = { focus = GRG_increase_university_funding } 
 
-		cost = 10  
+		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -632,4 +632,194 @@ focus_tree = {
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	
+	focus = { 
+		id = GRG_airfocus
+		icon = GFX_goal_generic_air_fighter
+		 
+		x = 23
+		y = 0
+
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		 
+		x = 22
+		y = 1
+		prerequisite = { focus = GRG_airfocus } 
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_bombers
+		icon = GFX_goal_generic_air_bomber
+		 
+		x = 24
+		y = 1
+		prerequisite = { focus = GRG_airfocus } 
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_air_support
+		icon = GFX_goal_generic_occupy_start_war
+		 
+		x = 23
+		y = 2
+		prerequisite = { focus = GRG_bombers } 
+		prerequisite = { focus = GRG_air_doctrine } 
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_control_the_skies
+		icon = GFX_goal_generic_air_fighter2
+		 
+		x = 23
+		y = 3
+		prerequisite = { focus = GRG_air_support } 
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = { 
+		id = GRG_navfocus
+		icon = GFX_goal_generic_navy_battleship
+		 
+		x = 28
+		y = 0
+
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		 
+		x = 27
+		y = 1
+		prerequisite = { focus = GRG_navfocus }
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_submarines
+		icon = GFX_goal_generic_navy_submarine
+		 
+		x = 29
+		y = 1
+		prerequisite = { focus = GRG_navfocus } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_intensify_submarine_production
+		icon = GFX_goal_generic_navy_anti_submarine
+		 
+		x = 28
+		y = 2
+		prerequisite = { focus = GRG_submarines } 
+		prerequisite = { focus = GRG_naval_doctrine } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	focus = { 
+		id = GRG_the_wolf_hunts
+		icon = GFX_goal_generic_wolf_pack
+		 
+		x = 28
+		y = 3
+		prerequisite = { focus = GRG_intensify_submarine_production } 
+		
+		cost = 8  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
 }
