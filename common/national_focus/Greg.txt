@@ -8,10 +8,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GRE_startfocus
-		icon = GFX_focus_generic_strike_at_democracy1
+		id = GRG_startfocus
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 10.00
-		x = 18
+		x = 7
 		y = 0
 		completion_reward = {
 			add_political_power = 300
@@ -21,480 +21,615 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GRE_ind
-		icon = GFX_goal_generic_construct_civ_factory
+		id = GRG_expand_research_facilities
+		icon = GFX_focus_research
 		cost = 10.00
-		x = 12
-		y = 0
-		completion_reward = {
-		
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = GRE_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_ind
-		}
-		x = 10
-		y = 1
-		completion_reward = {
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = dockyard
-					level = 8
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 9
-				add_building_construction = {
-					type = dockyard
-					level = 9
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 9
-				add_building_construction = {
-					type = dockyard
-					level = 9
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 9
-				add_building_construction = {
-					type = dockyard
-					level = 9
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = GRE_ships_2
-		icon = GFX_goal_generic_amphibious_assault
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_dockyards
-		}
-		x = 10
+		x = 3
 		y = 2
-		completion_reward = {
-			add_ideas = GRG_dockyard_output
+		prerequisite = {
+			focus = GRG_startfocus
 		}
-
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.05
+			add_war_support = 0.1
+			ROOT = { country_event = { id = greg.2 } }
+		}
 	}
 	focus = {
-		id = GRE_ships
-		icon = GFX_goal_generic_navy_anti_submarine
+		id = GRG_wonderweapons
+		icon = GFX_focus_wonderweapons
 		cost = 10.00
-		prerequisite = {
-			focus = GRE_ships_2
-		}
-		x = 10
+		x = 2
 		y = 3
+		prerequisite = {
+			focus = GRG_startfocus
+		}
 		completion_reward = {
-			add_ideas = GRG_sub_cost_reduction
+			add_political_power = 300
+			add_stability = 0.05
+			add_war_support = 0.1
+			ROOT = { country_event = { id = greg.2 } }
 		}
 	}
 	focus = {
-		id = GRE_infra
-		icon = GFX_goal_generic_construct_infrastructure
+		id = GRG_rocket_propelled_artillery
+		icon = GFX_focus_rocketry
 		cost = 10.00
-		prerequisite = {
-			focus = GRE_ind
-		}
-		prerequisite = {
-			focus = GRE_startfocus
-		}
-		x = 12
-		y = 1
-		completion_reward = {
-			add_ideas = GRG_infrastructure
-		}
-	}
-	focus = {
-		id = GRE_mili
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_infra
-		}
-		x = 12
+		x = 1
 		y = 2
+		prerequisite = {
+			focus = GRG_startfocus
+		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
+			add_political_power = 300
+			add_stability = 0.05
+			add_war_support = 0.1
+			ROOT = { country_event = { id = greg.2 } }
+		}
+	}
+	
+	focus = { 
+		id = GRG_international_trade
+		icon = GFX_goal_generic_improve_relations
+		 
+		x = 8
+		y = 2
+		
+		prerequisite = { focus = GRG_startfocus } 
+		mutually_exclusive = { focus = GRG_autarky } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
 			}
 		}
 	}
-	focus = {
-		id = GRE_mili_2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_mili
+	
+	focus = { 
+		id = GRG_autarky
+		icon = GFX_goal_generic_defence
+		 
+		x = 6
+		y = 2
+		prerequisite = { focus = GRG_startfocus } 
+		mutually_exclusive = { focus = GRG_international_trade } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
-		x = 12
+	}
+	
+	focus = { 
+		id = GRG_nationalize_civilian_industry
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		 
+		x = 6
 		y = 3
+		prerequisite = { focus = GRG_autarky focus = GRG_international_trade } 
+		mutually_exclusive = { focus = GRG_expand_corporate_ties } 
+		cost = 10  
+		available_if_capitulated = yes
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-			}
-			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
 			}
 		}
 	}
-	focus = {
-		id = GRE_iraqwar
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_ind
+	
+	focus = { 
+		id = GRG_expand_corporate_ties
+		icon = GFX_focus_generic_industry_2
+		 
+		x = 8
+		y = 3
+		prerequisite = { focus = GRG_autarky focus = GRG_international_trade } 
+		mutually_exclusive = { focus = GRG_nationalize_civilian_industry } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
-		prerequisite = {
-			focus = GRE_startfocus
+	}
+	
+	focus = { 
+		id = GRG_control_the_market
+		icon = GFX_focus_generic_self_management
+		 
+		x = 6
+		y = 4
+		prerequisite = { focus = GRG_nationalize_civilian_industry focus = GRG_expand_corporate_ties } 
+		mutually_exclusive = { focus = GRG_free_the_market } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
-		x = 15
-		y = 2
+	}
+	
+	focus = { 
+		id = GRG_free_the_market
+		icon = GFX_goal_generic_trade
+		 
+		x = 8
+		y = 4
+		prerequisite = { focus = GRG_nationalize_civilian_industry focus = GRG_expand_corporate_ties } 
+		mutually_exclusive = { focus = GRG_control_the_market } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_national_corporatism
+		icon = GFX_goal_generic_forceful_treaty
+		 
+		x = 6
+		y = 5
+		prerequisite = { focus = GRG_control_the_market focus = GRG_free_the_market } 
+		mutually_exclusive = { focus = GRG_corporate_mandate } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_corporate_mandate
+		icon = GFX_focus_generic_treaty
+		 
+		x = 8
+		y = 5
+		prerequisite = { focus = GRG_control_the_market focus = GRG_free_the_market } 
+		mutually_exclusive = { focus = GRG_national_corporatism } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_away_from_the_edge
+		icon = GFX_goal_generic_consumer_goods
+		 
+		x = 7
+		y = 6
+		prerequisite = { focus = GRG_corporate_mandate focus = GRG_national_corporatism } 
 
-	}
-	focus = {
-		id = GRE_rajwar
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_iraqwar
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
+	}
+	
+	focus = { 
+		id = GRG_national_effort
+		icon = GFX_focus_generic_support_the_left_right
+		 
 		x = 14
-		y = 3
-
-	}
-	focus = {
-		id = GRE_afgwar
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_iraqwar
-		}
-		x = 16
-		y = 3
-
-	}
-	focus = {
-		id = GRE_nationalism
-		icon = GFX_goal_support_fascism
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_startfocus
-		}
-		prerequisite = {
-			focus = GRE_ind
-		}
-		x = 18
-		y = 1
-		completion_reward = {
-			ROOT = { country_event = { id = greg.3 } }
-		}
-	}
-	focus = {
-		id = GRE_conscripts
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_nationalism
-		}
-		x = 18
 		y = 2
+		prerequisite = { focus = GRG_startfocus } 
+
+		cost = 8
+		available_if_capitulated = yes
 		completion_reward = {
-			ROOT = { country_event = { id = greg.4 } }
-		}
-	}
-	focus = {
-		id = GRE_cannonfodder
-		icon = GFX_goal_generic_secret_weapon
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_conscripts
-		}
-		x = 18
-		y = 3
-		completion_reward = {
-			ROOT = { country_event = { id = greg.5 } }
-		}
-	}
-	focus = {
-		id = GRE_indrec
-		icon = GFX_goal_generic_production
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_startfocus
-		}
-		x = 20
-		y = 1
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 10
-				category = infantry_weapons
-				category = artillery
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
 			}
-			add_ideas = GRG_equip_production
-		
 		}
 	}
-	focus = {
-		id = GRE_tanks
-		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_mech
-		}
-		x = 20
-		y = 4
-		completion_reward = {
-			add_ideas = GRG_tank_production
-		}
-	}
-	focus = {
-		id = GRE_mech
-		icon = GFX_goal_generic_army_motorized
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_supersoldiers
-		}
-		x = 20
+	
+	focus = { 
+		id = GRG_imperial_resource_comission
+		icon = GFX_goal_generic_position_armies
+		 
+		x = 17
 		y = 3
+		prerequisite = { focus = GRG_national_effort } 
+
+		cost = 8
+		available_if_capitulated = yes
 		completion_reward = {
-		
-			add_ideas = GRG_motor_production
-		
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
-	focus = {
-		id = GRE_sovwar
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_rajwar
-		}
-		prerequisite = {
-			focus = GRE_afgwar
-		}
-		prerequisite = {
-			focus = GRE_cannonfodder
-		}
-		prerequisite = {
-			focus = GRE_mili_2
-		}
+	
+	focus = { 
+		id = GRG_synthetic_refineries
+		icon = GFX_goal_generic_oil_refinery
+		 
 		x = 15
 		y = 4
+		prerequisite = { focus = GRG_imperial_resource_comission } 
 
-	}
-	focus = {
-		id = GRE_superfleet
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_ships
-		}
-		x = 10
-		y = 4
+		cost = 8
+		available_if_capitulated = yes
 		completion_reward = {
-			
-			add_ideas = GRG_fleet_production
-		
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
-	focus = {
-		id = GRE_superind
+	
+	focus = { 
+		id = GRG_prospect_for_minerals
+		icon = GFX_focus_generic_steel
+		 
+		x = 17
+		y = 4
+		prerequisite = { focus = GRG_imperial_resource_comission } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_grow_rubber_plantations
+		icon = GFX_focus_generic_rubber
+		 
+		x = 19
+		y = 4
+		prerequisite = { focus = GRG_imperial_resource_comission } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_form_national_cousinhood_organization
+		icon = GFX_goal_support_fascism
+		 
+		x = 11
+		y = 3
+		prerequisite = { focus = GRG_national_effort } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_national_labor_corp
+		icon = GFX_goal_generic_production
+		 
+		x = 11
+		y = 4
+		prerequisite = { focus = GRG_form_national_cousinhood_organization } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_volunteers
+		icon = GFX_focus_CZE_german_puppet
+		 
+		x = 11
+		y = 5
+		prerequisite = { focus = GRG_national_labor_corp } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_looking_outward
+		icon = GFX_goal_generic_territory_or_war
+		 
+		x = 17
+		y = 5
+		prerequisite = { focus = GRG_synthetic_refineries }
+		prerequisite = { focus = GRG_prospect_for_minerals }
+		prerequisite = { focus = GRG_grow_rubber_plantations } 
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_expand_industry
+		icon = GFX_goal_generic_production2
+		 
+		x = 9
+		y = 7
+		prerequisite = { focus = GRG_away_from_the_edge } 
+		prerequisite = { focus = GRG_volunteers }
+
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_fortified_industrial_cities
 		icon = GFX_goal_generic_fortify_city
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_mili_2
-		}
-		x = 12
-		y = 4
-		completion_reward = {
-			
-			add_ideas = GRG_super_industry
-			add_offsite_building = { type = industrial_complex level = 28 }
+		 
+		x = 8
+		y = 8
 		
+		prerequisite = { focus = GRG_expand_industry } 
+		mutually_exclusive = { focus = GRG_massive_industrial_networks } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
-	focus = {
-		id = GRE_superconscript
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_cannonfodder
-		}
-		x = 18
-		y = 4
+	
+	focus = { 
+		id = GRG_massive_industrial_networks
+		icon = GFX_goal_generic_construct_infrastructure
+		 
+		x = 10
+		y = 8
+		prerequisite = { focus = GRG_expand_industry } 
+		mutually_exclusive = { focus = GRG_fortified_industrial_cities } 
+		cost = 10  
+		available_if_capitulated = yes
 		completion_reward = {
-			
-			ROOT = { country_event = { id = greg.6 } }
-		
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
-	focus = {
-		id = GRE_supersoldiers
-		icon = GFX_goal_rhineland
-		cost = 10.00
-		prerequisite = {
-			focus = GRE_indrec
-		}
-		x = 20
-		y = 2
+	
+	focus = { 
+		id = GRG_maximize_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		 
+		x = 8
+		y = 9
+		prerequisite = { focus = GRG_massive_industrial_networks focus = GRG_fortified_industrial_cities } 
+		mutually_exclusive = { focus = GRG_intensify_luxury_goods_production } 
+		cost = 10  
+		available_if_capitulated = yes
 		completion_reward = {
-			
-			add_ideas = GRG_supersoliders
-		
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_intensify_luxury_goods_production
+		icon = GFX_goal_generic_construct_civ_factory
+		 
+		x = 10
+		y = 9
+		prerequisite = { focus = GRG_massive_industrial_networks focus = GRG_fortified_industrial_cities } 
+		mutually_exclusive = { focus = GRG_maximize_military_production } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_lock_down_the_coasts
+		icon = GFX_focus_generic_coastal_fort
+		 
+		x = 8
+		y = 10
+		prerequisite = { focus = GRG_maximize_military_production focus = GRG_intensify_luxury_goods_production } 
+		mutually_exclusive = { focus = GRG_overseas_trade } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_overseas_trade
+		icon = GFX_goal_generic_construct_naval_dockyard
+		 
+		x = 10
+		y = 10
+		prerequisite = { focus = GRG_maximize_military_production focus = GRG_intensify_luxury_goods_production } 
+		mutually_exclusive = { focus = GRG_lock_down_the_coasts } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_the_people
+		icon = GFX_goal_generic_national_unity
+		 
+		x = 8
+		y = 11
+		prerequisite = { focus = GRG_lock_down_the_coasts focus = GRG_overseas_trade } 
+		mutually_exclusive = { focus = GRG_the_corporations } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_the_corporations
+		icon = GFX_goal_generic_positive_trade_relations
+		 
+		x = 10
+		y = 11
+		prerequisite = { focus = GRG_lock_down_the_coasts focus = GRG_overseas_trade } 
+		mutually_exclusive = { focus = GRG_the_people } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_economic_boom
+		icon = GFX_focus_generic_tank_production
+		 
+		x = 9
+		y = 12
+		prerequisite = { focus = GRG_the_corporations focus = GRG_the_people } 
+
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_increase_university_funding
+		icon = GFX_goal_generic_intelligence_exchange
+		 
+		x = 3
+		y = 7
+		prerequisite = { focus = GRG_expand_research_facilities } 
+		prerequisite = { focus = GRG_away_from_the_edge } 
+
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_corporate_r&d
+		icon = GFX_focus_research2
+		 
+		x = 4
+		y = 9
+		prerequisite = { focus = GRG_increase_university_funding } 
+
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
+		}
+	}
+	
+	focus = { 
+		id = GRG_classroom_propoganda
+		icon = GFX_goal_generic_propaganda
+		 
+		x = 2
+		y = 9
+		prerequisite = { focus = GRG_increase_university_funding } 
+
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLN_statewill
+				add_idea = KLN_statewill_2
+			}
 		}
 	}
 }
