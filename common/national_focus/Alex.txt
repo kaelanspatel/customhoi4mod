@@ -1,0 +1,366 @@
+focus_tree = {
+
+	id = 'alex_focus'
+	country = {
+	factor=0
+		modifier = {
+			add = 10
+			tag = ALX
+		}
+	}
+	
+	
+	default = no
+	
+	focus = {
+		id = ALX_the_state_of_the_economy
+		icon = GFX_goal_generic_production
+	
+		x = 5
+		y = 0
+		cost = 6
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_civilian_development
+		icon = GFX_goal_generic_construct_infrastructure
+	
+		x = 6
+		y = 1
+		cost = 6
+		
+		prerequisite = { focus = ALX_the_state_of_the_economy }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_military_production
+		icon = GFX_focus_secret_rearmament
+	
+		x = 4
+		y = 1
+		cost = 6
+		
+		prerequisite = { focus = ALX_the_state_of_the_economy }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_construct_the_h_wolf_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+	
+		x = 4
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_military_production }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_synthetic_oil_efforts
+		icon = GFX_goal_generic_oil_refinery
+	
+		x = 2
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_military_production }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_mechanize_farming
+		icon = GFX_goal_generic_construct_civilian
+	
+		x = 8
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_civilian_development }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_build_more_luxury_goods_factories
+		icon = GFX_goal_generic_construct_civ_factory
+	
+		x = 6
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_civilian_development }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_equipment_design_standardization
+		icon = GFX_focus_generic_combined_arms
+	
+		x = 4
+		y = 3
+		cost = 6
+		
+		prerequisite = { focus = ALX_synthetic_oil_efforts } 
+		prerequisite = { focus = ALX_construct_the_h_wolf_arsenal }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_modern_cities
+		icon = GFX_focus_generic_industry_2
+	
+		x = 6
+		y = 3
+		cost = 6
+		
+		prerequisite = { focus = ALX_mechanize_farming }
+		prerequisite = { focus = ALX_build_more_luxury_goods_factories }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_dominate_the_north_sea
+		icon = GFX_focus_ger_great_red_menace
+	
+		x = 5
+		y = 5
+		cost = 6
+		
+		prerequisite = { focus = ALX_modern_cities }
+		prerequisite = { focus = ALX_equipment_design_standardization }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_department_of_social_progress
+		icon = GFX_focus_generic_soviet_politics
+	
+		x = 13
+		y = 0
+		cost = 6
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_create_the_southard_institute
+		icon = GFX_goal_generic_scientific_exchange
+	
+		x = 12
+		y = 1
+		cost = 6
+		
+		prerequisite = { focus = ALX_department_of_social_progress }
+		prerequisite = { focus =  ALX_the_state_of_the_economy }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_create_the_lavender_youth_service
+		icon = GFX_focus_generic_military_academy
+	
+		x = 14
+		y = 1
+		cost = 6
+		
+		prerequisite = { focus = ALX_department_of_social_progress }
+		prerequisite = { focus = ALX_the_state_of_the_economy }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+
+	focus = {
+		id = ALX_delegate_research_duties_to_old_universities
+		icon = GFX_goal_generic_intelligence_exchange
+	
+		x = 12
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_create_the_southard_institute }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_survey_corps
+		icon = GFX_goal_generic_position_armies
+	
+		x = 14
+		y = 2
+		cost = 6
+		
+		prerequisite = { focus = ALX_create_the_lavender_youth_service }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_automation_focus
+		icon = GFX_focus_research
+	
+		x = 12
+		y = 3
+		cost = 6
+		
+		prerequisite = { focus = ALX_delegate_research_duties_to_old_universities }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_the_young_citizens_militia
+		icon = GFX_focus_generic_little_entente
+	
+		x = 14
+		y = 3
+		cost = 6
+		
+		prerequisite = { focus = ALX_survey_corps }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_the_young_citizens_labor_corps
+		icon = GFX_goal_generic_construction2
+	
+		x = 16
+		y = 3
+		cost = 6
+		
+		prerequisite = { focus = ALX_survey_corps }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_decentralized_research
+		icon = GFX_focus_research2
+	
+		x = 12
+		y = 4
+		cost = 6
+		
+		prerequisite = { focus = ALX_automation_focus }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	focus = {
+		id = ALX_the_youth_officer_corps
+		icon = GFX_focus_generic_military_mission
+	
+		x = 14
+		y = 4
+		cost = 6
+		
+		prerequisite = { focus = ALX_the_young_citizens_militia }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	focus = {
+		id = ALX_new_order
+		icon = GFX_goal_generic_national_unity
+	
+		x = 13
+		y = 5
+		cost = 6
+		
+		prerequisite = { focus = ALX_the_youth_officer_corps }
+		prerequisite = { focus = ALX_decentralized_research }
+		
+		completion_reward = {
+		
+			
+		
+		}
+	}
+	
+	
+}
