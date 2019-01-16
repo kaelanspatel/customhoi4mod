@@ -28,7 +28,10 @@ country_event = { # directive one
 	option = {
 		name = kaelan.3.a	
 		add_manpower = -100000
-		add_ideas = KLN_directive_one
+		swap_ideas = {
+			remove_idea = KLN_dark_state
+			add_idea =  KLN_dark_state_2
+		}
 	}
 
 }
@@ -43,10 +46,6 @@ country_event = { # operation moon
 	
 	option = {
 		name = kaelan.4.a
-		swap_ideas = {
-			remove_idea = KLN_dark_state
-			add_idea =  KLN_dark_state_2
-		}
 	}
 
 }
@@ -61,10 +60,6 @@ country_event = { # Xenotechnology
 	
 	option = {
 		name = kaelan.5.a
-		swap_ideas = {
-			remove_idea = KLN_dark_state_2
-			add_idea =  KLN_dark_state_3
-		}
 	}
 
 }

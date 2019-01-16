@@ -1,0 +1,263 @@
+ideas = {
+	country = {
+		
+		ALX_red_guards = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				conscription = 0.05
+				army_morale_factor = 0.1
+				army_org_Factor = -0.2
+				planning_speed = -0.5
+				
+			}
+		}
+		
+	}
+
+	political_advisor = {
+
+		secpol_chief = {
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { secpol }
+		}
+
+		industrial_advisor = {
+
+
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { greg_industry }
+		}
+
+		dockyard_advisor = {
+
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { dockyards }
+		}
+
+		resource_advisor = {
+
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { goblin_hunter }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	theorist = {
+
+		gbp_th = {
+					
+					
+			allowed = {
+				original_tag = GRG
+			}
+			
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.10
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+
+		mw_th = {
+					
+					
+			allowed = {
+				original_tag = GRG
+			}
+			
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.10
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+	}
+	# MILITARY
+	army_chief = {
+		
+		off_ar = {
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { offense_first }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		def_ar = {
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { defense_first }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	air_chief = {
+		
+
+		nuke_ai = {
+			
+		
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { nukes }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		yolo_ai = {
+			
+		
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { yolo }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		gf_nv = {
+			
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { grand_fleet }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+	
+		humexp_mi = {
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { mage }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		supply_mi = {
+			
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { fuck_supply }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		go_mi = {
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+
+			
+			traits = { gnome_cavalry }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		attk_mi = {
+			
+			allowed = {
+				original_tag = GRG
+			}
+			
+			traits = { pvp_player }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

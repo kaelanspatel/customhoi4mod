@@ -1,5 +1,7 @@
 capital = 1
 
+oob = "AUS"
+
 set_research_slots = 4
 
 set_cosmetic_tag = KAS
@@ -144,11 +146,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	KLN_subject_idea
+}
 
 create_country_leader = {
-	name = "Kaelan Patel"
+	name = "The National Authority Corporation"
 	desc = "POLITICS_KAELAN_PATEL_DESC"
-	picture = "gfx/leaders/kln.dds"
+	picture = "gfx/leaders/nac.dds"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
 }

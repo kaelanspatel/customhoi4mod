@@ -104,6 +104,10 @@ focus_tree = {
 			160 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
 			162 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
 			158 = {	if = {	limit = { is_owned_and_controlled_by = KLN } add_extra_state_shared_building_slots = 2	} }
+			swap_ideas = {
+				remove_idea = KLN_dark_state_2
+				add_idea =  KLN_dark_state_3
+			}
 		}		
 	}
 	
@@ -289,11 +293,11 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = KLN_brainsweeps 
-		icon = GFX_goal_generic_wolf_pack 
+		id = KLN_psionic_transmitters
+		icon = GFX_goal_generic_radar
 		 
 		x =5 
-		y =4 
+		y =5
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_operation_moon } 
 		cost = 5  
@@ -305,6 +309,24 @@ focus_tree = {
 			}
 		}
 	}
+	
+	#focus = { 
+	#	id = KLN_brainsweeps 
+	#	icon = GFX_goal_generic_wolf_pack 
+	#	 
+	#	x =5 
+	#	y =5
+	#	mutually_exclusive = { } 
+	#	prerequisite = { focus = KLN_psionic_transmitters } 
+	#	cost = 5  
+	#	available_if_capitulated = yes
+	#	completion_reward = {
+	#		swap_ideas = {
+	#			remove_idea = KLN_statewill
+	#			add_idea = KLN_statewill_2
+	#		}
+	#	}
+	#}
 	
 	focus = { 
 		id = KLN_communion 
@@ -346,11 +368,13 @@ focus_tree = {
 		mutually_exclusive = { } 
 		prerequisite = { focus = KLN_arms_manufacturing } 
 		prerequisite = { focus = KLN_industry_two } 
-		prerequisite = { focus = KLN_brainsweeps } 
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = KLN_directive_2
+			swap_ideas = {
+				remove_idea = KLN_dark_state_3
+				add_idea = KLN_dark_state_4
+			}
 		}
 	}
 	
@@ -363,13 +387,13 @@ focus_tree = {
 		will_lead_to_war_with = USA
 		mutually_exclusive = { } 
 		prerequisite = { focus= KLN_the_reins_of_destiny  } 
+		prerequisite = { focus= KLN_psionic_transmitters} 
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
+			swap_ideas = {
+				remove_idea = KLN_dark_state_4
+				add_idea = KLN_dark_state_5
 			}
 		}
 	}
@@ -386,10 +410,9 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
+			swap_ideas = {
+				remove_idea = KLN_dark_science_costs
+				add_idea = KLN_dark_science_costs_2
 			}
 		}
 	}
@@ -406,11 +429,11 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
+			swap_ideas = {
+				remove_idea = KLN_statewill_2
+				add_idea = KLN_statewill_3
 			}
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	
@@ -426,17 +449,16 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
+			swap_ideas = {
+				remove_idea = KLN_dark_science_costs_2
+				add_idea = KLN_dark_science_costs_3
 			}
 		}
 	}
 	
 	focus = { 
 		id = KLN_the_hand_and_sword_of_divinity
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_focus_generic_industry_3
 		 
 		x =2
 		y =8 
@@ -447,10 +469,9 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = destiny
-			create_wargoal = {
-				type = annex_everything
-				target = USA
+			swap_ideas = {
+				remove_idea = KLN_dark_state_5
+				add_idea = KLN_perfect_economy
 			}
 		}
 	}
@@ -1383,7 +1404,7 @@ focus_tree = {
 		x =6 
 		y =6 
 		mutually_exclusive = { } 
-		prerequisite = { focus = KLN_brainsweeps } 
+		prerequisite = { focus = KLN_psionic_transmitters } 
 		prerequisite = { focus = KLN_communion } 
 		cost = 5  
 		available_if_capitulated = yes
@@ -1431,54 +1452,64 @@ focus_tree = {
 		prerequisite = { focus = KLN_communion } 
 		cost = 5  
 		available_if_capitulated = yes 
+		
 		completion_reward = {
-			# ROOT = { country_event = { id = kaelan.9 } }
-			378 = {
+			158 = {
 				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = -566170
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+				
 			}
-			385 = {
+			160 = {
 				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = -412660
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+				
 			}
-			386 = {
+			162 = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			379 = {
-				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = -222144
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
+				
 			}
-			387 = {
+			2 = {
 				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = -558216
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
+				
 			}
-		}		
+			117 = {
+				limit = { is_fully_controlled_by = ROOT }
+				add_manpower = -778124
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+		}
 	}
 	
 	focus = { 
@@ -1591,10 +1622,6 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_dark_state_3
-				add_idea = KLN_dark_state_4
-			}
 		}
 	}
 	
@@ -1836,16 +1863,13 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_dark_state_4
-				add_idea = KLN_dark_state_5
-			}
+		
 		}
 	}
 	
 	focus = { 
 		id = KLN_dark_state_economy
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_strike_at_democracy1
 		 
 		x =11 
 		y =11 
@@ -1856,10 +1880,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_dark_state_5
-				add_idea = KLN_perfect_economy
-			}
+			
 		}
 	}
 	

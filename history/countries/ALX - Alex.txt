@@ -144,6 +144,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	ALX_red_guards
+}
+
 
 create_country_leader = {
 	name = "Alex Southard"

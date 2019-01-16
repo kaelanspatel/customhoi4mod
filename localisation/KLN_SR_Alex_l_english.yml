@@ -22,3 +22,7 @@ ALX_paternal_autocrat_party_long:0 "Royalist Party"
 ALX_national_populist_party:0 "Alex Supremacists"
 ALX_national_populist_party_long:0 "Alex Supremacists"
 
+# Ideas
+ALX_red_guards:0 "Red Guards"
+ALX_red_guards_desc:0
+
