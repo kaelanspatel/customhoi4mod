@@ -81,9 +81,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -117,10 +117,7 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
-			}
+			
 		}
 	}
 	
@@ -135,9 +132,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -171,9 +168,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -207,9 +204,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -500,9 +497,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -536,9 +533,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -572,9 +569,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -608,9 +605,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
@@ -663,9 +660,9 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
 			}
 		}
 	}
