@@ -14,10 +14,8 @@ focus_tree = {
 		x = 7
 		y = 0
 		completion_reward = {
-			add_political_power = 300
 			add_stability = 0.05
-			add_war_support = 0.1
-			ROOT = { country_event = { id = greg.2 } }
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -29,11 +27,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GRG_startfocus
 		}
+		available = {
+			if = { not = { has_idea = GRG_imploded_economy } }
+		}
 		completion_reward = {
-			add_political_power = 300
-			add_stability = 0.05
-			add_war_support = 0.1
-			ROOT = { country_event = { id = greg.2 } }
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -45,11 +43,16 @@ focus_tree = {
 		prerequisite = {
 			focus = GRG_startfocus
 		}
+		available = {
+			if = { not = { has_idea = GRG_imploded_economy } }
+		}
 		completion_reward = {
-			add_political_power = 300
-			add_stability = 0.05
-			add_war_support = 0.1
-			ROOT = { country_event = { id = greg.2 } }
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	focus = {
@@ -61,11 +64,16 @@ focus_tree = {
 		prerequisite = {
 			focus = GRG_startfocus
 		}
+		available = {
+			if = { not = { has_idea = GRG_imploded_economy } }
+		}
 		completion_reward = {
-			add_political_power = 300
-			add_stability = 0.05
-			add_war_support = 0.1
-			ROOT = { country_event = { id = greg.2 } }
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+			}
 		}
 	}
 	
@@ -81,9 +89,74 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
+			ROOT = { country_event = { id = greg.corporate.1 } }
+			add_ideas = free_trade
+			
 			add_popularity = {
 				ideology = market_liberal
 				popularity = 0.05
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -99,11 +172,70 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+			add_ideas = limited_exports
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			
 		}
+		
 	}
 	
 	focus = { 
@@ -117,7 +249,59 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_stability = -0.10
+			random_owned_controlled_state = {
+				limit = {
+					
+					is_in_home_area = yes
+								
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					
+					is_in_home_area = yes
+								
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					
+					is_in_home_area = yes
+								
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					
+					is_in_home_area = yes
+								
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					
+					is_in_home_area = yes
+								
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = chromium
+					amount = 56
+				}
+			}
 		}
 	}
 	
@@ -132,6 +316,99 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
+			ROOT = { country_event = { id = greg.corporate.2 } }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_popularity = {
 				ideology = market_liberal
 				popularity = 0.05
@@ -150,10 +427,13 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = -0.05
+			add_idea = GRG_market_controls
 			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
+				remove_idea = GRG_economic_collapse
+				add_idea = GRG_fledgling_recovery
 			}
+			
 		}
 	}
 	
@@ -168,6 +448,11 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
+			add_idea = GRG_expanded_market_freedoms
+			swap_ideas = {
+				remove_idea = GRG_economic_collapse
+				add_idea = GRG_fledgling_recovery
+			}
 			add_popularity = {
 				ideology = market_liberal
 				popularity = 0.05
