@@ -398,7 +398,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { 
+	focus = {  
 		id = KLN_lock_down_research_cities
 		icon = GFX_goal_generic_fortify_city
 		 
@@ -407,6 +407,7 @@ focus_tree = {
 		will_lead_to_war_with = USA
 		mutually_exclusive = { } 
 		prerequisite = { focus= KLN_the_reins_of_destiny  }
+		prerequisite = { focus= KLN_psionic_transmitters } 
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
@@ -532,49 +533,7 @@ focus_tree = {
 		
 		completion_reward = {
 
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				
-			}
-			
+			air_experience = 25
 			
 		}
 	}
@@ -591,7 +550,55 @@ focus_tree = {
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			
+			add_tech_bonus = {
+				name = cat_strategic_destruction_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_strategic_destruction
+			}
 			
 		}
 	}
@@ -623,7 +630,12 @@ focus_tree = {
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25	
+			add_tech_bonus = {
+				name = cat_strategic_destruction_bonus
+				bonus = 0.5
+				uses = 3
+				category = cat_strategic_destruction
+			}	
 			
 		}
 	}
@@ -639,7 +651,12 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes 
 		completion_reward = {
-			add_ideas = air_production
+			add_tech_bonus = {
+				name = cat_strategic_bomber_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_strategic_bomber
+			}
 		}
 	}
 	
@@ -655,8 +672,12 @@ focus_tree = {
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25	
-			
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 0.5
+				uses = 3
+				category = naval_bomber
+			}	
 		}
 	}
 	
@@ -673,7 +694,8 @@ focus_tree = {
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25	
+			
+			add_ideas = air_destroyers
 			
 		}
 	}
@@ -706,8 +728,17 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			set_rule = {
-				can_use_kamikaze_pilots = yes
+			air_experience = 10
+			set_rule = { can_generate_female_aces = yes }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_anti_air
 			}
 		}
 	}
@@ -724,40 +755,6 @@ focus_tree = {
 		available_if_capitulated = yes  
 		completion_reward = {
 			navy_experience = 25
-			378 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						province = 9671
-						level = 5
-						instant_build = yes
-					}
-					
-				}
-			}
-			385 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						province = 12211
-						level = 7
-						instant_build = yes
-					}
-				}
-			}
-			484 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						province = 1892
-						level = 8
-						instant_build = yes
-					}
-				}
-			}
 		}
 	}
 	
@@ -772,7 +769,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = grand_fleet
+			add_ideas = prog
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -781,10 +778,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 10
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -797,10 +794,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 10
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -813,10 +810,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 10
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -829,10 +826,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 10
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -873,8 +870,43 @@ focus_tree = {
 		available_if_capitulated = yes 
 		
 		completion_reward = {
-			air_experience = 25	
-			
+			add_stability = 0.05
+			add_political_power = 50
+			army_experience = 10
+			838 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 6788
+						level = 2
+						instant_build = yes
+					}
+					
+				}
+			}
+			2 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 11751
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			115 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 10074
+						level = 8
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -890,13 +922,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
+			add_ideas = grand_fleet
+			
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
 				bonus = 0.50
-				uses = 3
+				uses = 1
 				category = fleet_in_being_tree
 			}
 			
+			add_tech_bonus = {
+				name = bb_tech_bonus
+				bonus = 0.5
+				uses = 3
+				category = bb_tech
+				category = shbb_tech
+			}
 		}		
 	}
 	
@@ -912,11 +953,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.50
-				uses = 3
-				category = fleet_in_being_tree
+			swap_ideas = {
+				add_idea = prog_2
+				remove_idea = prog
 			}
 			
 		}		
@@ -935,10 +974,11 @@ focus_tree = {
 		completion_reward = {
 			
 			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.50
+				name = cr_tech_bonus
+				bonus = 0.5
 				uses = 3
-				category = fleet_in_being_tree
+				category = cl_tech
+				category = ca_tech
 			}
 			
 		}		
@@ -955,13 +995,68 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.50
-				uses = 3
-				category = fleet_in_being_tree
+			division_template = {
+				name = "Astral Grand Legion"
+				priority = 1
+				division_names_group = MAN_INF_01
+				regiments = {
+					m = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+		
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+					
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					
+					heavy_tank =  { x = 3 y = 0 }
+					
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+				}
 			}
+			158 = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				create_unit = {
+					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
+					owner = KLN
+				}
+				
+			}			
+			
 			
 		}		
 	}
@@ -979,11 +1074,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.50
-				uses = 3
-				category = fleet_in_being_tree
+			swap_ideas = {
+				add_idea = prog_3
+				remove_idea = prog_2
 			}
 			
 		}		
@@ -1001,11 +1094,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.50
-				uses = 3
-				category = fleet_in_being_tree
+			swap_ideas = {
+				add_idea = grand_fleet_2
+				remove_idea = grand_fleet
 			}
 			
 		}		
@@ -1022,15 +1113,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			remove_ideas = army_purged
-			add_ideas = super_soldiers
-			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 25
 		}
 	}
 	
@@ -1045,161 +1128,18 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes  
 		completion_reward = {
-			add_ideas = miliind
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = KLN_army_purged
+				add_idea = KLN_army_purged_2 
 			}
-			
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 	
@@ -1215,11 +1155,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+				bonus = 0.5
+				uses = 2
+				category = cat_superior_firepower
 			}
 		}
 	}
@@ -1237,8 +1175,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
+				bonus = 0.5
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
@@ -1256,13 +1194,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
-			}
+			add_ideas = miliind
 		}
 	}
 	
@@ -1277,13 +1209,7 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
-			}
+			add_ideas = service_by_requirement
 		}
 	}
 	
@@ -1299,12 +1225,9 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+			swap_ideas = {
+				remove_idea = KLN_army_purged_2
+				add_idea = KLN_army_purged_3
 			}
 		}
 	}
@@ -1320,12 +1243,9 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+			swap_ideas = {
+				remove_idea = KLN_army_purged_3
+				add_idea = KLN_army_purged_4
 			}
 		}
 	}
@@ -1342,11 +1262,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
 			}
 		}
 	}
@@ -1364,11 +1283,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+				name = cl_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = cv_tech
+				category = cvh_tech
 			}
 		}
 	}
@@ -1385,11 +1304,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.7
-				uses = 7
-				category = infantry_weapons
-				category = artillery
+				name = marine_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
 			}
 		}
 	}
@@ -1545,7 +1463,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = KLN_nuclear_effort_2
-				bonus = 0.9
+				bonus = 0.5
 				uses = 2
 				category = nuclear
 			}
@@ -1669,58 +1587,6 @@ focus_tree = {
 			}
 			158 = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
 				create_unit = {
 					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
 					owner = KLN

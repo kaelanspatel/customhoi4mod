@@ -203,7 +203,11 @@ kaelan.14.a:0 "To See With Eyes Unclouded"
 state_control:0 "Control the Union"
 state_media:0 "State Media"
 SECPOL_idea:0 "Information Police"
-prog:0 "Department of Progress"
+
+prog:0 "NAVINF Directorate"
+prog_2:0 "NAVINF Directorate"
+prog_3:0 "NAVINF Directorate"
+
 black_labs:0 "Black Laboratories"
 super_soldiers:0 "The Grand Army"
 all_serve:0 "All Citizens Serve"
@@ -247,9 +251,21 @@ is:0 "Xenos Slave Workers"
 KLN_army_purged:0 "Navy Control of the Army"
 KLN_army_purged_desc:0 "While the army has been purged of all counter-authority filth, the loyal naval officers we've put in charge have done a questionable job of managing our land forces."
 
+KLN_army_purged_2:0 "Reformed Navy Control of the Army"
+KLN_army_purged_2_desc:0 "We have begun the task of reforming our army corps, but it will take some time before we are up to optimal fighting capacity."
+
+KLN_army_purged_3:0 "Reorganized Navy Control of the Army"
+KLN_army_purged_3_desc:0 "Our army is mostly reorganized, with only specific areas being weakened."
+
+KLN_army_purged_4:0 "The Grand Army"
+
 gov_purged:0 "Government Purged"
 xenotech:0 "Xenotechnology"
 grand_fleet:0 "The Grand Fleet"
+grand_fleet_2:0 "The Grand Fleet"
+
+KLN_subject_navy: "NAC Dockyard Comission"
+
 portal_tech:0 "Alternate Timeline Windows"
 alt_colonial:0 "Alternate Timeline Colonialism"
 destiny:0 "The Reins of Destiny"

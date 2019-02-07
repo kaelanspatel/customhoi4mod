@@ -6,13 +6,13 @@ state = {
 	state_category = town
 
 	history = {
-		owner = KLN
+		owner = KIL
 		victory_points = {
 			3924 5
 		}
 		buildings = {
 			infrastructure = 6
-			dockyard = 1
+			dockyard = 3
 			industrial_complex = 1
 			3924 = {
 				naval_base = 3
@@ -26,7 +26,7 @@ state = {
 			}
 		}
 
-		add_core_of = KLN
+		add_core_of = KIL
 	}
 
 	provinces = {

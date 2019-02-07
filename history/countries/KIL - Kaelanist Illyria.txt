@@ -146,6 +146,7 @@ set_politics = {
 
 add_ideas = {
 	KLN_subject_idea
+	KLN_subject_dockyards
 }
 
 
