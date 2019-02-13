@@ -80,7 +80,7 @@ KLN_grand_navy:0 "The NDGF"
 KLN_grand_army:0 "The NDGA"
 KLN_is:0 "Enslave Xenos"
 KLN_bring_them_through:0 "Alternate Earth Colonialism"
-KLN_ucs_luna:0 "KUSD KHONSHU"
+KLN_ucs_luna:0 "KGAS KHONSHU"
 KLN_fission_power:0 "Fission Power"
 KLN_aviation_cult:0 "Kamikaze Cult"
 KLN_dockyards:0 "Dockyard Industry"
@@ -94,7 +94,7 @@ KLN_astral_legions:0 "Astral Legions"
 KLN_otherworld_industries:0 "Otherworld Industries"
 KLN_lunar_industry:0 "Lunar Industry"
 KLN_fusion_power:0 "Fusion Power"
-KLN_ucs_ares:0 "KUSD ARES"
+KLN_ucs_ares:0 "KGAS ARES"
 KLN_martian_industry:0 "Martian Industry"
 KLN_space_capable_airforce:0 "Space-Capable Airforce"
 KLN_nuclear_infrastructure_two:0 "Nuclear Infrastructure II"
@@ -234,6 +234,8 @@ KLN_statewill_3_desc:0 "The people of the Authority have been stripped of the de
 
 KLN_arms:0 "NAC Arms Standardization"
 
+KLN_colonial_upkeep:0 "Colonial Upkeep"
+
 collectivism:0 "Collectivist Thought"
 research_parks:0 "Research Parks"
 free_edu:0 "Free Education"
@@ -293,3 +295,7 @@ construction_boost_2:0 "Advanced Infrastructure Nuclearization"
 
 rev_unending:0 "Esotericist"
 rev_unending_fac:0 "The South Will Rise Again"
+
+# Custom Tooltips
+KLN_astral_legion_tt:0 "We will raise a contingent of astral legions."
+KLN_navy_army_tt:0 "We will create an elite land-based contingent of the National Marines."

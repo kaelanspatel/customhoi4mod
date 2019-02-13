@@ -430,7 +430,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_idea = GRG_market_controls
 			swap_ideas = {
-				remove_idea = GRG_economic_collapse
+				remove_idea = GRG_imploded_economy
 				add_idea = GRG_fledgling_recovery
 			}
 			
@@ -450,12 +450,12 @@ focus_tree = {
 		completion_reward = {
 			add_idea = GRG_expanded_market_freedoms
 			swap_ideas = {
-				remove_idea = GRG_economic_collapse
+				remove_idea = GRG_imploded_economy
 				add_idea = GRG_fledgling_recovery
 			}
 			add_popularity = {
 				ideology = market_liberal
-				popularity = 0.05
+				popularity = 0.10
 			}
 		}
 	}
@@ -471,10 +471,7 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
-			}
+			add_ideas = GRG_national_corp_idea
 		}
 	}
 	
@@ -489,6 +486,7 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = GRG_corporate_man_idea
 			add_popularity = {
 				ideology = market_liberal
 				popularity = 0.05
@@ -507,10 +505,7 @@ focus_tree = {
 		cost = 8  
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KLN_statewill
-				add_idea = KLN_statewill_2
-			}
+			remove_ideas = GRG_fledgling_recovery
 		}
 	}
 	

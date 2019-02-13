@@ -513,7 +513,7 @@ focus_tree = {
 			ROOT = { country_event = { id = kaelan.7 } }
 			add_tech_bonus = {
 				name = KLN_nuclear_effort_1
-				bonus = 0.50
+				bonus = 0.25
 				uses = 1
 				category = nuclear
 			}
@@ -995,67 +995,71 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			division_template = {
-				name = "Astral Grand Legion"
-				priority = 1
-				division_names_group = MAN_INF_01
-				regiments = {
-					m = { x = 0 y = 0 }
-					marine = { x = 0 y = 1 }
-					marine = { x = 0 y = 2 }
-					marine = { x = 0 y = 3 }
-					marine = { x = 0 y = 4 }
-		
-					marine = { x = 1 y = 0 }
-					marine = { x = 1 y = 1 }
-					marine = { x = 1 y = 2 }
-					marine = { x = 1 y = 3 }
-					marine = { x = 1 y = 4 }
-					
-					marine = { x = 2 y = 0 }
-					marine = { x = 2 y = 1 }
-					marine = { x = 2 y = 2 }
-					
-					heavy_tank =  { x = 3 y = 0 }
-					
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
+			custom_effect_tooltip = KLN_navy_army_tt
+			hidden_effect = {
+				division_template = {
+					name = "Navy Army Division"
+					priority = 1
+					division_names_group = MAN_INF_01
+					regiments = {
+						m = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						marine = { x = 0 y = 4 }
+			
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						marine = { x = 1 y = 4 }
+						
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						
+						heavy_tank =  { x = 3 y = 0 }
+						
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 4 y = 3 }
+					}
 				}
+				158 = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Navy Army Corps\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					
+				}			
 			}
-			158 = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
 				
-			}			
 			
 			
 		}		
@@ -1458,13 +1462,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 0.5
+				ahead_reduction = 0.25
 				category = nuclear
 			}
 			add_tech_bonus = {
 				name = KLN_nuclear_effort_2
-				bonus = 0.5
-				uses = 2
+				bonus = 0.25
+				uses = 1
 				category = nuclear
 			}
 		}
@@ -1556,67 +1560,70 @@ focus_tree = {
 		cost = 5  
 		available_if_capitulated = yes
 		completion_reward = {
-			division_template = {
-				name = "Astral Grand Legion"
-				priority = 1
-				division_names_group = MAN_INF_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
-		
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
-					infantry = { x = 1 y = 4 }
+			custom_effect_tooltip = KLN_astral_legion_tt
+			hidden_effect = {
+				division_template = {
+					name = "Navy Army Division"
+					priority = 1
+					division_names_group = MAN_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+			
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+						
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						
+						heavy_tank =  { x = 3 y = 0 }
+						
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 4 y = 3 }
+					}
+				}
+				158 = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
+					create_unit = {
+						division = "name = \"Astral Legion\" division_template = \"Navy Army Division\" start_experience_factor = 1.0" 
+						owner = KLN
+					}
 					
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-					
-					heavy_tank =  { x = 3 y = 0 }
-					
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
 				}
 			}
-			158 = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				create_unit = {
-					division = "name = \"Astral Legion\" division_template = \"Astral Grand Legion\" start_experience_factor = 1.0" 
-					owner = KLN
-				}
-				
-			}			
 		}
 	}
 	

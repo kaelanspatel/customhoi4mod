@@ -143,6 +143,7 @@ add_ideas = {
 	KLN_army_purged
 	KLN_statewill
 	KLN_dark_state
+	KLN_colonial_upkeep
 }
 
 set_autonomy = {

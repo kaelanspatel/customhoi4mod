@@ -156,6 +156,31 @@ ideas = {
 		
 		}
 		
+		KLN_colonial_upkeep = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = King_Carol_Emptied_Accounts
+			
+			modifier = {
+				
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+				
+				
+			}
+			
+		
+		}
+		
 		KLN_directive_one_4 = {
 			
 			
